@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#10221f" />
+  <meta name="description" content="A high-yield GATE CS 2027 study system with a complete syllabus checklist, question patterns, and mock-analysis playbook." />
+  <title>GATE CS 2027 · Rank 1000 Study System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <div class="brand-lockup">
+        <div class="brand-mark" aria-hidden="true"><span>CS</span><i>27</i></div>
+        <div>
+          <div class="brand-name">Rankroom</div>
+          <div class="brand-subtitle">GATE / computer science</div>
+        </div>
+      </div>
+
+      <div class="sidebar-target">
+        <div class="eyebrow">The target</div>
+        <div class="target-line"><strong>&lt; 1000</strong><span>rank</span></div>
+        <div class="target-meter"><span></span></div>
+        <p>Master the recurring patterns. Then earn speed through analysis.</p>
+      </div>
+
+      <nav class="side-nav">
+        <div class="nav-label">Workspace</div>
+        <button class="nav-link active" data-view-target="overview"><span class="nav-icon">⌂</span><span>Overview</span><kbd>1</kbd></button>
+        <button class="nav-link" data-view-target="checklist"><span class="nav-icon">✓</span><span>Syllabus checklist</span><kbd>2</kbd></button>
+        <button class="nav-link" data-view-target="questions"><span class="nav-icon">?</span><span>Question patterns</span><kbd>3</kbd></button>
+        <button class="nav-link" data-view-target="playbook"><span class="nav-icon">↗</span><span>Rank playbook</span><kbd>4</kbd></button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="mini-note"><span class="status-dot"></span><span>Progress saves on this device</span></div>
+        <button class="reset-button" id="resetProgress">Reset progress</button>
+      </div>
+    </aside>
+
+    <div class="content-shell">
+      <header class="mobile-topbar">
+        <div class="brand-lockup">
+          <div class="brand-mark small" aria-hidden="true"><span>CS</span><i>27</i></div>
+          <div class="brand-name">Rankroom</div>
+        </div>
+        <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation" aria-expanded="false">☰</button>
+      </header>
+      <div class="mobile-nav" id="mobileNav" hidden>
+        <button data-view-target="overview"><span>01</span> Overview</button>
+        <button data-view-target="checklist"><span>02</span> Syllabus checklist</button>
+        <button data-view-target="questions"><span>03</span> Question patterns</button>
+        <button data-view-target="playbook"><span>04</span> Rank playbook</button>
+      </div>
+
+      <main>
+        <section class="view active" id="view-overview" aria-labelledby="overview-title">
+          <div class="page-head hero-head">
+            <div>
+              <div class="eyebrow accent-eyebrow"><span class="eyebrow-dot"></span> GATE CS 2027 · IIT Madras</div>
+              <h1 id="overview-title">Make every study hour<br /><em>show up in your score.</em></h1>
+              <p class="lede">A calm, high-yield system for covering the full Computer Science syllabus, recognizing question shapes, and converting mistakes into marks.</p>
+            </div>
+            <div class="head-actions">
+              <button class="button button-dark" data-view-target="checklist">Open checklist <span>→</span></button>
+              <div class="save-stamp"><span class="save-check">✓</span><span><strong>Auto-saved</strong><small>on this device</small></span></div>
+            </div>
+          </div>
+
+          <div class="stat-grid" id="statGrid" aria-label="Study statistics"></div>
+
+          <div class="dashboard-grid">
+            <section class="panel progress-panel">
+              <div class="panel-heading">
+                <div><div class="eyebrow">Your coverage</div><h2>One complete pass</h2></div>
+                <span class="panel-kicker" id="coverageLabel">Starting line</span>
+              </div>
+              <div class="coverage-body">
+                <div class="progress-ring" id="progressRing" aria-label="0 percent syllabus complete"><div><strong id="progressPercent">0%</strong><span>covered</span></div></div>
+                <div class="progress-copy">
+                  <p id="progressMessage">Every checked topic is one less open loop.</p>
+                  <div class="mini-bar"><span id="progressBar"></span></div>
+                  <div class="bar-meta"><span id="checkedCount">0 of 0 topics</span><span id="nextSubject">Start with a foundation</span></div>
+                </div>
+              </div>
+              <div class="subject-strip" id="subjectStrip"></div>
+            </section>
+
+            <section class="panel focus-panel">
+              <div class="panel-heading">
+                <div><div class="eyebrow">This week</div><h2>Highest-return loop</h2></div>
+                <span class="week-mark">W01</span>
+              </div>
+              <div class="focus-list" id="focusList"></div>
+              <button class="text-button" data-view-target="playbook">See the 4-phase plan <span>↗</span></button>
+            </section>
+          </div>
+
+          <section class="section-block">
+            <div class="section-heading">
+              <div><div class="eyebrow">The syllabus map</div><h2>Know what deserves your next block</h2></div>
+              <button class="text-button" data-view-target="checklist">Full checklist <span>→</span></button>
+            </div>
+            <div class="subject-card-grid" id="subjectOverviewGrid"></div>
+          </section>
+
+          <section class="bottom-grid">
+            <section class="panel dont-miss-panel">
+              <div class="panel-heading">
+                <div><div class="eyebrow">Non-negotiables</div><h2>Do not miss these</h2></div>
+                <span class="bolt" aria-hidden="true">✦</span>
+              </div>
+              <div class="non-negotiable-list" id="dontMissList"></div>
+            </section>
+            <section class="panel quote-panel">
+              <div class="quote-mark">“</div>
+              <blockquote>Rank is a lagging indicator. Your daily loop is the leading indicator.</blockquote>
+              <div class="quote-rule"></div>
+              <p>Learn → retrieve → solve timed → log the miss → revisit.</p>
+            </section>
+          </section>
+        </section>
+
+        <section class="view" id="view-checklist" aria-labelledby="checklist-title" hidden>
+          <div class="page-head compact-head">
+            <div>
+              <div class="eyebrow accent-eyebrow"><span class="eyebrow-dot"></span> Coverage tracker</div>
+              <h1 id="checklist-title">Nothing important<br /><em>left unchecked.</em></h1>
+              <p class="lede">Use the priority tags to sequence your first pass. Check a topic only after you can explain it and solve a basic question without notes.</p>
+            </div>
+            <div class="head-stat"><strong id="checklistPercent">0%</strong><span>complete</span></div>
+          </div>
+          <div class="toolbar panel">
+            <div class="toolbar-search"><span>⌕</span><input id="topicSearch" type="search" placeholder="Search a topic, method, or keyword…" aria-label="Search checklist" /></div>
+            <div class="filter-group" role="group" aria-label="Filter checklist by priority">
+              <button class="filter-button active" data-topic-filter="all">All</button>
+              <button class="filter-button" data-topic-filter="must">Must know</button>
+              <button class="filter-button" data-topic-filter="high">High yield</button>
+              <button class="filter-button" data-topic-filter="build">Build next</button>
+            </div>
+          </div>
+          <div class="checklist-summary" id="checklistSummary"></div>
+          <div class="checklist-grid" id="checklistGrid"></div>
+          <div class="empty-state" id="checklistEmpty" hidden><span>⌕</span><h3>No topic matches that search</h3><p>Try a broader term, or clear the filters.</p></div>
+        </section>
+
+        <section class="view" id="view-questions" aria-labelledby="questions-title" hidden>
+          <div class="page-head compact-head question-head">
+            <div>
+              <div class="eyebrow accent-eyebrow"><span class="eyebrow-dot"></span> Active recall bank</div>
+              <h1 id="questions-title">Recognize the shape<br /><em>before doing the math.</em></h1>
+              <p class="lede">These are high-frequency question archetypes, not a promise of exact predictions. Attempt each prompt cold, then reveal the solving lens and add misses to your error log.</p>
+            </div>
+            <div class="question-count"><strong id="questionMastery">0%</strong><span>patterns mastered</span></div>
+          </div>
+          <div class="question-toolbar panel">
+            <div class="toolbar-search"><span>⌕</span><input id="questionSearch" type="search" placeholder="Search questions or concepts…" aria-label="Search question bank" /></div>
+            <div class="question-hint"><span class="keyboard-key">R</span> Reveal an answer <span class="keyboard-key">M</span> Mark mastered</div>
+          </div>
+          <div class="question-subjects" id="questionSubjects"></div>
+          <div class="empty-state" id="questionEmpty" hidden><span>⌕</span><h3>No question matches that search</h3><p>Search by subject, concept, or question type.</p></div>
+        </section>
+
+        <section class="view" id="view-playbook" aria-labelledby="playbook-title" hidden>
+          <div class="page-head compact-head">
+            <div>
+              <div class="eyebrow accent-eyebrow"><span class="eyebrow-dot"></span> The operating system</div>
+              <h1 id="playbook-title">A rank is built<br /><em>in four deliberate phases.</em></h1>
+              <p class="lede">Do not confuse finishing lectures with finishing preparation. Move from coverage to retrieval to exam decisions, and let your mock analysis decide the next week.</p>
+            </div>
+            <div class="phase-badge"><span>4</span><small>phases<br />to cycle</small></div>
+          </div>
+
+          <div class="phase-grid" id="phaseGrid"></div>
+
+          <div class="playbook-grid">
+            <section class="panel daily-panel">
+              <div class="panel-heading"><div><div class="eyebrow">A repeatable day</div><h2>Three focused blocks</h2></div><span class="sun-mark">☼</span></div>
+              <div class="daily-blocks">
+                <div class="daily-block"><span class="block-time">01</span><div><strong>Learn + compress</strong><p>Concepts, one-page notes, and a small formula / pattern deck.</p></div><b>90 min</b></div>
+                <div class="daily-block"><span class="block-time">02</span><div><strong>Retrieve + solve</strong><p>Topic-wise PYQs first; then mixed questions under a clock.</p></div><b>90 min</b></div>
+                <div class="daily-block"><span class="block-time">03</span><div><strong>Review + repair</strong><p>Classify every miss: concept, setup, calculation, or decision.</p></div><b>45 min</b></div>
+              </div>
+            </section>
+            <section class="panel error-panel">
+              <div class="panel-heading"><div><div class="eyebrow">The score multiplier</div><h2>Mock analysis loop</h2></div><span class="loop-mark">↻</span></div>
+              <ol class="analysis-list">
+                <li><span>01</span><div><strong>Re-solve without the key</strong><p>Give an untouched question a second attempt before reading the solution.</p></div></li>
+                <li><span>02</span><div><strong>Name the failure</strong><p>Tag it C / S / A / T: concept, setup, arithmetic, or time/decision.</p></div></li>
+                <li><span>03</span><div><strong>Install a guardrail</strong><p>Write the one rule, cue, or shortcut that prevents the repeat miss.</p></div></li>
+                <li><span>04</span><div><strong>Re-test in 72 hours</strong><p>Bring the same idea back in a new-looking question.</p></div></li>
+              </ol>
+            </section>
+          </div>
+
+          <section class="panel guardrails-panel">
+            <div class="panel-heading"><div><div class="eyebrow">Before you call it ready</div><h2>Rank &lt;1000 guardrails</h2></div><span class="shield-mark">◇</span></div>
+            <div class="guardrails-grid">
+              <div><span class="guardrail-number">01</span><strong>Complete the official syllabus</strong><p>No blind spot hidden behind only favourite subjects.</p></div>
+              <div><span class="guardrail-number">02</span><strong>Finish every available official PYQ</strong><p>Tag the concept and the trap, not just the answer.</p></div>
+              <div><span class="guardrail-number">03</span><strong>Run mixed timed sets</strong><p>Practice switching between maths, theory, and numericals.</p></div>
+              <div><span class="guardrail-number">04</span><strong>Protect accuracy first</strong><p>Increase attempts only when your skip decisions are intentional.</p></div>
+            </div>
+            <p class="disclaimer"><span>↳</span> No checklist can guarantee a rank. This system makes the controllable work visible; official notices, your mock data, and consistent revision should set the final pace.</p>
+          </section>
+        </section>
+      </main>
+      <footer class="site-footer"><span>Rankroom / GATE CS 2027</span><span>Built for deliberate practice, not prediction theatre.</span></footer>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
