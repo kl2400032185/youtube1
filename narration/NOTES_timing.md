@@ -38,6 +38,22 @@
 
 > సూత్రం: **1 ఖాళీ లైన్ ≈ 0.45 s · 1 ellipsis ≈ 0.45 s · 1 లైన్ బ్రేక్స్ ≈ 0.15 s.**
 
+## 🔊 Reference render (ఈ repo లోని ఆడియో)
+
+నేను ఈ script ని reference voice తో generate చేశాను (ఇది మీ clone voice కాదు — pace calibrate చేసుకోడానికి):
+
+| ఫైల్ | పొడవు |
+|---|---|
+| `audio/vinayaka_ganesha_narration_te.mp3` | **6:59** (సహజ పేస్, tempo మార్చలేదు) |
+| `audio/vinayaka_ganesha_narration_te_FIT-6-08.mp3` | **6:08.04** (atempo 1.14, pitch మారదు) |
+| `audio/parts/part*.mp3` | ముక్కలు (re-render కావాలంటే) |
+
+**Calibration:** మాటలు మాత్రమే ≈ 346 s; పాజ్‌లు ≈ 70 s; మొత్తం 6:59 → ఈ voice **~5.8 syllables/sec** (నెమ్మదైన narration voice).
+
+మీ voice (ElevenLabs, Speed 45% Fast) దీనికన్నా కొంచెం వేగంగా ఉంటుంది → అంచనా **6:20 – 6:40**. అది 6:08 కన్నా ఎక్కువైతే `..._no_ellipsis.txt` (−25 s) వాడు; తక్కువైతే `..._extra_pauses.txt` (+45 s) వాడు.
+
+> 6:08 కి సరిగ్గా కావాలంటే (ఈ reference audio ఆధారంగా): tempo × **1.14** చాలు — అదే `..._FIT-6-08.mp3`.
+
 ## ✂️ 5000-అక్షరాల లిమిట్ ఎదురైతే (4696 chars ఉన్నాయి — దాదాపు లిమిట్ దగ్గరే)
 
 రెండు భాగాలుగా render చేసి జాయిన్ చేయి. స్ప్లిట్ పాయింట్ (సహజమైన బ్రేక్):
