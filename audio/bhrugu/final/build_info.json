@@ -1,0 +1,83 @@
+{
+ "natural": {
+  "file": "bhrugu_story_natural_11m43s.mp3",
+  "duration_s": 702.88,
+  "atempo": 1.0,
+  "gap_tightening": false
+ },
+ "exact": {
+  "file": "bhrugu_story_exact_10m00s.mp3",
+  "duration_s": 600.0,
+  "atempo": 1.0561,
+  "gap_tightening": true,
+  "gap_removed_s": 70.3
+ },
+ "pauses_s": [
+  2.0,
+  2.0,
+  2.0,
+  2.2,
+  2.0,
+  2.2,
+  2.0,
+  2.4
+ ],
+ "lead_in_s": 0.8,
+ "tail_s": 1.6,
+ "part_marks_exact": [
+  {
+   "t": 0.8,
+   "mmss": "0:00.80",
+   "part": 1,
+   "act": 1
+  },
+  {
+   "t": 75.21,
+   "mmss": "1:15.21",
+   "part": 2,
+   "act": 1
+  },
+  {
+   "t": 146.18,
+   "mmss": "2:26.18",
+   "part": 3,
+   "act": 2
+  },
+  {
+   "t": 217.05,
+   "mmss": "3:37.05",
+   "part": 4,
+   "act": 2
+  },
+  {
+   "t": 290.31,
+   "mmss": "4:50.31",
+   "part": 5,
+   "act": 3
+  },
+  {
+   "t": 364.6,
+   "mmss": "6:04.60",
+   "part": 6,
+   "act": 4
+  },
+  {
+   "t": 436.72,
+   "mmss": "7:16.72",
+   "part": 7,
+   "act": 4
+  },
+  {
+   "t": 502.34,
+   "mmss": "8:22.34",
+   "part": 8,
+   "act": 5
+  },
+  {
+   "t": 571.45,
+   "mmss": "9:31.45",
+   "part": 9,
+   "act": 5
+  }
+ ]
+}
