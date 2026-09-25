@@ -33,8 +33,9 @@
         <div class="nav-label">Workspace</div>
         <button class="nav-link active" data-view-target="overview"><span class="nav-icon">⌂</span><span>Overview</span><kbd>1</kbd></button>
         <button class="nav-link" data-view-target="checklist"><span class="nav-icon">✓</span><span>Syllabus checklist</span><kbd>2</kbd></button>
-        <button class="nav-link" data-view-target="questions"><span class="nav-icon">?</span><span>Question patterns</span><kbd>3</kbd></button>
-        <button class="nav-link" data-view-target="playbook"><span class="nav-icon">↗</span><span>Rank playbook</span><kbd>4</kbd></button>
+        <button class="nav-link" data-view-target="sheets"><span class="nav-icon">▦</span><span>Subject sheets</span><kbd>3</kbd></button>
+        <button class="nav-link" data-view-target="questions"><span class="nav-icon">?</span><span>Question patterns</span><kbd>4</kbd></button>
+        <button class="nav-link" data-view-target="playbook"><span class="nav-icon">↗</span><span>Rank playbook</span><kbd>5</kbd></button>
       </nav>
 
       <div class="sidebar-footer">
@@ -54,8 +55,9 @@
       <div class="mobile-nav" id="mobileNav" hidden>
         <button data-view-target="overview"><span>01</span> Overview</button>
         <button data-view-target="checklist"><span>02</span> Syllabus checklist</button>
-        <button data-view-target="questions"><span>03</span> Question patterns</button>
-        <button data-view-target="playbook"><span>04</span> Rank playbook</button>
+        <button data-view-target="sheets"><span>03</span> Subject sheets</button>
+        <button data-view-target="questions"><span>04</span> Question patterns</button>
+        <button data-view-target="playbook"><span>05</span> Rank playbook</button>
       </div>
 
       <main>
@@ -147,6 +149,19 @@
           <div class="checklist-summary" id="checklistSummary"></div>
           <div class="checklist-grid" id="checklistGrid"></div>
           <div class="empty-state" id="checklistEmpty" hidden><span>⌕</span><h3>No topic matches that search</h3><p>Try a broader term, or clear the filters.</p></div>
+        </section>
+
+        <section class="view" id="view-sheets" aria-labelledby="sheets-title" hidden>
+          <div class="page-head compact-head sheets-head">
+            <div>
+              <div class="eyebrow accent-eyebrow"><span class="eyebrow-dot"></span> Save, print, share</div>
+              <h1 id="sheets-title">Ten subjects.<br /><em>Ten focused sheets.</em></h1>
+              <p class="lede">Each 1800 × 2700 PNG combines the must-not-miss checklist with representative high-yield questions and answer keys. Download one subject at a time for offline revision.</p>
+            </div>
+            <div class="sheets-stat"><strong>10</strong><span>PNG sheets</span></div>
+          </div>
+          <div class="sheet-note panel"><span class="sheet-note-icon">↘</span><div><strong>Use them as a last-mile revision deck</strong><p>Attempt the question prompts before reading the answer line. These are recurring patterns, not guaranteed predictions; official PYQs remain the source of truth.</p></div><span class="sheet-format">PNG<br />1800×2700</span></div>
+          <div class="sheet-grid" id="sheetGrid"></div>
         </section>
 
         <section class="view" id="view-questions" aria-labelledby="questions-title" hidden>

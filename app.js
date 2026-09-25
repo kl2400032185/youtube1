@@ -325,6 +325,19 @@ const dontMiss = [
   ["REVISE", "Spaced retrieval", "Revisit formulas, traps, and misses at 1 / 3 / 7 / 14 days."]
 ];
 
+const sheetFiles = {
+  math: "01-engineering-mathematics.png",
+  logic: "02-digital-logic.png",
+  coa: "03-computer-organization.png",
+  programming: "04-programming-data-structures.png",
+  algorithms: "05-algorithms.png",
+  toc: "06-theory-of-computation.png",
+  compiler: "07-compiler-design.png",
+  os: "08-operating-systems.png",
+  db: "09-databases.png",
+  networks: "10-computer-networks.png"
+};
+
 const STORAGE_KEY = "rankroom-gate-cs-2027-v1";
 const state = loadState();
 let toastTimer;
@@ -459,6 +472,19 @@ function renderChecklist() {
   document.querySelectorAll("[data-topic-filter]").forEach(button => button.classList.toggle("active", button.dataset.topicFilter === state.topicFilter));
 }
 
+function renderSheets() {
+  const grid = document.getElementById("sheetGrid");
+  if (!grid) return;
+  grid.innerHTML = subjects.map(subject => {
+    const file = sheetFiles[subject.id];
+    const path = `assets/subject-cards/${file}`;
+    return `<article class="sheet-card" style="--subject-color:${subject.color}">
+      <div class="sheet-image-wrap"><img src="${path}" loading="lazy" alt="${esc(subject.name)} GATE CS 2027 checklist and question sheet" /></div>
+      <div class="sheet-card-footer"><div><strong>${esc(subject.name)}</strong><small>Checklist + question prompts</small></div><div class="sheet-actions"><a class="sheet-action" href="${path}" target="_blank" rel="noreferrer" aria-label="Open ${esc(subject.name)} sheet">↗</a><a class="sheet-action" href="${path}" download aria-label="Download ${esc(subject.name)} sheet">↓</a></div></div>
+    </article>`;
+  }).join("");
+}
+
 function renderQuestions() {
   const query = state.questionQuery.trim().toLowerCase();
   const groups = subjects.map(subject => {
@@ -501,13 +527,14 @@ function renderAll() {
   renderStats();
   renderOverview();
   renderChecklist();
+  renderSheets();
   renderQuestions();
   renderPlaybook();
   setView(state.activeView, false);
 }
 
 function setView(view, persist = true) {
-  const validView = ["overview", "checklist", "questions", "playbook"].includes(view) ? view : "overview";
+  const validView = ["overview", "checklist", "sheets", "questions", "playbook"].includes(view) ? view : "overview";
   state.activeView = validView;
   document.querySelectorAll(".view").forEach(section => {
     const active = section.id === `view-${validView}`;
@@ -604,7 +631,7 @@ document.getElementById("mobileMenu").addEventListener("click", event => {
 document.addEventListener("keydown", event => {
   if (event.target.matches("input")) return;
   const key = event.key.toLowerCase();
-  if (["1", "2", "3", "4"].includes(key)) setView(["overview", "checklist", "questions", "playbook"][Number(key) - 1]);
+  if (["1", "2", "3", "4", "5"].includes(key)) setView(["overview", "checklist", "sheets", "questions", "playbook"][Number(key) - 1]);
   if (key === "r" && state.activeView === "questions") {
     const first = document.querySelector(".question-card:not(.revealed)");
     if (first) first.querySelector("[data-reveal-id]").click();
