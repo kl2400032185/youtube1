@@ -33,9 +33,14 @@ download pack. Every short has:
 
 | What | Where |
 |---|---|
+| 🎬 **Final edited shorts (upload-ready MP4, 9:16)** | [`videos/`](videos/) |
 | 🎧 Telugu VO audio (downloadable `.mp3`) | [`assets/audio/`](assets/audio/) |
 | 🖼️ Thumbnail (vertical 9:16 `.jpg`) | [`assets/thumbnails/`](assets/thumbnails/) |
 | 🏷️ Title · description · hashtags (copy buttons) | [`index.html`](index.html) |
+
+The MP4s are fully edited: scene-by-scene art with Ken-Burns motion, Telugu VO on
+the beat, burned-in Telugu subtitles (Noto Sans Telugu), comedy music bed + cartoon
+SFX from the cue sheets. Built with `tools/build_video.py` (re-runnable).
 
 VO cast: **voice-00** = బాబు & చైతు (auto-assigned male voice) · **voice-01** = అమ్మ ·
 **voice-02** = చిన్ని. Episode 1 ships as a full merged track plus separate

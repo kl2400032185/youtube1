@@ -1,0 +1,4 @@
+file '/home/user/youtube1/assets/build/tmp/04-alarm-joke/seg_00.mp4'
+file '/home/user/youtube1/assets/build/tmp/04-alarm-joke/seg_01.mp4'
+file '/home/user/youtube1/assets/build/tmp/04-alarm-joke/seg_02.mp4'
+file '/home/user/youtube1/assets/build/tmp/04-alarm-joke/seg_03.mp4'
