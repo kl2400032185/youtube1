@@ -26,6 +26,23 @@ Subtitles for editors live in [`episodes/subtitles/`](episodes/subtitles/) as re
 
 ---
 
+## 📦 Download pack — audio · thumbnails · metadata
+
+**▶ Open [`index.html`](index.html)** (or the local preview server) for the one-page
+download pack. Every short has:
+
+| What | Where |
+|---|---|
+| 🎧 Telugu VO audio (downloadable `.mp3`) | [`assets/audio/`](assets/audio/) |
+| 🖼️ Thumbnail (vertical 9:16 `.jpg`) | [`assets/thumbnails/`](assets/thumbnails/) |
+| 🏷️ Title · description · hashtags (copy buttons) | [`index.html`](index.html) |
+
+VO cast: **voice-00** = బాబు & చైతు (auto-assigned male voice) · **voice-01** = అమ్మ ·
+**voice-02** = చిన్ని. Episode 1 ships as a full merged track plus separate
+Babu/Amma parts so you can time the cuts precisely.
+
+---
+
 ## 🎨 One look, five jokes
 
 All five shorts share a single visual identity so they feel like **one show**, not five
