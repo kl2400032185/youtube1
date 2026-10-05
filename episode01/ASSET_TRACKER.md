@@ -8,8 +8,8 @@ PENDING: none — images complete ✅
 Folder: episode01/assets/EP01_Snn.png
 
 ## NARRATION AUDIO (target: 66 clips, Telugu narrator voice-00)
-DONE: S01-S60
-PENDING: S61 S62 S63 S64 S65 S66 (final 6)
+DONE: **ALL 66 SCENES** (S01-S66) — voice-00 ✅
+PENDING: none — audio complete ✅
 Folder: episode01/audio/EP01_Snn.mp3
 
 ## USER-ADDED IN EDITING (outside AI generation)
