@@ -983,7 +983,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Purpose:** Narada's blessing-line + the promise he leaves behind before departure.
 **A.** [GLOBAL STYLE MASTER] + NARADA-REF + VYASA-ID: two-shot on risen feet — Narada now standing with one hand raised in blessing over Vyasa's bowed-forward head (the great author bowing to receive), veena settled back on his shoulder as if it knows the work is done, blessing-hand emanating a soft warm edge-light that is 90% morning sun 10% grace, farewell-beauty painterly tableau at the banyan.
 **B.** *(narrator yields to the blessing)*
-**C.** NARADA (as blessing): "మీ కలం కేవలం రాయదు, వ్యాసా — మనసులను కదుల్తుంది. (pause) నేనెప్పుడైనా వస్తాను… ఈ గ్రంథం ముగిసే వరకు — నీ కలాన్ని ఆపడానికి కాని, నీ మనసును ఆపడానికి కాదు."
+**C.** NARADA (as blessing): "మీ కలం కేవలం రాయదు, వ్యాసా — మనసులను కదుల్తుంది. (pause) నేను మళ్ళీ వస్తాను, వ్యాసా… ఈ గ్రంథం ముగిసే వరకు నీ కలం ఆగకూడదు, నీ మనసు ఆగకూడదు — అది నా బాధ్యత."
 **D.** Hand rests a breath above the trembling-with-holding-it crown; Vyasa accepts without rising yet; both settle into the goodbye that has arrived unannounced.
 **E.** Narada: blessing as gift, blessing as leaving. Vyasa: received, sealed.
 **F.** Static tableau — composition as icon; let frames be frames here.
