@@ -213,7 +213,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 01:12–01:24 · **Duration:** 12 sec
 **Purpose:** New day begins; recap line places returning + new viewers.
 **A.** [GLOBAL STYLE MASTER] + ASHRAMA forest pre-dawn: deep charcoal-blue forest interior, treetops just beginning to silhouette against a barely-warming sky, mist knee-height along the ground like a sleeping river, one faint golden seam on the horizon behind the trees, serene painterly wide shot, birds as small dark commas on branches.
-**B.** "మరుసటి ఉదయం. నిద్రలో ఉన్న అడవి. (pause) [recap line] మునుపటి భాగంలో — ప్రశ్నతో కలిసిన ఆ ఆశ్రమం… ఈరోజు ఏదో ఒక జవాబు కోసం ఎదురు చూస్తోంది."
+**B.** "మరుసటి ఉదయం. నిద్రలో ఉన్న అడవి. (pause) మునుపటి భాగంలో — ప్రశ్నతో కలిసిన ఆ ఆశ్రమం… ఈరోజు ఏదో ఒక జవాబు కోసం ఎదురు చూస్తోంది."
 **C.** *(none)*
 **D.** Environment only; first birds stir on high branches.
 **E.** *(environmental)* expectancy held in a held breath.
@@ -1150,7 +1150,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 | 04 | 00:36–00:48 | ★ Hand on bundles MACRO | ★ mandated question line | Q motif | wick, fibre |
 | 05 | 00:48–01:00 | Wind combs canopy | "గాలి మారింది…" | veena far ×2 | wind shear |
 | 06 | 01:00–01:12 | ★ Head raises → CUT TO BLACK | "తల ఎత్తాడు…" | harmonic nearer | hush |
-| 07 | 01:12–01:24 | Pre-dawn forest + recap | "మరుసటి ఉదయం… [recap]" | T1→T2 | koel |
+| 07 | 01:12–01:24 | Pre-dawn forest + recap | "మరుసటి ఉదయం… మునుపటి భాగంలో" | T1→T2 | koel |
 | 08 | 01:24–01:36 | Peacock freezes | "ఆ మయూరం చెప్పింది" | T2 tremolo | feather-shiver |
 | 09 | 01:36–01:48 | Light blades the path | "వెలుగు ముందు వచ్చింది" | flute ascends | light-wind |
 | 10 | 01:48–02:00 | Disciples freeze mid-chore | "ఆ తీగ రెండుసార్లు" + whisper | 2 answer notes | pot-lap |
