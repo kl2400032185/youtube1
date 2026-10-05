@@ -11,11 +11,12 @@ OUT_J = ROOT / 'episode02/vo_script/EP02_scene_texts.json'
 OUT_M = ROOT / 'episode02/vo_script/EP02_VO_RECORDING_SCRIPT.md'
 
 def clean(field: str) -> str:
+    if 'none' in field.lower()[:40]:   # check BEFORE quote extraction (directions may contain quotes)
+        return ''
+    field = field.replace('\\"', '"')
     q = re.findall(r'"([^"]+)"', field)
     if q:
         t = ' '.join(q)
-    elif 'none' in field.lower()[:40]:
-        return ''
     else:
         t = field
     t = re.sub(r'\([^()]*\)', ' ', t)      # strip stage directions like (pause)

@@ -567,7 +567,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 06:20–06:32 · **Duration:** 12 sec
 **Purpose:** Callback payoff: "I knew your question before you did" — gentle, not smug.
 **A.** [GLOBAL STYLE MASTER] + NARADA-REF CLOSE-UP: the eyes re-open, and the smile that opens with them is the SAME smile from EP1-S63 (the audience must feel the rhyme), soft knowledge without a trace of triumph, morning light restored warm on his face, head now tilted toward Vyasa (off-frame) with the fond patience of someone holding a door they already saw through, painterly.
-**B.** "చిన్నగా నవ్వాడు. (pause) ఆ నవ్వు చెప్పింది — 'నీ ప్రశ్న నాకు మీ ముందే తెలుసు, వ్యాసా.' (pause) అందుకే వచ్చాను."
+**B.** "చిన్నగా నవ్వాడు. ఆ నవ్వు చెప్పింది — నీ ప్రశ్న నాకు ముందే తెలుసు, వ్యాసా. అందుకే వచ్చాను."
 **C.** *(none — the smile IS the line)*
 **D.** Head-tilt; smile's completion in stages (rhyming EP1 grammar); one veena-string receives his resting thumb.
 **E.** Foresight worn as fondness.
@@ -581,8 +581,8 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 06:32–06:44 · **Duration:** 12 sec
 **Purpose:** Gentle family humor that RESPECTS the weight: even the world's answer-man has an unanswerable.
 **A.** [GLOBAL STYLE MASTER] + NARADA-REF + disciples + banyan seat, medium: Narada leaning back with light mischief blooming, one brow up, addressing Vyasa but angled so disciples can hear; Gurudatta at mid-distance caught mid-fruit-plate-duty, eyes wide at the sage's daring to tease; Vaishampayana turning his face away to hide a smile he believes in hiding; morning warmth restored, painterly scene of good company.
-**B.** "నారదుడు చిన్న మెరుపు చేశాడు. (pause) 'లోకానికి సమస్యలకు పరిష్కారాలు రాసిన చేతులు… తమ సమస్యకు పేరు పెట్టలేకపోతున్నాయా?' (pause) గురుదత్తుడు దాచలేని నవ్వు — గమ్ము. కథ ఇక గాడి పడింది."
-**C.** NARADA (light, fond): "నీవు రాసిన వాటికి పేజీలు ఉన్నాయి… దీనికి పేజీ లేదేమో, అంతే." *(disciples' poorly-hidden smiles)*
+**B.** "నారదుడు చిన్న చమత్కారం చేశాడు."
+**C.** NARADA (light, fond): "లోకానికి సమస్యలకు పరిష్కారాలు రాసిన చేతులు… తమ సమస్యకు పేరు పెట్టలేకపోతున్నాయా? నీవు రాసిన వాటికి పేజీలు ఉన్నాయి… దీనికి పేజీ లేదేమో, అంతే."
 **D.** Narada's brow arcs; Vyasa's hand rises a half-inch then drops — caught; Gurudatta presses both lips together; Vaishampayana studies the horizon with theatrical suddenness.
 **E.** Narada: fond tease. Vyasa: caught, and secretly relieved by it. Disciples: conspiratorial delight.
 **F.** Static medium; the camera is one of the company.
@@ -599,7 +599,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 06:44–06:56 · **Duration:** 12 sec
 **Purpose:** Teaching begins — the gentle 'but' that re-aims a lifetime.
 **A.** [GLOBAL STYLE MASTER] + NARADA-REF + VYASA-ID, low warm two-shot from root-level: Narada now leaning in with open gravity, both hands loosely joined between knees, speaking to Vyasa across the seat-gap; morning light deepening into rich honey; the veena silent but present at his side; disciples' shadows long and attentive at the edges; painterly ashrama-chamber.
-**B.** "ఆ నవ్వు ఆదర్పడిన తర్వాత… నారదుడు మూలం చెప్పడం మొదలుపెట్టాడు."
+**B.** "గురుదత్తుడు దాచలేని నవ్వు — గమ్ము. కథ ఇక గాడిలో పడింది. ఆ నవ్వు చెరిగిన తర్వాత… నారదుడు మూలం చెప్పడం మొదలుపెట్టాడు."
 **C.** NARADA (velvet and clear): "వ్యాసా… నువ్వు చాలా రాశావు. జ్ఞానం రాశావు, ధర్మం రాశావు. కానీ — భగవంతుని మహిమను… ప్రేమతో రాయలేదు."
 **D.** Narada's joined hands part once — a flower opening; Vyasa's chin lifts, honest attention arriving.
 **E.** Narada: the physician prescribes with love. Vyasa: the patient finally ready to hear the diagnosis.
@@ -627,7 +627,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 07:08–07:20 · **Duration:** 12 sec
 **Purpose:** METAPHOR 1 resolve — rain arrives: devotion given to the thirsty heart.
 **A.** [GLOBAL STYLE MASTER, metaphor-landscape]: the same cracked riverbank NOW in rain — silver rain-rods slanting in cinematic columns, fissures filling with mirror-water, the sapling drenched and standing taller, droplets exploding on dry clay into tiny crowns, grey sky breaking at one gold seam, painterly rain-realism, redemption palette.
-**B.** "వర్షం పడ్డాక… ఆ నేల ఎండ ఎుక్కు మర్చెదు. (pause) అదే మనసు — భగవంతుని పట్ల ప్రేమ వర్షం పడితే… తానే చీలికలు మూసుకుంటుంది."
+**B.** "వర్షం పడ్డాక… నేల తన చీలికలను మరచిపోతుంది. అదే మనసు — భగవంతుని పట్ల ప్రేమ వర్షం పడితే… చీలికలు తానే మూసుకుంటాయి."
 **C.** *(none)*
 **D.** None — the land receives.
 **E.** *(landscape)* relief.
@@ -669,7 +669,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 07:44–07:56 · **Duration:** 12 sec
 **Purpose:** METAPHOR 4 (lightest, smile-worthy) — searching everywhere for what is in your own hand.
 **A.** [GLOBAL STYLE MASTER, metaphor village-night, painterly]: an elderly householder with a small hand-lamp at blue dusk searching under a cart, behind pots, through hay-pile — for the lamp's wick-box he is actually holding in his own other hand (visible to audience, hidden from him), warm lamp-pool in the blue courtyard, goose watching from the sill, tender comedy-of-life composition, no characters from the main cast.
-**B.** "ఎవరో ఏదో వెతుకుతున్నారు… ఇంట్లోంచి, బయలోంచి, పొదలోంచి. (pause) చివరికి… దీపం కూడా నవ్వింది — అది నీ చేతిలోనే ఉందని."
+**B.** "ఎవరో ఏదో వెతుకుతున్నారు… ఇంట్లోంచి, బయట, పొదల్లోంచి. చివరికి… దీపం కూడా నవ్వింది — అది నీ చేతిలోనే ఉందని."
 **C.** *(none)*
 **D.** He searches earnestly; the goose tilts its head at him; the hidden wick-box catches the light in his own hand.
 **E.** Earnest blindness (universal, lovable).
@@ -697,7 +697,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 08:08–08:20 · **Duration:** 12 sec
 **Purpose:** Explain in SIMPLE Telugu what narration/remembrance of the Lord means (no jargon).
 **A.** [GLOBAL STYLE MASTER] + NARADA-REF close two-shot with teaching-gestures: Narada counting the simple practices on his fingers for Vyasa (and the camera) — listening, rememberingizes telling, singing — each finger-fold luminous in the honey light, face patient and bright like a beloved teacher's, veena warm at his knees, disciples leaned-in at frame edge, painterly intimacy of explanation.
-**B.** "ఏం చేయాలని? (pause) వినడం — ఆయన లీలలు. స్మరణ — ఊహించడం కాదు… నెమ్మదిగా న్యాపకం చేసుకోవడం. కీర్తన — కొంచెం కళ్లుగా, మాత్రం నిజంగా పాడడం. ఇంతే. ఇంతకు మించిన మాట ఏమి కాదు."
+**B.** "ఏం చేయాలి? వినడం — ఆయన లీలలు. స్మరణ — ఊహించడం కాదు… నెమ్మదిగా గుర్తు చేసుకోవడం. కీర్తన — గొంతు చినికినా సరే… నిజంగా పాడడం. ఇంతే. ఇంతకు మించిన మాట ఏమీ కాదు."
 **C.** *(carried by narrator; Narada's fingers still count along)*
 **D.** Fingers fold one-by-one: vinaḍam, smaraṇa, kīrtana; disciples at the edge wordlessly repeat the three; Vyasa follows each fold with his eyes like a diligent student for once.
 **E.** Patient pedagogy, beloved-teacher brightness; the great scholar, humbly seated in the front row.
@@ -726,8 +726,8 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 08:32–08:44 · **Duration:** 12 sec
 **Purpose:** Third and final pravachanam-light beat — Narada's veena teaches where words stop.
 **A.** [GLOBAL STYLE MASTER] + NARADA-REF + VYASA-ID + disciples, banyan seat, medium: Narada suddenly patting his veena like an old friend on its round body, mischief-kind eyes on Vyasa, disciples perked to hear the famous sage joke about his own instrument; morning at full honey now; the company-frame painterly warmth repeated from S33 (the rhymed set-up).
-**B.** "నారదుడు తన వీణమీద చిన్నగా చప్పుడు చేశాడు. (pause) 'నా వీణకు ఏడు తీగలు… అంతులో మొదటి తీగ పేరు — భక్తి. మిగిలినవి… ఆ రాగం పక్కనే వస్తాయి.' (pause) ఆశ్రమం నవ్వింది — నెమ్మదిగా, మాత్రం ఒక్క మనసుతో."
-**C.** NARADA (as if confiding a trade secret): "ఇవి చూస్తూ ఏమిటి అంటున్నారు — మొదటి తీగ మ్రోగకుంటే మిగిలినవి ఏమీ చేయలేవు."
+**B.** "నారదుడు తన వీణమీద చిన్నగా చప్పుడు చేశాడు."
+**C.** NARADA (as if confiding a trade secret): "నా వీణకు ఏడు తీగలు… అందులో మొదటి తీగ పేరు — భక్తి. మిగిలినవి… ఆ రాగం వెనుకనే వస్తాయి. మొదటి తీగ మ్రోగకుంటే — మిగిలిన ఆరు ఏమీ చేయలేవు."
 **D.** Narada pats the resonator twice; plucks ONE string — and lets its single note stand in for everything (it is the answer motif's first note, smiling); disciples laugh-softly; Vyasa laughs — full chest, second time in the episode, a habit being relearned.
 **E.** Narada: trickster-grandparent warmth. Vyasa: forgiving himself through laughter.
 **F.** Static medium; cut to short insert of the laughing disciples at 0:08; back.
@@ -740,7 +740,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 08:44–08:56 · **Duration:** 12 sec
 **Purpose:** The charge phrased as craft: what exactly to write — qualities, play, devotees.
 **A.** [GLOBAL STYLE MASTER] + NARADA-REF close teaching shot: Narada in continued counsel — right hand gently sketching a small universe in the air between them (palm circling a point), left resting on the veena, gold morning saturating, eyes on Vyasa with the steadiness of assignment being given, painterly gravity beneath the warmth.
-**B.** "చెప్పు — ఆయన మహిమలు. (pause) ఆయన లీలలు. ఆయన మీద ప్రేమతో ఉండే భక్తుల అనుభవాలు. (pause) విన్నవాళ్ళ హృదయాల్లో ఏ మార్పు వస్తుందో — అది కూడా చెప్పు."
+**B.** "ఆశ్రమం నవ్వింది — నెమ్మదిగా, కానీ ఒకటే మనసుతో. చెప్పు — ఆయన మహిమలు. ఆయన లీలలు. ఆయన మీద ప్రేమతో ఉండే భక్తుల అనుభవాలు. విన్నవాళ్ళ హృదయాల్లో ఏ మార్పు వస్తుందో — అది కూడా చెప్పు."
 **C.** *(Narada's line already within narration; keep visual silent-support)*
 **D.** The palm circles; stops; points a finger at Vyasa's chest, then at the manuscripts by the hut.
 **E.** Narada: commissioning, not suggesting. 
@@ -754,7 +754,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 08:56–09:08 · **Duration:** 12 sec
 **Purpose:** Expression arc stage 3 (understanding) — the eyes soften into the new grammar.
 **A.** [GLOBAL STYLE MASTER] + VYASA-ID CLOSE-UP: Vyasa's face as the teaching LANDS — brows releasing their decades-old knot, lips slightly parted, eyes gone inward-bright as the four metaphors arrange themselves inside, morning light gentling its whole register across his features as though the light itself also understood, painterly before/after study.
-**B.** "రాత్రి ఎంత చిక్కటైనా… ఉదయానికే ఆకారం మారుతుంది. (pause) ఆయన ముఖం… కూడా అంతే. గంటల కష్టం కాదు — ఒక్కో మాట చాలు."
+**B.** "రాత్రి ఎంత చీకటైనా… ఉదయం దాన్ని మార్చేస్తుంది. ఈ మనసు కూడా అంతే. గంటల సాధన కాదు… ఒక్కో మాట చాలు."
 **C.** *(none)*
 **D.** Slow deliberate nod — three small degrees, each with a breath between.
 **E.** Understanding arriving like sunrise: gradual, total, irreversible.
@@ -768,8 +768,8 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 09:08–09:20 · **Duration:** 12 sec
 **Purpose:** Bridge into the backstory: "how do YOU know this road so well?"
 **A.** [GLOBAL STYLE MASTER] + VYASA-ID + NARADA-REF banyan two-shot: Vyasa leaning forward with the palm of lifelong scholarship open, asking; Narada caught for one beat by the question, his gaze travelling briefly to a far private distance (the backstory pool), morning-dapple between them, the veena seeming to hold its breath with its master, painterly.
-**B.** "అప్పుడు వ్యాసుడు నిజమైన ప్రశ్న అడిగాడు — (pause) 'అయినా నారదా… ఈ ధారి నీకెలా ఈ అంత స్పష్టంగా తెలుసు?' (pause) నారదుడి కళ్ళు… పాత ఒక ఉదయం వైపు వెళ్ళాయి."
-**C.** NARADA (soft, suddenly younger inside): "నాకేమో… ఒకప్పుడు — చాలా పొద్దునే."
+**B.** "అప్పుడు వ్యాసుడు నిజమైన ప్రశ్న అడిగాడు. నారదుడి కళ్ళు… ఒక పాత ఉదయం వైపు వెళ్ళాయి."
+**C.** NARADA (soft, suddenly younger inside): "అయినా నారదా… ఈ దారి నీకెలా ఇంత స్పష్టంగా తెలుసు? నాకేమో… చాలా పొద్దునే."
 **D.** Narada's gaze leaves the courtyard; hand on veena-stills; a memory-version of morning light tugs the grade warmer at frame edges.
 **E.** Narada: sudden honest distance — the boy beneath the sage surfacing.
 **F.** Slow push toward the distance in his eyes; the grade-shift begins inside the lens.
@@ -784,7 +784,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 09:20–09:32 · **Duration:** 12 sec
 **Purpose:** Flashback open — a poor hut at the edge of a village, long ago.
 **A.** [GLOBAL STYLE MASTER (memory-gold grade)] + village edge at dawn generations ago: one small mud-and-thatch hut with patched walls, clay pots by the door, a banyan far beyond, smoke of cooking-fires from better houses curling behind, soft morning sun, YOUNG-NARADA (boy ~11) sweeping the bare yard with a broom taller than him, patched thin clothes, barefoot, dust-soft painterly-realism in warm memory tone.
-**B.** "చాలా కాలం క్రితం… ఒక ఉపకారిణి ఇల్లు. పని కోసం, ప్రాణం కోసం తల్లితో నడిచే ఒక బాలుడు. పేరు అప్పుడు వేరే — కానీ ఆ కళ్ళు… ఇప్పటి నారదుడివే."
+**B.** "చాలా కాలం క్రితం… ఒక పనివాళ్ళ ఇల్లు. కడుపు కోసం తల్లితో కలిసి నడిచే ఒక బాలుడు. పేరు అప్పుడు వేరు — కానీ ఆ కళ్ళు… ఇప్పటి నారదుడివే."
 **C.** *(none)*
 **D.** Boy sweeps earnestly; pauses to look down the empty lane (waiting for his mother's return); resumes.
 **E.** Innocence already carrying patience.
@@ -798,7 +798,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 09:32–09:44 · **Duration:** 12 sec
 **Purpose:** Mother and son — two-person kingdom. Warmth before loss, so the loss means something.
 **A.** [GLOBAL STYLE MASTER (memory-gold)] + MOTHER-ID + YOUNG-NARADA: inside the dim hut at the cooking spot — mother kneeling, wiping the boy's face clean with her pallu corner as he squirms happily, one brass plate of humble food between them, dawn light through the door-gap cutting one warm blade across both faces, patched cloth everywhere, immeasurable wealth of affection, painterly tender-realism.
-**B.** "అమ్మ ఉదయం పూటా పనిలోను పనిలోను… తన పావుభాగం ఆ బాలుడి పళ్ళంలో ఏమోగిస్తూనే ఉండేది. (pause) పేదరికం ఇల్లు — కానీ ఆ కూడలి చిన్నగా గౌరవంతో నిండి ఉండేది."
+**B.** "అమ్మ పగలంతా పనిలో ఉండేది… కానీ తన వంతు అన్నంలో సగం ఆ బాలుడి పళ్లెంలో వేస్తూనే ఉండేది. పేద ఇల్లు — కానీ ప్రేమతో నిండిన కూడలి. ఆ రా బాబూ… ఇంకో ముద్ద."
 **C.** MOTHER (soft, almost lullaby): "ఆరా బాబూ… ఇంకొక్క ముద్ద."
 **D.** Pallu-corner face-wipe; the squirm accepted as love; mother presses one more morsel into his palm.
 **E.** Mother: smile built from fatigue and pride. Boy: slight protest, total surrender.
@@ -812,7 +812,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 09:44–09:56 · **Duration:** 12 sec
 **Purpose:** The sages arrive — ordinary morning, destiny onboard.
 **A.** [GLOBAL STYLE MASTER (memory-gold)] + TRAVELING-SAGES + village lane: three elderly rishis in travel-stained white and ochre, staffs and kamandalus, walking into the village edge at forenoon, calm radiant dust-covered faces, village dogs regarding them without barking, children peeking from behind doorways, the hut of the boy in near-ground, painterly chronicle realism.
-**B.** "ఆ రోజు — ఋషులు ఆ గ్రామం చేరారు. తిండికి కాదు. తరింది కాదు. కేవలం కొంతసేపు విశ్రాంతికి. (pause) అయినా — ఆ కొంతసేపే ఒక జన్మను మార్చేసింది."
+**B.** "ఆ రోజు — ఋషులు ఆ గ్రామం చేరారు. తినడానికి కాదు. దాహానికి కాదు. కేవలం కొంతసేపు విశ్రాంతికి. అయినా — ఆ కొంతసేపే ఒక జన్మను మార్చేసింది."
 **C.** *(none)*
 **D.** The sages unshoulder their bundles beneath the wayside banyan at the hut's side; dust knocked from staffs; they settle with the uncomplaining grace of the road.
 **E.** Road-peace; holiness without performance.
@@ -826,8 +826,8 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 09:56–10:08 · **Duration:** 12 sec
 **Purpose:** Service renders the first blessing: the boy brings what a poor home has.
 **A.** [GLOBAL STYLE MASTER (memory-gold)] + YOUNG-NARADA + TRAVELING-SAGES + MOTHER-ID: under the wayside banyan — the boy carrying a brass tumbler of water far too full, both hands trembling-careful, mother behind with a small basket of leafy greens and millet balls; the sages rising to receive with surprising gentleness for their status; sun-dapple, dust motes, a transaction of spirit done in village materials, painterly.
-**B.** "ఇంట్లో ఉన్నది — ఆ తల్లి దంపతులకు తెలిసిన గౌరవమే. (pause) బాలుడు నీళ్ళు మోస్తున్నాడు — చేతులు వణుకుతున్నా, కళ్ళు మాత్రం ఆ ఋషుల ముఖాలనў తాగుతున్నాయి."
-**C.** SAGE-1 (kind, measuring the small bearer): "నిదానం, బాలూ. నీవు నీ తల్లివి రెండూ ఒకటే అమ్మాయి చేతులు."
+**B.** "ఆ ఇంట్లో ఇవ్వగలిగినది ఒక్కటే ఉంది — సేవ. బాలుడు నీళ్ళు మోస్తున్నాడు… చేతులు వణుకుతున్నా, కళ్ళు మాత్రం ఆ ఋషుల ముఖాలనే తాగుతున్నాయి."
+**C.** SAGE-1 (kind, measuring the small bearer): "నిదానం, బాలూ… నీ చేతుల్లో నీ తల్లి చేతులు కనిపిస్తున్నాయి. ఇలాంటి చేతులతో చేసే పని ఏదైనా — అది పూజే."
 **D.** The trembling tumbler changes hands without a drop spilled; a sage touches the boy's crown in blessing; mother bows from her elbow.
 **E.** The boy: awe held upright by effort. Sages: the gentleness of those who own nothing.
 **F.** Low angle at the boy's height — heroes and giants meet at eye level.
@@ -840,8 +840,8 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 10:08–10:20 · **Duration:** 12 sec
 **Purpose:** THE TRANSMISSION — the boy listens to katha by the fire; devotion is seeded.
 **A.** [GLOBAL STYLE MASTER (memory-gold)] + YOUNG-NARADA + TRAVELING-SAGES: night under the banyan — fire at the center, the three sages in amber half-light mid-discourse of the Lord's stories (simple homely Telugu in their mouths), the boy seated at their feet hugging his knees, face fully UP in the firelight like a flower to moonrise, eyes enormous with the worlds being described, shadows dancing, the fire's glow forming a soft nimbus around the storyteller's silhouettes, painterly sacred-night composition.
-**B.** "అర్ధరాత్రి కూడా ఆ బాలుడు కదలలేదు. (pause) నారాయణుడి కథలు — తీగల్లా అతని గుండెల్లో మ్రోగుతున్నాయి. (pause) ఆ రాత్రి అతని మనసులో మొక్క పడింది — భక్తి."
-**C.** SAGE-2 (storytelling warmth, simple): "…భగవంతుడు ప్రేమను మాత్రమే చూస్తాడు, బాలూ. పొరపాట్లను కాదు. నీరు నీ మాట మీద నిల్చుంటే… ఆ నేరుకే ఆయన వస్తాడు."
+**B.** "అర్ధరాత్రి కూడా ఆ బాలుడు కదలలేదు. నారాయణుడి కథలు — తీగల్లా అతని గుండెల్లో మ్రోగుతున్నాయి. ఆ రాత్రి అతని మనసులో మొక్క పడింది… భక్తి."
+**C.** SAGE-2 (storytelling warmth, simple): "భగవంతుడు పొరపాట్లను చూడడు, బాలూ… ప్రేమను మాత్రమే చూస్తాడు. నీవు నీ మాట మీద నిలబడితే — ఆయనే నీ వద్దకు వస్తాడు."
 **D.** The boy's entire body leans a full 4 degrees closer over the course of the shot; firelight grades his pupils twin-orange; a sage's staff-gesture paints stars.
 **E.** Awe metabolising into love — the exact face needed.
 **F.** Over-fire two-level composition: storyteller's figure beyond, boy's fire-lit face in foreground.
@@ -854,7 +854,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 10:20–10:32 · **Duration:** 12 sec
 **Purpose:** The sages leave; the seed stays standing.
 **A.** [GLOBAL STYLE MASTER (memory-gold)] + YOUNG-NARADA + village lane dawn: the three sages walking away down the morning lane already small with distance, staffs rising and falling; in foreground CLOSE the boy standing still watching them go, morning light full on his back-lit profile, hands folded unconsciously at his chest copying the sages' own manner, dust settling off the lane, painterly goodbye-composition.
-**B.** "వెళ్లినా — వేళ్ళే మిగిలిపోయారు. (pause) ఆ బాలుడి కళ్ళకు ధారి ఇక తిరిగి పొయ్యేది లేదు. మాట కూడా మారిపోయింది — నోటి బిడ్డ అయిపోయాడు ఆ 'ఆయన' పేరు పలకడంలోనే."
+**B.** "వెళ్లినా — మిగిలిపోయారు. ఆ బాలుడి కళ్ళు ఇక వారు వెళ్లిన దారి వైపే తిరుగుతున్నాయి. నోట్లో ఇక ఒకే పేరు… నారాయణ."
 **C.** *(none)*
 **D.** The folded hands at his own chest surprise him; he keeps them there; something principles itself upright inside the small frame.
 **E.** Departure as inheritance; a life re-aimed in one dawn.
@@ -868,7 +868,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 10:32–10:44 · **Duration:** 12 sec
 **Purpose:** The mother is gone — handled with NON-GRAPHIC sacred suggestiveness (per spec).
 **A.** [GLOBAL STYLE MASTER (memory-gold, softened)] + the hut at first light: the empty cooking spot with the brass plate overturned-dry, mother's worn sandals side-by-side untouched by the door, the lamp at her corner still warm-smoking, THROUGH the door-gap the boy sitting outside on the bare yard's edge facing away toward the fields with shoulders barely-held, no body, nothing graphic — only objects that have lost their owner, painterly requiem in things.
-**B.** "తర్వాతి ఉదయం… ఆ ఇల్లు ఒంటరి అయిпоయింది. (pause) అమ్మాయి చేతులు ఇక పని చేయవని — ఆ పాత్రలూ చెప్తున్నాయి. (long pause) ఈ అందం కష్టం — మహర్షుల జీవితాల్లో కూడా ఉంటుంది."
+**B.** "తర్వాత ఒక ఉదయం… ఆ ఇల్లు ఒంటరయిపోయింది. అమ్మ చేతులు ఇక పనిచేయవన్నట్లు — పాత్రలు, చీపురు, అన్నీ చెబుతున్నాయి. మహర్షుల జీవితాల్లో కూడా… ఇలాంటి ఉదయాలు ఉంటాయి."
 **C.** *(none)*
 **D.** The boy's shoulders hold, dip once, hold again; he does not turn back into the hut.
 **E.** Grief kept company by the discipline of grief already begun.
@@ -882,7 +882,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 10:44–10:56 · **Duration:** 12 sec
 **Purpose:** The departure: the boy walks away from every world he has.
 **A.** [GLOBAL STYLE MASTER (memory-gold)] + YOUNG-NARADA on the country road: small lone figure walking north along a vast empty embankment road between flooded pale-gold fields at noon, bundle on a stick over one shoulder, big sky enormous over him, his shadow short beneath, fields' water-mirror doubling the sky, the smallest protagonist the series has framed, lonely-magnificent painterly wide.
-**B.** "ధారి ఎదుబాటు పడింది. (pause) బట్టలు ఒకటే జత. భుజంలో చిన్న మూట. కన్నీరు కూడా అతన్ని ఆపలేదు — ఆ ఋషులు చెప్పిన 'ఆయన' మాత్రమే అతన్ని నడిపించింది."
+**B.** "ఒంటరిగా దారి పట్టాడు. బట్టలు ఒకటే జత. భుజం మీద చిన్న మూట. కన్నీరు కూడా అతన్ని ఆపలేదు — ఆ ఋషులు చెప్పిన ఆ పేరు మాత్రమే అతన్ని నడిపించింది."
 **C.** *(none)*
 **D.** Steady small steps; once he stops, looks back at the vanishing village smudge; resumes without a word.
 **E.** Resolve replacing grief in real-time; abandoned but not aimless.
@@ -896,8 +896,8 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 10:56–11:08 · **Duration:** 12 sec
 **Purpose:** The vision: meditation under the pipal → the Lord's light appears (restrained, holy, non-flashy).
 **A.** [GLOBAL STYLE MASTER (memory-gold → luminous)] + YOUNG-NARADA under a great lone pipal tree at dusk: the boy seated cross-legged in front of the trunk in unste coached meditation-hands (mimicking how he saw sages sit), eyes shut, bathed in cool-blue night — and in front of his closed eyes a warm light has begun to gather like a sunrise that chose to come to one person, thin gold filaments rising through the blue, no figure shown — only light and a sense of loving presence, the boy's face illuminated from below-front by something that should have no light-source, tear-trails clean on his cheeks, sacred-restrained painterly transcendence.
-**B.** "చాలా రోజులు తర్వాత — కళ్ళు మూశాడు. (pause) హృదయం నిండా ఒక్క పేరు. (pause) అప్పుడు — ఆ బాలుడికి ముందు… వెలుగు. కేవలం ప్రేమతో నిన్న వెలుగు."
-**C.** *(none — the light "speaks" in S56)*
+**B.** "చాలా రోజులు నడిచాడు. ఒక పిప్పలి చెట్టు నీడలో కళ్ళు మూశాడు. హృదయం నిండా ఒక్క పేరు. అప్పుడు… ఎదురుగా — వెలుగు. కేవలం ప్రేమతో నిన్న వెలుగు."
+**C.** *(none)*
 **D.** Closed eyes flutter at the presence; his seated small body leans 3 degrees toward it; hands still in the copied-mudra.
 **E.** Fearless wonder; a child meeting his own prayer.
 **F.** Slow push toward the light-facing face; light-source never resolved (kept ambiguous-sacred).
@@ -910,8 +910,8 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 11:08–11:20 · **Duration:** 12 sec
 **Purpose:** The promise received; the boy remade; flashback closes as the sage returns.
 **A.** [GLOBAL STYLE MASTER (memory-gold → present-warm)] + YOUNG-NARADA under the pipal, the light now cradling his whole small figure, eyes still closed but SMILING through tears — the exact smile of NARADA-REF visible in miniature on the boy's face (the series' visual rhyme), gold filaments settling like a blessing laid down, dawn's first real sun breaking at the frame edge over the fields, graduation-of-a-soul painterly composition.
-**B.** "ఆ వెలుగు చెప్పింది… (pause, soft) 'మళ్ళీ మళ్ళీ నాతో జన్మలేదని నీకు ఖాళీలేదు — నీవు నా సేవకుడివి. మరింత దగ్గరకు వస్తావు.' (pause) ఆ బాలుడు నవ్వాడు — కన్నీళ్ళతోనే. అదే నవ్వు… ఇప్పటి నారదుడిది."
-**C.** *(the Lord's words carried inside narration — gentle, simple; optionally as soft voiceless whisper in mix)*
+**B.** "ఆ వెలుగు చెప్పింది…"
+**C.** *(the Lord's words carried inside narration — gentle, simple; optionally as soft voiceless whisper in mix)*: "నీకు ఇక ఎన్నో జన్మలు అవసరం లేదు, బాలూ… నీవు నా సొంతము. ఇంకా దగ్గరగా వస్తావు."
 **D.** The smile-through-tears completes; hands fold at his own chest — fully his posture now, not copied; filaments lay down and rest.
 **E.** Consummation: grief, road, and reward paid into one smile.
 **F.** Push completes to the face; the dawn-edge in frame begins the grade-back to present.
@@ -926,7 +926,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 11:20–11:32 · **Duration:** 12 sec
 **Purpose:** Present tense resumes: "that is how bhakti remade even Narada."
 **A.** [GLOBAL STYLE MASTER] + NARADA-REF banyan seat present-time CLOSE: Narada ending his told story — the smile that we just saw on the boy now on the sage, carved deeper by lifetimes of carrying it, courtyard morning fully itself again, Vyasa (off-frame) held in the listening air, the veena's body warm against his knee as if it too had been listening, painterly return-of-the-narrator touched permanently by what he tells.
-**B.** "భక్తి అంటే అలా — ఆ పని బాలుణ్ణి ఋషిగా మార్చింది. (pause) నాకిచ్చినదంతా ఆ ప్రేమే. నా వీణ పాడేదంతా ఆ గాథయే."
+**B.** "ఆ బాలుడు నవ్వాడు — కన్నీళ్ళతోనే. అదే నవ్వు… ఇప్పటి నారదుడిది. భక్తి అంటే అలా — ఆ పని బాలుణ్ణి ఋషిగా మార్చింది. నాకిచ్చినదంతా ఆ ప్రేమే. నా వీణ పాడేదంతా ఆ గాథయే."
 **C.** *(none)*
 **D.** Narada's hand leaves the veena and comes gently to his own heart (the mirror-gesture's third appearance — instrument, then Vyasa, now himself).
 **E.** Gratitude that has worn smooth like river-stone.
@@ -968,7 +968,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 11:56–12:08 · **Duration:** 12 sec
 **Purpose:** Expression arc completes (inspiration): Vyasa stands as a NEW intention forms.
 **A.** [GLOBAL STYLE MASTER] + VYASA-ID: Vyasa RISING from his root-seat to full height mid-frame — the movement's nobility itself the subject, morning's full gold embracing the ochre robe, the white tripunda catching light like a vow, eyes far-bright toward the manuscripts at his hut (that-distant-then-this-near focus arc complete), disciples' upturned faces in soft bokeh below, the risen figure against banyan and sky, painterly epic-portrait of the moment a sage is commissioned.
-**B.** "అప్పుడు వ్యాసుడు లేచాడు. (pause) ఏమో — ఎవరికీ కోసం నిలబడటం అలవాటయిన భుజాలపై… ఈసారి తన కోసాగానో కోసం — ఒక కొత్త రాత మోపడానికి లేచాడు."
+**B.** "అప్పుడు వ్యాసుడు లేచాడు. ఎల్లప్పుడూ లోకం కోసం నిలిచిన భుజాలు… ఈసారి ఒక కొత్త రాత కోసం లేచాయి."
 **C.** VYASA (standing, voice transformed — certainty newly-bought): "నారదా… ఇక నేను రాయాల్సినది తెలుసుకున్నాను."
 **D.** The rise completes in three musical beats (hand on root for balance, straighten, shoulders set); he looks at his own ink-stained forefinger as if meeting it anew.
 **E.** Confusion → curiosity → understanding → INSPIRATION: the 4-stage arc landing at confident brightness.
@@ -996,7 +996,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 12:20–12:32 · **Duration:** 12 sec
 **Purpose:** Narada departs as he came — ordinary-miraculous reversal of S11.
 **A.** [GLOBAL STYLE MASTER] + NARADA-REF + ASHRAMA: from the courtyard behind the disciples' watching row — Narada walking away down the golden path INTO the glare this time (S11 reversed), veena outline distinct against the light-wall, pausing once at the far curve to look back over his shoulder with the smile that started and ends everything, then the glare receives him; disciples' silhouettes foreground, peacock still, afternoon now subtly longer in the light, painterly completion-of-arc wide.
-**B.** "వచ్చినట్లేనే వెళ్లాడు. (pause) కానీ ఆ ఆశ్రమం లోపల… ఇక ఏదీ మునుపటిలా లేదు. (long pause) కళ్ళు కదిలిన చోటన్నీ — ఆ కథ మిగిలి ఉంది."
+**B.** "వచ్చినట్లేనే వెళ్లాడు. కానీ ఆ ఆశ్రమం లోపల… ఇక ఏదీ మునుపటిలా లేదు. కళ్ళు తిరిగిన చోటన్నీ — ఆ కథ మిగిలి ఉంది."
 **C.** *(none — one backward "నారాయణ…" can be breathed* optional*)*
 **D.** The walk-away is unhurried exactly as the arrival was (rhythm-match required); the single look-back at the path-curve; gone.
 **E.** Departure worn as promise; the smile, fourth and fitting rhyme.
@@ -1040,7 +1040,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 12:56–13:08 · **Duration:** 12 sec
 **Purpose:** Time-fold: sunset river → the possibility-dawn gathering.
 **A.** [GLOBAL STYLE MASTER] + ASHRAMA ghat river: the broad river under sunset — molten bronze path standing on the water, Vyasa's tiny solitary silhouette seated on the ghat (composition rhyming EP1-S19 loneliness but radically re-graded: warm, expectant), skyfire clouds stacking to the west, a single lamp placed beside him LIT this time, river speaking full against the stones, painterly metamorphosis-in-landscape.
-**B.** "ఆ సాయం… నది ఇంకో భాష మాట్లాడుతోంది. (pause) ఎప్పటికి మాట్లాడిన భాషే — కానీ ఆయనకు ఇప్పుడు అర్థమవుతోంది. జవాబులు సముద్రమంతా దౌరౌతాయి… కానీ భక్తి నిల్చుంటే చేతిలోకే వస్తాయి."
+**B.** "ఆ సాయంత్రం… నది ఇంకో భాష మాట్లాడుతోంది. ఎప్పటినుంచో మాట్లాడే భాషే — కానీ ఆయనకు ఇప్పుడు అర్థమవుతోంది. జవాబులు దూరంగా వెతకాల్సినవి కావని అంటారు… కానీ భక్తి ఉంటే — అవి చేతిలోకే వస్తాయి."
 **C.** *(none)*
 **D.** Vyasa seated; beside him the lit lamp — tended, re-lit, his.
 **E.** Contemplation re-purposed as preparation.
@@ -1054,7 +1054,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 13:08–13:20 · **Duration:** 12 sec
 **Purpose:** The preparation: manuscripts, lamp, a working-sage arranging his own ordination.
 **A.** [GLOBAL STYLE MASTER] + VYASA-ID + hut interior pre-dawn: hut's interior in lamp-glow — Vyasa kneeling among manuscript bundles being unwrapped and RE-ARRANGED into new purposeful order on the low desk, fresh palm-leaf stacks set ready, ink-pot prepared, stylus laid at perfect right angles (ritual of the desk), the flame steady over everything, ink-stained hands moving with the economy of total intent, steam of a simple morning congee-cup at the corner (a disciple's quiet provision), sacred-workshop realism painterly.
-**B.** "ఆ రాత్రి — ఆయన భవిష్యత్తును పైకప్పు చేసి కూర్చాడు. (pause) కొత్త ఆలయం ఎలా మొదలుపెట్టాలో… ఆలములో ఆయన నిర్మాణం చేశాడు."
+**B.** "ఆ రాత్రి — ఆయన భవిష్యత్తును కూర్చదీసుకున్నాడు. కొత్త ఆలయం ఎలా మొదలుపెట్టాలో… ఆ రాత్రి ఆలోచనలోనే నిర్మించాడు."
 **C.** *(none)*
 **D.** Untie, reorder, align: each bundle's place re-decided; stylus laid as deity; the unused page-stack faced east (custom).
 **E.** Craft-as-worship; the preparation itself is the answer being written.
