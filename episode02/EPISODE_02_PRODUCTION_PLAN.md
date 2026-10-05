@@ -411,7 +411,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 04:03–04:15 · **Duration:** 12 sec
 **Purpose:** Arghyam and settling: the arena for the conversation is consecrated.
 **A.** [GLOBAL STYLE MASTER] + VYASA-ID + NARADA-REF + ASHRAMA banyan: both sages seated — Narada on the prepared deerskin stone seat, veena laid gently across his lap, Vyasa on the adjacent root-seat; Vaishampayana kneeling offering water from a brass lota into the guest's cupped hands; fruit plate untouched beside; canopy dapple warm, servant-love in every line, painterly ritual-realism.
-**B.** "అర్ఘ్యం పూలలో నీరు చేసుకుని… నారదుడు దాన్ని మొకటసిధ్ధంతో పుచ్చుకున్నాడు. (pause) ఇకిలావరణంలో జరిగే మాటలకేంటో గృహం అయింది ఆ ఆశేషం."
+**B.** "పూలు వేసిన అర్ఘ్య జలాన్ని శిష్యులు తెచ్చారు. నారదుడు దాన్ని రెండు చేతులతో ఆదరంగా పుచ్చుకున్నాడు. (pause) ఆ ఆవరణం… ఇక మాటలకు గృహమైంది."
 **C.** *(ritual murmur only)*
 **D.** Water poured; Narada's cupped hands receive; a drop falls to the root of the tree (offering); Vyasa watches the ritual complete with host's eyes.
 **E.** Mutual reverence made of small physics.
@@ -425,8 +425,8 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 04:15–04:28 · **Duration:** 13 sec
 **Purpose:** Pleasant small-talk that plants the theme in the soil: Narada's travels.
 **A.** [GLOBAL STYLE MASTER] + VYASA-ID + NARADA-REF banyan seat, medium two-shot: Narada mid-anecdote, one hand painting the air with a story, veena across the lap, eyes bright with places; Vyasa listening with a scholar-listener's tilt, tea-light of morning honey across both faces, disciples' attentive silhouettes at respectful distance, living-conversation painterly composition.
-**B.** "నారదుడు ప్రయాణాలు చెప్పడం మొదలుపెట్టాడు. కైలాసమంతా మంచు సల్లం… వైకుంఠం అంచైమా… కానీ అతని కళ్ళు మధ్య మధ్యలో… వ్యాసుడి వైపు వస్తున్నాయి."
-**C.** NARADA (easy, warm): "…అవన్నీ చూశాను. కానీ నీ కలం ముందు నాచేతి నీరూపానికి బెరుకే మిగిలింది — చెప్పడానికి నువ్వే ఉంటే ఎలాగో, రాయడానికి నువ్వే కావాలి."
+**B.** "నారదుడు ప్రయాణాలు చెప్పడం మొదలుపెట్టాడు. కైలాసం మంచు కొండలు… వైకుంఠం వెలుగుల సముద్రం… అన్నీ నవ్వుతూ చెప్పాడు. (pause) కానీ అతని కళ్ళు మధ్య మధ్యలో… వ్యాసుడి వైపే వస్తున్నాయి."
+**C.** NARADA (easy, warm): "అవన్నీ చూశాను, వ్యాసా. కానీ నీ కలం రాసినవి మాత్రం… లోకాల్లో ఎక్కడా లేవు. రాయడం నీ వెంట ఉంది — చెప్పడం నా వెంట ఉంది."
 **D.** Narada gestures; the veena rocks lightly on his lap as he leans; Vyasa laughs once — short, rusty, surprised by his own laugh.
 **E.** Narada: storytelling sparkle. Vyasa: courtesy slowly becoming genuine.
 **F.** Static two-shot with imperceptible push; let acting breathe.
@@ -439,7 +439,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 04:28–04:41 · **Duration:** 13 sec
 **Purpose:** The pivot: Narada sees it. The party is over inside his eyes.
 **A.** [GLOBAL STYLE MASTER] + NARADA-REF CLOSE-UP: Narada mid-listen but his eyes have gone somewhere else — looking THROUGH the pleasantness into Vyasa's carefully-composed face beyond him (off-frame), smile resting but the pupils holding diagnostic stillness, morning light cooling a half-degree across the frame, storyteller's face becoming physician's face, painterly intimacy.
-**B.** "(small beat) …ఆపాడు. (pause) కథ మాట్లాడుతున్న నవ్వు… మెల్లగా ఒక వైపు మరింత కళ్ళు గమనిస్తున్నాయి. వ్యాసుడి నవ్వులో ఏదో — సరిపడని భాగం."
+**B.** "కథ చెబుతున్న నవ్వు అలాగే ఉంది. కానీ ఆ నవ్వు వెనుక… కళ్ళు వ్యాసుడిని మరింత జాగ్రత్తగా చూస్తున్నాయి. ఆ నవ్వులో ఏదో… సరిపడని భాగం."
 **C.** *(none)*
 **D.** The listening-nod slows; the veena-hand on his lap stills; eyes narrow 2 millimetres — lovingly.
 **E.** Diagnosis arriving: tender, unshaken, sure.
@@ -456,7 +456,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Purpose:** Narada opens the door — praise first, then the gentle probe.
 **A.** [GLOBAL STYLE MASTER] + NARADA-REF + VYASA-ID banyan two-shot: Narada leaning forward slightly toward Vyasa across the small space between their seats, one hand open toward him palm-up, warm-direct morning light, the fruit plate and brass lota between the root-seats, intimacy-of-two composition, painterly.
 **B.** "నారదుడు అడిగాడు — నెమ్మదిగా, కానీ నేరుగా."
-**C.** NARADA (gently, palm open): "వ్యాసా… నీ అక్షరాలు లోకాలను వెలిగిస్తున్నాయి, నాకే కానవస్తాయి. కానీ — నువ్వేమో, మరింత తేలిగ్గా లేవు ఇవాళ. ఏంటి ఆ విషయం?"
+**C.** NARADA (gently, palm open): "వ్యాసా… నీ అక్షరాలు లోకాలను వెలిగిస్తున్నాయి, అది నా కళ్ళకూ కనిపిస్తోంది. కానీ నువ్వేమో… ఇవాళ అంతగా నవ్వడం లేదు. ఏమిటి ఆ విషయం?"
 **D.** Narada's open palm offers the question; Vyasa's own hands fold over each other slowly — a gate closing, not an answer given.
 **E.** Narada: open hand, open face. Vyasa: the host-mask meets its limits.
 **F.** Over-Narada's-shoulder onto Vyasa receiving the question.
@@ -483,8 +483,8 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 05:05–05:17 · **Duration:** 12 sec
 **Purpose:** The résumé part 1 — he divided the undividable.
 **A.** [GLOBAL STYLE MASTER] + VYASA-ID at his hut-front stone platform, symbolic insert composition: Vyasa's hand resting over FOUR palm-leaf bundles laid apart on the cloth, four faint golden seams of light rising between them (montage-light, gentle — memory of the Veda-division from EP1-S10 grammar), scholarly evening-morning blend of light, painterly symbolic realism.
-**B.** "నా చేతులే… అంతుపట్టని వేదాన్ని నాలుగు చేశాయి. (pause) కలత్పడని జ్ఞానానికి మొదటిసారిగా ఆకారం ఇచ్చాయి."
-**C.** VYASA (measured, touched with old pride): "వేదాన్ని నాలుగుగా విడదీశాను. ఋగ్వేదం… యజుః… సామ… అథర్వ."
+**B.** "నా చేతులే… అంతుపట్టని వేదాన్ని నాలుగు చేశాయి. రూపం లేని జ్ఞానానికి మొదటిసారి ఆకారమిచ్చాయి. ఋగ్వేదం… యజుర్వేదం… సామవేదం… అథర్వవేదం."
+**C.** *(none)*
 **D.** The hand passes over the four bundles left-to-right, a librarian's caress.
 **E.** Earned pride recited like an old house-tour — pride already shelving itself.
 **F.** Lateral slow pass over the four bundles following his hand.
@@ -497,7 +497,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 05:17–05:29 · **Duration:** 12 sec
 **Purpose:** Résumé part 2 — epics and puranas poured out like rivers.
 **A.** [GLOBAL STYLE MASTER] + VYASA-ID, writing montage single frame: night-lamp memory-flash style single image — Vyasa mid-write at the low desk, stylus in hand, around him palm-leaf pages floating in a slow luminous spiral in the lamplight (symbolic, restrained: 7-9 pages only), deep orange flame-glow against ink-blue shadows, the Ganga of letters made visible, painterly fantasy-realism in EP1-S10 grammar.
-**B.** "ఇది మహాభారతం. (pause) లక్ష శ్లోకాల తానేశారు ఆ శరీరం, కానీ నాకది అలపనే కనబడేది. పురాణాలు — అవి మేడలో అవు మాత్రం కాలం ముందుది అవున్నవి."
+**B.** "మహాభారతం రాశాను. లక్ష శ్లోకాలు… ఒక ప్రపంచాన్నే అక్షరాల్లోకి దింపాను. పద్దెనిమిది పురాణాలు — ప్రతి ఒకటి ఒక మహాద్వారం."
 **C.** *(none)*
 **D.** The stylus etches; a completed page lifts itself into the spiral.
 **E.** *(memory-face)* total absorption, even now.
@@ -511,7 +511,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 05:29–05:41 · **Duration:** 12 sec
 **Purpose:** Résumé part 3 — dharma taught; the world instructed.
 **A.** [GLOBAL STYLE MASTER] + disciples + VYASA-ID teaching-court wide: sunlit courtyard from EP1's teaching scenes — Vyasa at the guru-seat mid-discourse, disciples in their arc on grass mats, palm-notes on their knees, one rishi-visitor captured nodding at the back, butterflies in the air, gold-morning abundance, painterly cronicle composition (audience recognises EP1-S12 energy but calmer now).
-**B.** "ధర్మమంటే ఏమిటో… నాకీరోజు వెలుగు చేశాను. శిష్యులు నా పెద్దకుతుంబం. ధర్మ మర్యాదలు — నా ముద్రలు ప్రతీ పల్లెకు చేరాయి."
+**B.** "ధర్మమంటే ఏమిటో — వేలాది శిష్యులకు బోధించాను. ఆ శిష్యులే నా కుటుంబం. ధర్మ మర్యాదలు వ్రాసిన నా అక్షరాలు… ప్రతి పల్లెకు చేరాయి."
 **C.** *(none)*
 **D.** Vyasa's explaining-gesture completes; disciples note; the visitor nods twice.
 **E.** The teacher's peace — professional, fulfilled, and somehow still vertical.
