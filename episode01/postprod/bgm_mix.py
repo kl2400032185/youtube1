@@ -15,7 +15,7 @@ FF   = imageio_ffmpeg.get_ffmpeg_exe()
 SR   = 22050
 ROOT = "/home/user/youtube1/episode01"
 WORK = "/tmp/bgmwork"; os.makedirs(WORK, exist_ok=True)
-OUT_SCENES = os.path.join(ROOT, "audio_bgm"); os.makedirs(OUT_SCENES, exist_ok=True)
+OUT_SCENES = os.path.join(ROOT, "audio_final"); os.makedirs(OUT_SCENES, exist_ok=True)
 
 # ---- scenes: (n, start_s, end_s, kind, intensity/10) -------------------------
 # kind: T1 Ancient World | T2 Vyasa Greatness | T3 Inner Restlessness
@@ -165,7 +165,293 @@ def melody(scale, base, dur, rng, density=0.5, amp=0.2, kind='flute', reg=0,
         add(out, t0, sig)
     return out
 
-# ---- the two motifs (the story in music) -------------------------------------
+# ============================ SFX LAYER (item E) =============================
+def _lp(x, k):
+    k = max(3, int(k) | 1)
+    return np.convolve(x, np.hanning(k)/np.hanning(k).sum(), 'same')
+
+def _hp(x):
+    return np.concatenate([[0.0], np.diff(x)])
+
+def fwind(dur, amp=0.05, gust=0.35, seed=0):
+    """wind bed — brown noise shaped by slow random gusts"""
+    rng = np.random.default_rng(seed)
+    n = N(dur)
+    br = np.cumsum(rng.standard_normal(n)); br /= max(1e-9, np.abs(br).max())
+    br = _hp(br)
+    g = _lp(rng.standard_normal(n), SR//2)
+    g = 0.65 + gust*(g/max(1e-9, np.abs(g).max()))
+    hiss = _hp(rng.standard_normal(n))*0.35*g
+    return ((br*g*0.9 + hiss)*amp).astype(np.float32)
+
+def friver(dur, amp=0.05, seed=0):
+    """river — mid-band rushing water, no pitch"""
+    rng = np.random.default_rng(seed)
+    n = N(dur); x = rng.standard_normal(n)
+    mid = _lp(x, 31) - _lp(x, 501)
+    g = 1.0 + 0.18*np.sin(2*np.pi*0.37*np.arange(n)/SR + seed)
+    return (mid*g*amp/max(1e-9, np.abs(mid).max())*0.9).astype(np.float32)
+
+def fcrickets(dur, amp=0.02, seed=0):
+    rng = np.random.default_rng(seed)
+    n = N(dur); t = np.arange(n)/SR
+    train = (np.sin(2*np.pi*4230*t)*(0.5+0.5*np.sign(np.sin(2*np.pi*14*t)))) * \
+            (0.6+0.4*np.sin(2*np.pi*0.9*t+1))
+    train = _lp(train, 9)
+    return (train*amp/(1e-9+np.abs(train).max())*0.8).astype(np.float32)
+
+def ffire(dur, amp=0.045, seed=0, density=3.0):
+    """fire — low rumble + random crackle pops"""
+    rng = np.random.default_rng(seed)
+    n = N(dur)
+    br = np.cumsum(rng.standard_normal(n)); br = _hp(br); br /= max(1e-9, np.abs(br).max())
+    y = br*0.5
+    pops = int(dur*density)
+    for _ in range(pops):
+        p = int(rng.integers(0, max(1, n-800)))
+        L = int(rng.integers(120, 700))
+        y[p:p+L] += rng.standard_normal(min(L, len(y)-p))*np.exp(-np.arange(min(L, len(y)-p))/60.0)*rng.uniform(0.3, 1.0)
+    return (y*amp/(1e-9+np.abs(y).max())).astype(np.float32)
+
+def _gliss(f0, f1, d, amp, seed=0, vib=0.0, rough=0.0):
+    rng = np.random.default_rng(seed)
+    n = N(d); t = np.arange(n)/SR
+    f = np.linspace(f0, f1, n)
+    if vib: f = f*(1+vib*np.sin(2*np.pi*9*t))
+    ph = 2*np.pi*np.cumsum(f)/SR
+    y = np.sin(ph)
+    if rough: y += rough*np.sign(np.sin(ph))
+    e = np.ones(n); a = min(int(0.02*SR), max(2, n//4)); r = min(int(0.09*SR), max(2, n-a))
+    e[:a] = np.linspace(0, 1, a); e[-r:] *= np.linspace(1, 0, r)
+    return (y*e*amp).astype(np.float32)
+
+def koel(dur, amp=0.05, times=(2.0,), seed=0):
+    out = np.zeros(N(dur), dtype=np.float32)
+    for i, t0 in enumerate(times):
+        add(out, t0,       _gliss(880, 1180, 0.30, amp, seed+i))
+        add(out, t0+0.34,  _gliss(1180, 950, 0.42, amp*1.1, seed+i+9))
+    return out
+
+def mynah(dur, amp=0.04, times=(1.0,), seed=0):
+    out = np.zeros(N(dur), dtype=np.float32)
+    for i, t0 in enumerate(times):
+        for k in range(3):
+            add(out, t0+k*0.16, _gliss(1900, 1250, 0.10, amp*rng01(seed+i+k), seed+i*7+k))
+    return out
+
+def rng01(s):
+    return float(np.random.default_rng(int(s*7919) % 2**31).uniform(0.75, 1.05))
+
+def peacock_call(dur, amp=0.045, t0=2.0, seed=0):
+    out = np.zeros(N(dur), dtype=np.float32)
+    add(out, t0, _gliss(1900, 950, 0.75, amp, seed, vib=0.02))
+    add(out, t0+0.95, _gliss(1750, 900, 0.65, amp*0.85, seed+3, vib=0.02))
+    return out
+
+def crow(dur, amp=0.07, times=(2.0,), seed=0):
+    out = np.zeros(N(dur), dtype=np.float32)
+    for i, t0 in enumerate(times):
+        add(out, t0, _gliss(760, 430, 0.16, amp, seed+i, rough=0.9))
+    return out
+
+def owl(dur, amp=0.04, times=(2.0,), seed=0):
+    out = np.zeros(N(dur), dtype=np.float32)
+    for i, t0 in enumerate(times):
+        add(out, t0, _gliss(338, 330, 0.55, amp, seed+i))
+        add(out, t0+0.75, _gliss(335, 322, 0.85, amp, seed+i+4))
+    return out
+
+def nightjar(dur, amp=0.03, t0=3.0, seed=0):
+    n = N(min(1.6, dur-t0)); t = np.arange(n)/SR
+    y = np.sin(2*np.pi*1750*t)*(np.sign(np.sin(2*np.pi*31*t))*0.5+0.5)
+    out = np.zeros(N(dur), dtype=np.float32); add(out, t0, (y*amp).astype(np.float32))
+    return out
+
+def cuckoo(dur, amp=0.04, times=(3.0,), seed=0):
+    out = np.zeros(N(dur), dtype=np.float32)
+    for i, t0 in enumerate(times):
+        add(out, t0, _gliss(660, 650, 0.28, amp, seed+i))
+        add(out, t0+0.38, _gliss(540, 525, 0.34, amp, seed+i+2))
+    return out
+
+def bee(dur, amp=0.05, t0=1.6, seed=0):
+    rng = np.random.default_rng(seed); nn = N(min(2.6, dur-t0))
+    t = np.arange(nn)/SR
+    y = np.sign(np.sin(2*np.pi*196*t)) + 0.6*np.sin(2*np.pi*196*t)
+    y = _lp(y, 61)
+    wob = 0.55 + 0.45*np.sin(2*np.pi*23*t)
+    drift = 0.5 + 0.5*np.sin(2*np.pi*0.7*t+1.2)
+    out = np.zeros(N(dur), dtype=np.float32)
+    add(out, t0, (y*wob*drift*amp*0.25).astype(np.float32))
+    return out
+
+def wingburst(dur, amp=0.13, t0=0.6, seed=0):
+    rng = np.random.default_rng(seed); out = np.zeros(N(dur), dtype=np.float32)
+    t = t0
+    for i in range(9):
+        L = int(0.12*SR); p = int(t*SR)
+        fl = rng.standard_normal(L)*np.exp(-np.arange(L)/(0.028*SR))
+        fl = _lp(fl, 121)
+        add(out, t, (fl*amp).astype(np.float32))
+        t += 0.23 - i*0.012
+    return out
+
+def drop_ripple(dur, amp=0.10, t0=2.0, seed=0):
+    out = np.zeros(N(dur), dtype=np.float32)
+    add(out, t0, _gliss(920, 430, 0.09, amp, seed))
+    add(out, t0+0.42, _gliss(830, 460, 0.06, amp*0.35, seed+1))
+    rng = np.random.default_rng(seed)
+    for k in range(4):
+        add(out, t0+0.75+0.4*k, _gliss(1200+200*k, 1150, 0.05, amp*0.12, seed+10+k))
+    return out
+
+def leaves(dur, amp=0.03, seed=0):
+    rng = np.random.default_rng(seed); n = N(dur)
+    x = _hp(rng.standard_normal(n))
+    g = _lp(rng.standard_normal(n), int(0.4*SR))
+    g = 0.5+0.5*(g/max(1e-9, np.abs(g).max()))
+    return (x*g*amp).astype(np.float32)
+
+def steps(dur, amp=0.09, times=(0.5, 1.2, 1.9), seed=0, stone=False):
+    rng = np.random.default_rng(seed); out = np.zeros(N(dur), dtype=np.float32)
+    for i, t0 in enumerate(times):
+        th = thump(amp=amp*(0.8 if not stone else 0.55), dur=0.16, seed=seed+i)
+        tk = tick(amp=amp*(0.35 if stone else 0.15), dur=0.05, seed=seed+i+50)
+        out2 = np.zeros(len(th), dtype=np.float32)
+        out2[:len(th)] += th; out2[:len(tk)] += tk
+        add(out, t0, out2)
+    return out
+
+def swish(dur, amp=0.06, t0=1.0, seed=0, dd=0.35):
+    rng = np.random.default_rng(seed); out = np.zeros(N(dur), dtype=np.float32)
+    n = N(dd); x = _lp(rng.standard_normal(n), 25)
+    e = np.sin(np.pi*np.arange(n)/n)**1.5
+    add(out, t0, (x*e*amp).astype(np.float32))
+    return out
+
+def stylus(dur, amp=0.05, times=(1.0, 3.2, 5.5), seed=0):
+    rng = np.random.default_rng(seed); out = np.zeros(N(dur), dtype=np.float32)
+    for i, t0 in enumerate(times):
+        n = N(0.5); x = _hp(rng.standard_normal(n))
+        e = np.sin(np.pi*np.arange(n)/n)**2
+        add(out, t0, (x*e*amp).astype(np.float32))
+    return out
+
+def woodknock(dur, amp=0.10, times=(1.0,), seed=0):
+    out = np.zeros(N(dur), dtype=np.float32)
+    for i, t0 in enumerate(times):
+        add(out, t0, pluck(196+((seed+i) % 3)*24, 0.22, amp, bright=0.35, seed=seed+i))
+    return out
+
+def chantbed(dur, amp=0.05, seed=0):
+    n = N(dur); t = np.arange(n)/SR
+    y = np.zeros(n)
+    for k, a in [(1, 1.0), (2, 0.35), (3, 0.14)]:
+        y += a*np.sin(2*np.pi*(130.81*0.75)*k*t + 0.1*np.sin(2*np.pi*0.5*t))
+    breath = _lp(np.random.default_rng(seed).standard_normal(n), 301)*0.25
+    e = np.ones(n); a = int(1.2*SR); e[:a] = np.linspace(0, 1, a); e[-a:] *= np.linspace(1, 0, a)
+    return ((y+breath)*e*amp).astype(np.float32)
+
+def whoosh(dur, amp=0.07, t0=1.0, dd=1.8, seed=0):
+    rng = np.random.default_rng(seed); out = np.zeros(N(dur), dtype=np.float32)
+    n = N(dd); x = rng.standard_normal(n)
+    sweep = np.linspace(3, 401, n); x = x - _lp(x, sweep.astype(int).clip(3).tolist()) if False else x  # keep simple
+    base = _hp(x)*0.5 + _lp(x, 501)*0.5
+    e = np.sin(np.pi*np.arange(n)/n)**1.3
+    add(out, t0, (base*e*amp).astype(np.float32))
+    return out
+
+def breathpuff(dur, amp=0.05, t0=2.0, seed=0):
+    rng = np.random.default_rng(seed); out = np.zeros(N(dur), dtype=np.float32)
+    n = N(0.55); x = _hp(rng.standard_normal(n)); e = np.sin(np.pi*np.arange(n)/n)
+    add(out, t0, (x*e*amp).astype(np.float32))
+    return out
+
+def chimespark(dur, amp=0.05, times=(2.0,), seed=0, base_f=2500):
+    out = np.zeros(N(dur), dtype=np.float32)
+    for i, t0 in enumerate(times):
+        add(out, t0, bell(base_f*(1+0.11*(i % 3)), 1.3, amp, seed+i))
+    return out
+
+def rumble(dur, amp=0.06, seed=0):
+    n = N(dur); t = np.arange(n)/SR
+    y = np.sin(2*np.pi*42*t)*(0.7+0.3*np.sin(2*np.pi*0.4*t))
+    return (y*amp).astype(np.float32)
+
+def sfx_scene(n, dur, seed0=7):
+    """per-scene SFX recipe (plan item E)"""
+    rng = np.random.default_rng(4000+n)
+    buf = np.zeros(N(dur), dtype=np.float32)
+    s = lambda x, g=1.0: buf.__iadd__((x*g).astype(np.float32))
+
+    if n == 1: s(fwind(dur, 0.055, 0.5, seed0+1)); buf = np.add(buf, koel(dur, 0.02, (6.0,), 2))
+    elif n == 2: s(fwind(dur, 0.06, 0.55, seed0+2)); add(buf, 5.0, _gliss(2300, 1500, 1.1, 0.035, 3))
+    elif n == 3: s(leaves(dur, 0.035, 4)); add(buf, 0, koel(dur, 0.045, (1.5, 6.5), 5)); add(buf, 0, mynah(dur, 0.03, (3.5, 8.5), 6))
+    elif n == 4: s(friver(dur, 0.05, 7)); add(buf, 0, peacock_call(dur, 0.03, 5.0, 8))
+    elif n == 5: s(fwind(dur, 0.03, 0.3, 9)); add(buf, 0, peacock_call(dur, 0.025, 7.5, 10)); add(buf, 2.0, bell(640, 0.7, 0.015, 11)); add(buf, 6.0, bell(660, 0.7, 0.013, 12))
+    elif n == 6: s(fwind(dur, 0.035, 0.4, 13)); s(leaves(dur, 0.025, 14)); add(buf, 3.0, bell(1320, 1.6, 0.03, 15))
+    elif n == 7: s(steps(dur, 0.07, tuple(0.8+i*0.75 for i in range(6)), 16)); add(buf, 0, swish(dur, 0.04, 2.2, 17))
+    elif n == 8: s(leaves(dur, 0.02, 18)); add(buf, 0, swish(dur, 0.03, 4.0, 19)); add(buf, 0, kotick(dur) if False else swish(dur, 0.025, 8.0, 20))
+    elif n == 9: s(stylus(dur, 0.045, (1.2, 4.0, 7.0, 10.0), 21)); s(ffire(dur, 0.02, 22, 1.5))
+    elif n == 10: add(buf, 0, whoosh(dur, 0.05, 3.0, 2.2, 23)); add(buf, 0, rumble(dur, 0.03, 24))
+    elif n == 11: s(friver(dur, 0.04, 25)); add(buf, 0, owl(dur, 0.03, (4.0,), 26)); s(ffire(dur, 0.015, 27, 1.0))
+    elif n == 12: add(buf, 0, chantbed(dur, 0.05, 28)); add(buf, 0, tickbed(dur) if False else chimespark(dur, 0.008, tuple(1.0+i*0.7 for i in range(14)), 29, 3200))
+    elif n == 13: add(buf, 0, woodknock(dur, 0.05, (1.5, 4.5, 8.0), 30)); s(steps(dur, 0.05, (2.0, 3.2, 5.6, 7.4), 31)); add(buf, 0.6, bell(880, 1.4, 0.03, 32))
+    elif n == 14: s(ffire(dur, 0.035, 33, 2.0)); s(_lp(np.random.default_rng(34).standard_normal(N(dur)), 901)*0.012); add(buf, 4.0, breathpuff(dur, 0.02, 4.0, 35))
+    elif n == 15: s(fwind(dur, 0.04, 0.35, 36)); s(ffire(dur, 0.012, 37, 0.8))
+    elif n == 16: s(fwind(dur, 0.028, 0.3, 38)); add(buf, 2.0, bell(2000, 2.0, 0.015, 39))
+    elif n == 17: s(ffire(dur, 0.03, 40, 1.2)); add(buf, 0, fcrickets(dur, 0.014, 41))
+    elif n == 18: s(ffire(dur, 0.04, 42, 2.5)); add(buf, 0, breathpuff(dur, 0.03, 6.0, 43))
+    elif n == 19: s(friver(dur, 0.055, 44)); add(buf, 0, nightjar(dur, 0.022, 4.0, 45)); s(leaves(dur, 0.015, 46))
+    elif n == 20: s(friver(dur, 0.045, 47)); add(buf, 0, drop_ripple(dur, 0.10, 8.6, 48))
+    elif n == 21: s(friver(dur, 0.035, 49)); s(fwind(dur, 0.025, 0.3, 50))
+    elif n == 22: s(leaves(dur, 0.028, 51)); add(buf, 0, koel(dur, 0.04, (2.0, 8.0), 52)); s(steps(dur, 0.04, (3.0, 4.0, 7.0), 53))
+    elif n == 23: s(friver(dur, 0.03, 54)); add(buf, 3.2, swish(dur, 0.05, 3.2, 55, 0.5)); add(buf, 3.9, bell(520, 0.5, 0.03, 56))
+    elif n == 24: add(buf, 0, bee(dur, 0.05, 2.0, 57)); add(buf, 8.0, swish(dur, 0.04, 8.0, 58))
+    elif n == 25: add(buf, 2.0, whoosh(dur, 0.06, 2.0, 1.2, 59)); s(ffire(dur, 0.035, 60, 2.2)); add(buf, 10.0, bell(1560, 1.2, 0.03, 61))
+    elif n == 26: add(buf, 0, peacock_call(dur, 0.035, 2.5, 62)); add(buf, 6.0, bell(640, 0.6, 0.018, 63)); add(buf, 9.5, bell(655, 0.6, 0.015, 64))
+    elif n == 27: add(buf, 0, swish(dur, 0.035, 1.5, 65, 0.6)); add(buf, 0, swish(dur, 0.03, 5.5, 66, 0.6)); s(friver(dur, 0.02, 67))
+    elif n == 28: s(leaves(dur, 0.03, 68)); add(buf, 7.0, swish(dur, 0.04, 7.0, 69))
+    elif n == 29: s(ffire(dur, 0.02, 70, 1.5)); add(buf, 1.5, bell(1180, 1.8, 0.03, 71)); add(buf, 5.0, bell(1320, 1.8, 0.03, 72)); add(buf, 9.5, bell(1100, 2.2, 0.028, 73))
+    elif n == 30: add(buf, 0, fcrickets(dur, 0.018, 74)); add(buf, 2.5, bell(2600, 1.0, 0.012, 75)); add(buf, 7.0, bell(2450, 1.0, 0.010, 76))
+    elif n == 31: s(ffire(dur, 0.028, 77, 1.4)); add(buf, 0, fcrickets(dur, 0.010, 78))
+    elif n == 32: s(fwind(dur, 0.018, 0.25, 79)); add(buf, 5.5, drop_ripple(dur, 0.06, 5.5, 80)); add(buf, 3.0, swish(dur, 0.02, 3.0, 81, 0.3))
+    elif n == 33: s(friver(dur, 0.06, 82))
+    elif n == 34: s(friver(dur, 0.04, 83)); add(buf, 0, breathpuff(dur, 0.035, 9.0, 84))
+    elif n == 35: s(_lp(np.random.default_rng(85).standard_normal(N(dur)), 601)*0.02); add(buf, 4.5, whoosh(dur, 0.045, 4.5, 2.4, 86))
+    elif n == 36: s(friver(dur, 0.045, 87)); add(buf, 0, breathpuff(dur, 0.03, 4.0, 88)); add(buf, 0, breathpuff(dur, 0.025, 10.5, 89))
+    elif n == 37: s(fwind(dur, 0.05, 0.5, 90)); add(buf, 0, crow(dur, 0.05, (3.0, 3.5), 91))
+    elif n == 38: add(buf, 1.8, swish(dur, 0.05, 1.8, 92, 0.15)); add(buf, 2.2, swish(dur, 0.04, 2.2, 93, 0.12)); add(buf, 5.0, swish(dur, 0.045, 5.0, 94, 0.2))
+    elif n == 39: s(fwind(dur, 0.02, 0.25, 95)); add(buf, 6.0, swish(dur, 0.03, 6.0, 96))
+    elif n == 40: add(buf, 0, _gliss(520, 430, 0.09, 0.03, 97, rough=0.4)); add(buf, 2.0, _gliss(540, 420, 0.08, 0.028, 98, rough=0.4)); add(buf, 9.0, breathpuff(dur, 0.04, 9.0, 99))
+    elif n == 41: s(fwind(dur, 0.04, 0.55, 100)); s(steps(dur, 0.05, tuple(1.0+i*0.9 for i in range(4)), 101))
+    elif n == 42: s(leaves(dur, 0.04, 102)); s(steps(dur, 0.045, (1.4, 3.0, 4.8, 6.6), 103))
+    elif n == 43: s(leaves(dur, 0.02, 104)); add(buf, 0, cuckoo(dur, 0.032, (4.0,), 105))
+    elif n == 44: s(rumble(dur, 0.045, 106)); add(buf, 3.0, drop_ripple(dur, 0.05, 3.0, 107)); add(buf, 8.5, drop_ripple(dur, 0.04, 8.5, 108))
+    elif n == 45: s(friver(dur, 0.05, 109)); add(buf, 0, woodknock(dur, 0.04, (6.0, 10.0), 110))
+    elif n == 46: add(buf, 2.0, swish(dur, 0.035, 2.0, 111, 0.5)); s(leaves(dur, 0.02, 112))
+    elif n == 47: s(stylus(dur, 0.04, (1.5, 5.5, 9.5), 113)); s(fwind(dur, 0.02, 0.4, 114))
+    elif n == 48: s(fwind(dur, 0.05, 0.5, 115)); add(buf, 1.2, whoosh(dur, 0.05, 1.2, 1.4, 116)); add(buf, 11.0, swish(dur, 0.02, 11.0, 117, 0.3))
+    elif n == 49: s(fwind(dur, 0.035, 0.35, 118)); add(buf, 5.0, pluck(70, 0.9, 0.03, 0.3, 119))
+    elif n == 50: s(fwind(dur, 0.055, 0.6, 120)); add(buf, 3.5, bell(2400, 1.0, 0.012, 121)); add(buf, 8.0, bell(2550, 0.9, 0.010, 122))
+    elif n == 51: add(buf, 0, wingburst(dur, 0.13, 1.0, 123)); add(buf, 0, mynah(dur, 0.045, (2.6, 3.4, 5.0), 124))
+    elif n == 52: s(leaves(dur, 0.03, 125)); add(buf, 1.5, bell(760, 2.6, 0.06, 126)); add(buf, 6.0, bell(760, 2.2, 0.04, 127))
+    elif n == 53: s(fwind(dur, 0.018, 0.2, 128))
+    elif n == 54: s(fwind(dur, 0.03, 0.3, 129)); s(steps(dur, 0.04, (2.0, 3.1, 4.2), 130))
+    elif n == 55: add(buf, 1.0, bell(950, 1.6, 0.025, 131)); add(buf, 4.5, bell(1010, 1.4, 0.02, 132)); add(buf, 7.5, swish(dur, 0.03, 7.5, 133))
+    elif n == 56: s(steps(dur, 0.06, tuple(1.0+i*1.1 for i in range(5)), 134, stone=True)); add(buf, 10.5, bell(880, 2.2, 0.035, 135))
+    elif n == 57: s(steps(dur, 0.05, (2.5, 3.6, 4.7), 136, stone=True)); add(buf, 6.0, bell(2300, 1.2, 0.012, 137))
+    elif n == 58: add(buf, 9.8, pluck(523.25, 2.5, 0.09, 1.6, 138)); s(_lp(np.random.default_rng(139).standard_normal(N(dur)), 801)*0.010)
+    elif n == 59: add(buf, 0.8, bell(1568, 2.0, 0.045, 140)); add(buf, 0, koel(dur, 0.035, (5.0,), 141)); add(buf, 0, mynah(dur, 0.03, (8.5,), 142))
+    elif n == 60: add(buf, 2.0, swish(dur, 0.03, 2.0, 143)); add(buf, 6.5, bell(2800, 0.9, 0.012, 144))
+    elif n == 61: s(steps(dur, 0.055, tuple(1.2+i*1.0 for i in range(5)), 145, stone=True)); s(friver(dur, 0.015, 146))
+    elif n == 62: add(buf, 4.0, swish(dur, 0.025, 4.0, 147, 0.8)); s(fwind(dur, 0.012, 0.2, 148))
+    elif n == 63: add(buf, 0, cuckoo(dur, 0.022, (3.0,), 149)); add(buf, 6.5, bell(1760, 2.0, 0.015, 150))
+    elif n == 64: add(buf, 1.2, bell(660, 2.6, 0.03, 151))
+    elif n == 65: s(fwind(dur, 0.03, 0.25, 152))
+    elif n == 66: add(buf, 2.0, whoosh(dur, 0.05, 2.0, 1.6, 153)); add(buf, 11.5, bell(1320, 1.6, 0.03, 154))
+    return buf
+
 def q_motif(dur, base, amp=0.26, ached=True):
     """QUESTION: 3 rising notes that FALL on the 4th — Shivaranjani"""
     offs = [0, 2, 3, -4 if ached else -4]; durs = [0.8, 0.8, 0.8, 1.8]
@@ -380,6 +666,7 @@ def build_scene(n, start, end, kind, inten, rng):
 # ---- render master -----------------------------------------------------------
 TOTAL = SCENES[-1][2]
 bgm = np.zeros(N(TOTAL), dtype=np.float32)
+sfx = np.zeros(N(TOTAL), dtype=np.float32)
 vob = np.zeros(N(TOTAL), dtype=np.float32)
 
 print("synthesizing BGM…")
@@ -396,6 +683,14 @@ for idx, (n, s, e, kind, inten) in enumerate(SCENES):
     if fi < len(segb): segb[:fi]  *= np.linspace(0, 1, fi)
     if fo > 0:         segb[-fo:] *= np.linspace(1, 0, fo)
     add(bgm, s, segb)
+
+print("synthesizing SFX layer…")
+for (n, s, e, kind, inten) in SCENES:
+    d = float(e - s)
+    segx = sfx_scene(n, d)
+    m = int(0.4*SR)
+    segx[:m] *= np.linspace(0, 1, m); segx[-m:] *= np.linspace(1, 0, m)
+    add(sfx, s, segx)
 
 def compress_pauses(vo, sr, max_pause=0.62, floor=0.012):
     """silence-compress: cap over-long TTS pauses at max_pause sec —
@@ -452,8 +747,9 @@ env  = np.abs(vob)
 k    = np.ones(int(0.30*SR))/int(0.30*SR)
 mask = np.clip(np.convolve((env > 0.010).astype(np.float32), k, 'same')*2.2, 0, 1)
 bgm *= (1.0 - 0.66*mask)                                                  # ≈ −9.4 dB under speech
+sfx *= (1.0 - 0.50*mask)                                                  # ≈ −6.0 dB under speech
 
-mix = vob*1.0 + bgm*0.92
+mix = vob*1.0 + bgm*0.92 + sfx*0.85
 mix /= max(1e-9, np.abs(mix).max()); mix *= 0.94
 wav = os.path.join(WORK, 'master.wav')
 from wave import open as wopen

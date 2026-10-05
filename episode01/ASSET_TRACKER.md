@@ -22,3 +22,11 @@ BGM themes T1-T5 (Plan S11) · per-scene SFX (Scene-E) · image-to-video clips (
 - Themes: T1 Mohanam flute/veena (S01–06) · T2 Kalyani veena+pad (S07–14, crest+hard stop @02:47) · T3 Shivaranjani bansuri (S15–21,30–52) · T4 Hamsadhwani ashrama warmth (S22–29, humour stingers S23/24/38/40) · T5 Mohana-Kalyani Narada (S53–66)
 - Motif rule honoured: Q = 3 rising→fall 4th (S20/30/33/37/48/65), A = 4 rising (S53+), fused ONLY S64 (4 bars) → full stop @13:30; S62 held chord; S65 unresolved; S66 harmonic + final thump + clean tail.
 - NOT included (editor adds per plan §11/E-items): SFX (wind, river, birds, bells…), image-to-video animation, thumbnail Telugu text overlay.
+
+## FINAL DELIVERABLES (v2)
+- `audio_final/EP01_Snn.mp3` — 66/66 per-scene clips with FULL MIX (narration + BGM + SFX) ✅
+- `EP01_MASTER_13m58s.mp3` — full episode audio master (narration + 5-theme BGM + SFX per item E), −16.5 LUFS ✅
+- `EP01_PREVIEW_CUT_540p.mp4` — complete 13:58 preview cut (66 images animated, Ken Burns + fades, full audio) ✅ (720p master render: `EP01_PREVIEW_CUT.mp4` in workspace, git-ignored)
+- `thumbnail_ep01_text.jpg` — finished thumbnail with Telugu title text (shaping-correct) ✅
+- `postprod/` — bgm_mix.py (BGM+SFX synth & mix), make_preview.py (video), make_thumbnail.py (Telugu text via uharfbuzz+freetype)
+- Remaining manual: none blocking — optional polish = real image-to-video via AI tools using prompt I per scene; upload-time thumbnail = thumbnail_ep01_text.jpg.
