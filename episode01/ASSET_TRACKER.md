@@ -30,3 +30,8 @@ BGM themes T1-T5 (Plan S11) · per-scene SFX (Scene-E) · image-to-video clips (
 - `thumbnail_ep01_text.jpg` — finished thumbnail with Telugu title text (shaping-correct) ✅
 - `postprod/` — bgm_mix.py (BGM+SFX synth & mix), make_preview.py (video), make_thumbnail.py (Telugu text via uharfbuzz+freetype)
 - Remaining manual: none blocking — optional polish = real image-to-video via AI tools using prompt I per scene; upload-time thumbnail = thumbnail_ep01_text.jpg.
+
+## PATH B KICKOFF (premium launch)
+- `AI_VIDEO_WORKLIST.csv` — 66 rows: scene, duration, image, clips needed, ready-to-paste image-to-video prompts ✅
+- `AI_VIDEO_GUIDE.md` — tool picks (Kling/Runway/Hailuo/Luma), per-scene recipe, assembly (agent rebuilds final 1080p film when clips are returned), upload metadata ✅
+- Thumbnail v2 (catchy): `thumbnail_ep01_catchy.jpg` — dramatic Vyasa/Narada art + big shaped Telugu title ✅ (base: `thumbnail_catchy_base.png`)
