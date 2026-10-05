@@ -295,9 +295,9 @@ L = min(len(voice), len(bgm)); voice = voice[:L]; bed = bgm[:L]
 env = np.abs(voice)
 w = int(0.09 * SR); env = np.convolve(env, np.ones(w) / w, 'same')
 mask = np.clip(env / 0.06, 0, 1)
-DUCK = 0.55
+DUCK = 0.72
 gain = 1.0 - DUCK * mask
-bed *= gain * 0.85
+bed *= gain * 0.45
 mix = voice + bed
 peak = np.abs(mix).max()
 if peak > 0.89: mix *= 0.89 / peak
