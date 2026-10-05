@@ -43,3 +43,10 @@ BGM themes T1-T5 (Plan S11) · per-scene SFX (Scene-E) · image-to-video clips (
 - Local VO lead/trail vs picture ≤ ~8.5s in early montage scenes (static frames); cue scenes (S48 face question, S53 eyes, S59 reveal, S64 greeting) locked to picture. Path-B final assembly will re-time visuals exactly to VO.
 - New: `EP01_VOICE_ONLY_13m58s.mp3` — narration-only master (no music/SFX) for listeners who want pure story.
 - Rebuilt masters + 66 audio_final clips + BOTH preview videos with v3 audio.
+
+## v4 — CLARITY EDITION (user: words must be crystal-clear & pleasant; longer video OK)
+- `EP01_CLEAN_VOICE.mp3` — **20:48** narration-only master: 100% natural TTS pace (no speed-ups), generous pauses (≤0.95s), nothing underneath ✅ — **the DEFAULT track now**
+- `EP01_SOFT_BED.mp3` — same voice + ultra-soft tanpura/pad bed only (no birds/bells/fire/steps) for those who want a whisper of music
+- `audio_clean/EP01_Snn.mp3` — 66 per-scene clean clips on the EXPANDED scene windows
+- `EP01_PREVIEW_CUT.mp4` (720p) / `EP01_PREVIEW_CUT_540p.mp4` — rebuilt on the expanded timeline so picture & voice match 1:1
+- Removed from default: SFX layer, heavy BGM, all time-fits/atempo. (v3 cinematic mix still in repo history: EP01_MASTER_13m58s.mp3, audio_final/)
