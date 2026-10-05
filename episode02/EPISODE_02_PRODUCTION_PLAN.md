@@ -940,7 +940,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 11:32–11:44 · **Duration:** 12 sec
 **Purpose:** THE CHARGE — Narada transfers the task explicitly: give bhakti-rasa to the world.
 **A.** [GLOBAL STYLE MASTER] + NARADA-REF + VYASA-ID banyan seat, communion two-shot: Narada leaning across the seat-gap, both hands open toward Vyasa with the palms up — giving something invisible and priceless across twelve inches of morning air; Vyasa receiving with his whole posture forward; the golden light between their hands at its richest of the episode; disciples frozen with the fruit plate — even they understand this is the moment; painterly commissioned intensity.
-**B.** "ఇప్పుడు… నీవు. (pause) 'భక్తి రసాన్ని — లోకానికి ఇచ్చే బాధ్యత నీది, వ్యాసా. నీ కలంతో నీరు రాసినది కావాల్సింది… ఆయన మహిమే.'"
+**B.** "ఇప్పుడు… నీవు. (pause) 'భక్తి రసాన్ని — లోకానికి ఇచ్చే బాధ్యత నీది, వ్యాసా. నీ కలం రాయాల్సింది… ఆయన మహిమనే.'"
 **C.** NARADA (final, clear, quiet — the episode's thesis sentence): "భక్తితో రాసిన గ్రంథం విన్నవాడికి… భగవంతుడు అందుబాటులోకి వస్తాడు. అలా రాసి — నీకు శాంతి ఇస్తుంది, వారికీ దారి చూపిస్తుంది."
 **D.** The open palms press gently down — the charge placed, accepted unseen; Vyasa's own hands rise to his chest (fourth and final mirror-gesture of the teaching arc) — this time ON PURPOSE.
 **E.** Narada: total issuance. Vyasa: acceptance arriving BEFORE words.
