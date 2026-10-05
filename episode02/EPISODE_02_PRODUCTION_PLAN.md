@@ -325,7 +325,7 @@ Every A-prompt implicitly begins with [GLOBAL STYLE MASTER] + relevant character
 **Timecode:** 02:48–03:03 · **Duration:** 15 sec
 **Purpose:** The arrival completes inside the ashrama; narrator's simple who-is-Narada explainer.
 **A.** [GLOBAL STYLE MASTER] + NARADA-REF + ASHRAMA + disciples: Narada stepping through the ashrama gate into full sunlight, veena on shoulder, head turned gently toward Vaishampayana and Gurudatta who have dropped everything and stand in dazzled stillness, peacock rearing up behind them, woodsmoke crossing the gold light, welcome-tableau composition, painterly grandeur without bombast.
-**B.** "అతను నారదుడు. దేవఋషి. భగవంతుని నామం పాడుతూ లోకాల మధ్య సంచరించే వాడు. (pause) ఎవరూ పిలవకముందే వస్తాడు… ఎవరిముందు జరగబోయేది తెలిసే వస్తాడు. (pause) ఆ నడిచే వెలుగు ఇవాళ… వ్యాసాశ్రమం మన పట్టుకుంది."
+**B.** "అతను నారదుడు. దేవఋషి. భగవంతుని నామం పాడుతూ లోకాల మధ్య సంచరించే వాడు. (pause) ఎవరూ పిలవకముందే వస్తాడు… ఎవరిముందు జరగబోయేది తెలిసే వస్తాడు. (pause) ఆ నడిచే వెలుగు ఇవాళ… వ్యాసాశ్రమాన్ని చేరుకుంది."
 **C.** GURUDATTA (awed whisper): "నారద… మహర్షి…!"
 **D.** Narada halts inside the gate, inclines his head toward the disciples; Vaishampayana starts forward with folded palms; Gurudatta half-runs and catches himself.
 **E.** Disciples: dazzled reverence. Narada: homing calm.
