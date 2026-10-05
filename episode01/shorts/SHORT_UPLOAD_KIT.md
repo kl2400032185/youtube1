@@ -22,7 +22,7 @@
 ఆ ప్రశ్నకు జవాబు చెప్పడానికి ఒక మహర్షి వచ్చాడు… ఆయన ఎవరు? ఆ మాట ఏమిటి?
 
 🔴 పూర్తి కథ (భాగం 1) ఇక్కడ చూడండి:
-👉 [FULL VIDEO LINK — paste here: e.g. https://youtu.be/XXXXXXX]
+👉 https://youtu.be/3J7Hdg4tR3g
 
 ⏭ భాగం 2 (నారదుడు చెప్పిన ఆ ఒక్క మాట) త్వరలో — SUBSCRIBE చేసుకోండి! 🙏
 
@@ -32,9 +32,11 @@
 
 ## PINNED COMMENT (recommended)
 ```
-చుక్క పడిన అలల అంతా కదిలిపోతుంది… పూర్తి కథ: [FULL VIDEO LINK] 
+చుక్క పడిన అలల అంతా కదిలిపోతుంది… పూర్తి కథ: https://youtu.be/3J7Hdg4tR3g 
 భాగం 2 కోసం ఛానెల్ ని SUBSCRIBE చేయండి 🙏
 ```
+
+**Channel:** @creationsdairy0.25 (Creations Diary 0.25) · links verified live 2026-10-05
 
 ## Upload settings checklist
 - [ ] Category: **Entertainment** (or People & Blogs)
