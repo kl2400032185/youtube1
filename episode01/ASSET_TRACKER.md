@@ -35,3 +35,11 @@ BGM themes T1-T5 (Plan S11) · per-scene SFX (Scene-E) · image-to-video clips (
 - `AI_VIDEO_WORKLIST.csv` — 66 rows: scene, duration, image, clips needed, ready-to-paste image-to-video prompts ✅
 - `AI_VIDEO_GUIDE.md` — tool picks (Kling/Runway/Hailuo/Luma), per-scene recipe, assembly (agent rebuilds final 1080p film when clips are returned), upload metadata ✅
 - Thumbnail v2 (catchy): `thumbnail_ep01_catchy.jpg` — dramatic Vyasa/Narada art + big shaped Telugu title ✅ (base: `thumbnail_catchy_base.png`)
+
+## v3 — VOICE-FIRST REMIX (after user preview feedback)
+- Fixed real bug: narration overflowed scene windows → up to 2.7s voice-over-voice overlap. v3 placement = anchor-warp algorithm; **verified 0 overlaps**.
+- Music/sfx pulled back: BGM −4.5dB overall, duck −14dB under speech (was −9.4). Narration now clearly dominant.
+- Pace: 43/66 scenes natural, 23 gently pause-compressed, 18 pace-fitted ≤11% (pitch preserved) in dense early scenes.
+- Local VO lead/trail vs picture ≤ ~8.5s in early montage scenes (static frames); cue scenes (S48 face question, S53 eyes, S59 reveal, S64 greeting) locked to picture. Path-B final assembly will re-time visuals exactly to VO.
+- New: `EP01_VOICE_ONLY_13m58s.mp3` — narration-only master (no music/SFX) for listeners who want pure story.
+- Rebuilt masters + 66 audio_final clips + BOTH preview videos with v3 audio.

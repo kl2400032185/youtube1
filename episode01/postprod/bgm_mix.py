@@ -692,7 +692,7 @@ for (n, s, e, kind, inten) in SCENES:
     segx[:m] *= np.linspace(0, 1, m); segx[-m:] *= np.linspace(1, 0, m)
     add(sfx, s, segx)
 
-def compress_pauses(vo, sr, max_pause=0.62, floor=0.012):
+def compress_pauses(vo, sr, max_pause=0.58, floor=0.012):
     """silence-compress: cap over-long TTS pauses at max_pause sec —
     keeps every spoken word at natural speed, breathing room intact."""
     fl = int(0.02*sr)
@@ -722,34 +722,64 @@ def compress_pauses(vo, sr, max_pause=0.62, floor=0.012):
         res[:m] *= np.linspace(0, 1, m); res[-m:] *= np.linspace(1, 0, m)
     return res
 
-print("placing narration…")
-fits = 0
+def decode_vo(mp3, atempo=1.0):
+    af = ['-f', 'f32le', '-ac', '1', '-ar', str(SR), '-']
+    cmd = [FF, '-v', 'error', '-i', mp3] + ([] if atempo == 1.0 else ['-af', f'atempo={atempo:.4f}']) + af
+    out = subprocess.run(cmd, capture_output=True)
+    return np.frombuffer(out.stdout, dtype=np.float32).copy()
+
+print("placing narration (voice-first v3)…")
+meta = []; atempo_used = []
 for n, s, e, kind, inten in SCENES:
     mp3 = os.path.join(ROOT, 'audio', f'EP01_S{n:02d}.mp3')
-    out = subprocess.run([FF, '-v', 'error', '-i', mp3, '-f', 'f32le', '-ac', '1',
-                          '-ar', str(SR), '-'], capture_output=True)
-    vo = np.frombuffer(out.stdout, dtype=np.float32).copy()
-    raw = len(vo)/SR
-    vo = compress_pauses(vo, SR)
-    win = (e - s) - 0.45
-    if len(vo)/SR > win:                                                  # only if still long: ≤5 % fit
-        ratio = max(0.95, win/(len(vo)/SR))
-        x = np.linspace(0, len(vo)-1, int(len(vo)*ratio))
-        vo = np.interp(x, np.arange(len(vo)), vo).astype(np.float32)
-        fits += 1
-        print(f"  S{n:02d}: {raw:.1f}s → {len(vo)/SR:.1f}s (fit ×{ratio:.3f})")
-    add(vob, s + (0.35 if kind not in ('S48_STOP_Q',) else 1.6), vo*0.98)
-print(f"  speed-fitted scenes: {fits}/66 (rest = natural pace, pauses capped at 0.62s)")
+    v0 = decode_vo(mp3)
+    vo = compress_pauses(v0, SR, max_pause=0.58)
+    if len(vo)/SR > (e-s) - 0.4:                                            # still long: tighter pause pass
+        vo = compress_pauses(v0, SR, max_pause=0.42)
+    need = (len(vo)/SR) / (e-s)
+    if need > 0.99:                                                         # gentle, pitch-correct fit (≤8 %)
+        sp = min(need, 1.0/(0.90 if n <= 33 else 0.92))
+        vo = compress_pauses(decode_vo(mp3, atempo=sp), SR, max_pause=0.55)
+        atempo_used.append((n, sp))
+    meta.append([n, s, e, kind, mp3, vo])
+if atempo_used:
+    print(f"  pace-fitted scenes (≤11% faster in dense early scenes, natural pitch preserved): {len(atempo_used)}")
+
+# pass 1 — sequential drift placement, then warped back onto design cue times
+off = {48: 1.6}
+starts1 = []; prev_end = -1.0
+for n, s, e, kind, mp3, vo in meta:
+    t = max(s + off.get(n, 0.35), prev_end + 0.48)
+    starts1.append(t); prev_end = t + len(vo)/SR
+ANCHOR_SCENES = (1, 6, 9, 10, 13, 14, 17, 19, 21, 23, 24, 25, 26, 29, 31, 33, 35, 36,
+                 39, 40, 43, 44, 47, 48, 50, 53, 56, 59, 60, 62, 64, 65, 66)
+ax = [starts1[n-1] for n in ANCHOR_SCENES]
+ay = [SCENES[n-1][1] + off.get(n, 0.35) for n in ANCHOR_SCENES]
+starts = np.interp(np.array(starts1), ax, ay)
+for i in range(1, len(meta)):                                             # kill any residual collision
+    need = starts[i-1] + len(meta[i-1][5])/SR + 0.40
+    if starts[i] < need: starts[i] = need
+end_last = starts[-1] + len(meta[-1][5])/SR
+print(f"  last VO ends at {end_last:.1f}s (design 838.0)")
+viol = sum(1 for i in range(1, len(meta))
+           if starts[i] < starts[i-1] + len(meta[i-1][5])/SR + 0.38)
+print(f"  voice-overlap violations: {viol} (must be 0)")
+shifts = [(n, starts[i] - (s + off.get(n, 0.35))) for i, (n, s, e, kind, mp3, vo) in enumerate(meta)]
+big = [(n, d) for n, d in shifts if abs(d) > 1.2]
+print(f"  scenes shifted >1.2s from design start: {len(big)}",
+      ", ".join(f"S{n}{'+' if d>0 else ''}{d:.1f}" for n, d in big[:10]))
+for (n, s, e, kind, mp3, vo), t in zip(meta, starts):
+    add(vob, t, vo*0.98)
 
 # ---- duck music under speech -------------------------------------------------
 print("ducking + mastering…")
 env  = np.abs(vob)
 k    = np.ones(int(0.30*SR))/int(0.30*SR)
 mask = np.clip(np.convolve((env > 0.010).astype(np.float32), k, 'same')*2.2, 0, 1)
-bgm *= (1.0 - 0.66*mask)                                                  # ≈ −9.4 dB under speech
-sfx *= (1.0 - 0.50*mask)                                                  # ≈ −6.0 dB under speech
+bgm *= (1.0 - 0.80*mask)                                                  # ≈ −14 dB under speech (voice-first)
+sfx *= (1.0 - 0.60*mask)                                                  # ≈ −8  dB under speech
 
-mix = vob*1.0 + bgm*0.92 + sfx*0.85
+mix = vob*1.0 + bgm*0.55 + sfx*0.70                                       # music/sfx pulled well back
 mix /= max(1e-9, np.abs(mix).max()); mix *= 0.94
 wav = os.path.join(WORK, 'master.wav')
 from wave import open as wopen
@@ -764,6 +794,19 @@ subprocess.run([FF, '-y', '-v', 'error', '-i', wav,
 master_mp3 = os.path.join(ROOT, 'EP01_MASTER_13m58s.mp3')
 subprocess.run([FF, '-y', '-v', 'error', '-i', norm, '-b:a', '192k', master_mp3], check=True)
 print("master →", master_mp3)
+
+# ---- voice-only master (no music/sfx — clean narration option) --------------
+von = vob/max(1e-9, np.abs(vob).max())*0.94
+wav2 = os.path.join(WORK, 'voice.wav')
+with wopen(wav2, 'wb') as w:
+    w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR)
+    w.writeframes((np.clip(von, -1, 1)*32767).astype('<i2').tobytes())
+norm2 = os.path.join(WORK, 'voice_norm.wav')
+subprocess.run([FF, '-y', '-v', 'error', '-i', wav2,
+                '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11', '-ar', '44100', '-ac', '2', norm2], check=True)
+voice_mp3 = os.path.join(ROOT, 'EP01_VOICE_ONLY_13m58s.mp3')
+subprocess.run([FF, '-y', '-v', 'error', '-i', norm2, '-b:a', '192k', voice_mp3], check=True)
+print("voice-only →", voice_mp3)
 
 # ---- per-scene clips ---------------------------------------------------------
 print("rendering 66 scene clips…")
