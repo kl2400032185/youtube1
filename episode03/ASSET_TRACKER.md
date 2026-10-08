@@ -6,3 +6,5 @@
 - **Assembly recipe (locked):** tight flow everywhere; S19–S58 (ritual→meditation→vision) slot = max(blueprint design, VO+0.45s) so vision vistas/music breathe; other scenes VO+0.45s. Master floor >10:00 (projects ≈11:30). Gaps only under/after narration, never inside it.
 - Font: `assets/fonts/NotoSansTelugu.ttf` (end-card Telugu text at film build).
 - Pipeline: assemble_ep3.py ✅ · make_bgm_ep3.py ✅ (8 themes wired, vision anchors at S36/38/55/57/60). Masters: EP03_CLEAN_VOICE.mp3 11:14.2 · EP03_WITH_BGM.mp3 (8-theme ducked bed, -16 LUFS, verified 674.23s decode) · EP03_BGM_STEM.mp3 · scene_map_ep3.json ✅. Remaining: 68 keyframes → 68 keyframes → preview/final films (end card = 4 exact lines via PIL+NotoSansTelugu) → short (S34→S40 hook) → upload kit.
+
+Keyframes `assets/EP03_SNN.jpg` (10/turn): **S01–S10 ✅** · next S11–S20.
