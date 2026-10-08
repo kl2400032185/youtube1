@@ -455,7 +455,7 @@ S59 8 10 breath returns T8 dawn · S60 8 12 EYES OPEN clarity T8 dawn · S61 8 1
 
 ### SCENE 43 — LIGHT PASSES THROUGH HER
 **A.** The shimmering aurora veil gently trying to cover the golden rays — and the rays simply passing through it like sunlight through silk, the veil realizing its softness, VISION GRADE ethereal celestial gold, premium 2.5D cinematic anime, Indian mythological painting, ethereal glow, serene, 16:9, no text, no watermark
-**B.** NARRATION: "మాయ వెలుగును కప్పడానికి చూసింది — కానీ ఆ వెలుగు, జిన్నెటూ సులభంగా తననుంచి సాగిపోయింది."
+**B.** NARRATION: "మాయ వెలుగును కప్పడానికి చూసింది — కానీ ఆ వెలుగు జారుకుంటూ సులభంగా తననుంచి సాగిపోయింది."
 **C.** *(none)*
 **D.** Her power versus His light.
 **E.** Design 12s
