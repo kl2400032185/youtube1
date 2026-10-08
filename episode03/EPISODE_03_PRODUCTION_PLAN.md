@@ -185,7 +185,7 @@ S59 8 10 breath returns T8 dawn · S60 8 12 EYES OPEN clarity T8 dawn · S61 8 1
 
 ### SCENE 13 — DISCIPLES FOLLOW RESPECTFULLY
 **A.** Two young disciples in ochre dhotis following their elderly white-bearded guru at a respectful distance along the forest path, hands folded, morning light dappling through trees onto the trail, premium 2.5D cinematic anime, Indian mythological painting, volumetric light, 16:9, no text, no watermark
-**B.** NARRATION: "విద్యార్థులు మౌనంగా వెంటపడ్డారు — గురువు ఎక్కడికి నడిచినా, ఆ దారే ధ్యానస్థలి అనగానే ధ్యానస్థలి."
+**B.** NARRATION: "విద్యార్థులు మౌనంగా వెంటపడ్డారు — గురువు ఎక్కడికి నడిచినా, ఆ మార్గమే వారికి పాఠశాల అని నమ్ముతూ."
 **C.** *(none)*
 **D.** Devoted trailing.
 **E.** Design 9s
@@ -221,7 +221,7 @@ S59 8 10 breath returns T8 dawn · S60 8 12 EYES OPEN clarity T8 dawn · S61 8 1
 
 ### SCENE 17 — SUBTLE HUMOR #1 (asana rush)
 **A.** Gentle comedy: two young disciples in ochre dhotis both lunging for the same rolled straw asana mat at once, hands colliding mid-air, a puff of morning dust rising into the light, elderly guru politely unamused-amused in soft-focus background, premium 2.5D cinematic anime, Indian mythological painting, warm light, 16:9, no text, no watermark
-**B.** NARRATION: "గురువు 'ఆసనం' అంటుండగానే — విద్యార్థుల ఇద్దరి చేతులు ఒకేసారి ముందుకు చాపాయి. భక్తిలో పోటీ కూడా ఒక స్వభావం."
+**B.** NARRATION: "గురువు 'ఆసనం' అంటుండగానే — విద్యార్థుల ఇద్దరి చేతులు ఒకేసారి ఆ పొరలపై పడ్డాయి. భక్తిలో పోటీ కూడా ఒక స్వభావం."
 **C.** *(none)*
 **D.** Subtle family humor beat #1; warmth, never mockery.
 **E.** Design 10s
@@ -230,7 +230,7 @@ S59 8 10 breath returns T8 dawn · S60 8 12 EYES OPEN clarity T8 dawn · S61 8 1
 
 ### SCENE 18 — THE STONE SEAT
 **A.** A smooth flat river-stone at the water's edge, half in morning sun half in cool shadow, calm water kissing its base, a natural throne for meditation, premium 2.5D cinematic anime, Indian mythological painting, volumetric light, 16:9, no text, no watermark
-**B.** NARRATION: "చదపరని రాతిపై కూర్చున్నాడు — ఇక్కడ నీటి శబ్దం, గాలి వేగం, సూర్య కోణం… అన్నీ సరిగా ఉన్నాయి."
+**B.** NARRATION: "చదపురాతిపై కూర్చున్నాడు — ఇక్కడ నీటి శబ్దం, గాలి వేగం, సూర్య కోణం… అన్నీ సరిగా ఉన్నాయి."
 **C.** *(none)*
 **D.** The chosen place.
 **E.** Design 9s
