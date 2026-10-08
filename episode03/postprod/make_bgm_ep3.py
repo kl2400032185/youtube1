@@ -231,7 +231,7 @@ def P4(t0, t1, d):  # S35–41 · T4 THE LORD (Mohanakalyani)
     add(bgm, T(41), melody(MOHANAM, SA * 4, TE(41) - T(41), R, density=0.45, amp=0.05, kind='pluck'))  # petal cascade santoor
 
 def P5(t0, t1, d):  # S42–46 · T5 MAYA-VEIL (Bhairavi shimmer)
-    add(bgm, t0, melody(BHAIRAVI, SA * 2, d, R, density=0.22, amp=0.07, kind='flute', warm=False))
+    add(bgm, t0, melody(BHAIRAVI, SA * 2, d, R, density=0.22, amp=0.07, kind='flute'))
     add(bgm, t0, pad([hz(0), hz(1), hz(7)], d, 0.04, a_t=3.0, r_t=3.0))      # the shimmering minor-second veil
     for k in range(6):                                                         # reversed plucks = her backwards arrival
         add(bgm, T(42) + 1.0 + k * 1.6, rpluck(hz([0, 1, 7, 12, 1, 7][k], SA * 2), 1.1, 0.08, seed=42 + k))
@@ -275,7 +275,7 @@ def P7(t0, t1, d):  # S53–58 · T7 BHAKTI RIVER (Desh)
 def P8(t0, t1, d):  # S59–68 · T8 HOME / COMPOSITION (Mohanam)
     tanpura(bgm, t0, T(67), amp=0.042)
     add(bgm, t0, pad([hz(0), hz(7)], T(63) - t0, 0.05, a_t=2.0))
-    add(bgm, t0, melody(MOHANAM, SA * 2, T(64) - t0, R, density=0.35, amp=0.09, kind='flute', warm=True))
+    add(bgm, t0, melody(MOHANAM, SA * 2, T(64) - t0, R, density=0.35, amp=0.09, kind='flute'))
     motif_A(bgm, T(60) + 0.3, amp=0.16)                          # ★ eyes open — full cadence
     add(bgm, T(63) + 0.8, pluck(hz(9, SA * 2), 0.9, 0.10, bright=1.6, seed=63))     # humor #2, soft two-note
     add(bgm, T(63) + 1.7, pluck(hz(12, SA * 2), 0.9, 0.10, bright=1.6, seed=64))
