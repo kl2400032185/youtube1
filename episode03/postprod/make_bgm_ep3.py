@@ -311,7 +311,7 @@ w = int(0.09 * SR); env = np.convolve(env, np.ones(w) / w, 'same')
 mask = np.clip(env / 0.06, 0, 1)
 DUCK = 0.72
 gain = 1.0 - DUCK * mask
-bed = bed * (gain * 0.45)
+bed = bgm[:L].copy(); bed *= gain * 0.45
 mix = voice + bed
 peak = np.abs(mix).max()
 if peak > 0.89: mix *= 0.89 / peak
@@ -322,7 +322,7 @@ def write_mp3(sig, out, q='2', norm=True):
                     '-i', '-', '-c:a', 'pcm_s16le', wav], input=sig.tobytes(), check=True)
     args = [FF, '-y', '-v', 'error', '-i', wav]
     if norm: args += ['-af', 'loudnorm=I=-16:TP=-1.5:LRA=11']
-    args += ['-c:a', 'libmp3lame', '-q:a', q, out]
+    args += ['-ar','44100','-c:a', 'libmp3lame', '-q:a', q, out]
     subprocess.run(args, check=True)
 
 write_mp3(mix, f"{ROOT}/EP03_WITH_BGM.mp3")
