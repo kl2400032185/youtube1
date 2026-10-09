@@ -9,7 +9,7 @@
 ## PROGRESS
 - [x] Blueprint call sheet (56 scenes w/ camera assignments)
 - [x] Text extraction JSON verified
-- [ ] VO: **7/40 ✅ (S01–S05,S07,S08)** · batch2 = S11,S13,S14,S15,S16,S17,S18,S19,S20,S21 (10 clips) · batch3 = S22..S31 · batch4 = S32..S44 · batch5 = S46..S55 (end S55 long)
+- [ ] VO: **17/40 ✅ (thru S21)** · batch3 = S22,S24,S25,S28,S30,S31 + S32,S34,S35,S37,S38 (10) · batch4 = S39..S44,S46,S47,S49,S51,S52 · batch5 = S55 · batch4 = S32..S44 · batch5 = S46..S55 (end S55 long)
 - [ ] Assembly (target ~7.0–7.9 min, slot=max(design, VO+0.45))
 - [ ] Music M1–M10 plan in blueprint (veena/flute/birds/river beds)
 - [ ] Keyframes 56 (10/turn)
