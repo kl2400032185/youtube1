@@ -12,7 +12,7 @@ Blueprint: vo_script/EP05_scene_texts.json — 40 scenes, 37 speaking + 3 visual
 ## Keyframes
 | S01 ridge walk+city glow | S02 throne portrait | S03 blessing subjects | S04 hunt |
 | S05 thirsty at ashrama | S06 HUMOR bush-guard | S07 Shamika samadhi | S08 water-ask silence |
-| S09 pride flicker close |
+| S09 pride flicker close |\n| S10 the mistake | S11 turning away | S12 pond ripple | S13 whisper | S14 rage close | S15 water touch | S16 CURSE golden-7 | S17 father wakes | S18 rebuke | S19 runner |
 
 ## Character locks (image prompts — reuse in Flow)
 - PARIKSHIT: noble young Indian king early thirties, sharp dignified face, determined eyes, golden jewel-studded crown, pearl necklaces, maroon + gold royal silks, bow/quiver in forest
