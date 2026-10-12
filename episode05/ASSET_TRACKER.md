@@ -22,3 +22,8 @@ Blueprint: vo_script/EP05_scene_texts.json — 40 scenes, 37 speaking + 3 visual
 - JANAMEJAYA: boy prince ~10, small golden crown, blue silk
 - SHUKA/VYASA: inherit EP4 locks (episode04/postprod/make_flow_kit_ep4.py)
 - Style: premium 2.5D cinematic anime, Indian mythological painting, volumetric golden divine light, 16:9, family-friendly, no text
+
+## MULTILINGUAL AUDIO (user directive: audio-only HI+EN, no images)
+- [x] HI script 40 slots / EN script 40 slots (commit 9c27c35)
+- [ ] HI VO 5/37 — S01-S05 done | [ ] EN VO 5/37 — S01-S05 done
+- [ ] ENGINES: assemble cloned (assemble_ep5_lang.py) | BGM PORT PENDING — clone make_bgm_ep4_lang.py -> ep5, retarget theme table to EP5 10-cue map (C-ROYAL Hamsadhwani S02-03 / C-HUNT tabla S04-06 / C-THIRST Shivaranjani S05 / C-SAMADHI drone S07-09 / C-CURSE Bhairavi S10-20 / C-FATHER Kalyani S17-22 / C-RENOUNCE Mohanam S22-24 / C-GANGA Desh S23-30 / C-SHUKA Mohanakalyani S29-37 / C-END Mohanam+bell S37-40); duck .80/bed .38
