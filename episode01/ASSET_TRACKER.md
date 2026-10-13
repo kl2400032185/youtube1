@@ -55,3 +55,8 @@ BGM themes T1-T5 (Plan S11) · per-scene SFX (Scene-E) · image-to-video clips (
 - [x] Scripts HI+EN 66 scenes (texts from plan MD, durations CSV 13:58) b694569
 - [ ] EN VO 5/66 (S01-05) | [ ] HI VO 5/66 (S01-05)
 - engines at finals: clone lang assemble/bgm pattern from episode04 (assemble EP1_clean_voice_<L> + scene_map_ep1_<L>.json; BGM engine EP1 has bgm_mix.py-style own bed — reuse EP01_BGM stem strategy or build small cue-mix; duck .80/bed .38)
+
+### DUB FINALS (this session)
+- ENGLISH: EP01_WITH_BGM_EN.mp3 14.3m RMS -21.4 (clean voice 14:21) + scene_map_ep1_en.json
+- HINDI: EP01_WITH_BGM_HI.mp3 15.8m RMS -20.2 (clean voice 15:48) + scene_map_ep1_hi.json
+- engine: postprod/dub_ep1_lang.py (block-split -> 66-slot assemble -> soft-bed duck .80/bed .38 mix)
