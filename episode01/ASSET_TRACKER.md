@@ -50,3 +50,8 @@ BGM themes T1-T5 (Plan S11) · per-scene SFX (Scene-E) · image-to-video clips (
 - `audio_clean/EP01_Snn.mp3` — 66 per-scene clean clips on the EXPANDED scene windows
 - `EP01_PREVIEW_CUT.mp4` (720p) / `EP01_PREVIEW_CUT_540p.mp4` — rebuilt on the expanded timeline so picture & voice match 1:1
 - Removed from default: SFX layer, heavy BGM, all time-fits/atempo. (v3 cinematic mix still in repo history: EP01_MASTER_13m58s.mp3, audio_final/)
+
+## MULTILINGUAL DUB (user: order-wise EP1 first, EN+HI full audio)
+- [x] Scripts HI+EN 66 scenes (texts from plan MD, durations CSV 13:58) b694569
+- [ ] EN VO 5/66 (S01-05) | [ ] HI VO 5/66 (S01-05)
+- engines at finals: clone lang assemble/bgm pattern from episode04 (assemble EP1_clean_voice_<L> + scene_map_ep1_<L>.json; BGM engine EP1 has bgm_mix.py-style own bed — reuse EP01_BGM stem strategy or build small cue-mix; duck .80/bed .38)
