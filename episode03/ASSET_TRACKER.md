@@ -8,3 +8,8 @@
 - Pipeline: assemble_ep3.py ✅ · make_bgm_ep3.py ✅ (8 themes wired, vision anchors at S36/38/55/57/60). Masters: EP03_CLEAN_VOICE.mp3 11:14.2 · EP03_WITH_BGM.mp3 (8-theme ducked bed, -16 LUFS, verified 674.23s decode) · EP03_BGM_STEM.mp3 · scene_map_ep3.json ✅. Remaining: 68 keyframes → 68 keyframes → preview/final films (end card = 4 exact lines via PIL+NotoSansTelugu) → short (S34→S40 hook) → upload kit.
 
 Keyframes `assets/EP03_SNN.jpg` (10/turn): **ALL S01–S68 ✅ (COMPLETE)**
+
+### DUB FINALS (this session, block-split pipeline dub_ep3_lang.py)
+- ENGLISH: EP03_WITH_BGM_EN.mp3 11.2m RMS -20.6 | clean voice 11:13.9 (== design) + scene_map_ep3_en.json
+- HINDI: EP03_WITH_BGM_HI.mp3 11.3m RMS -19.5 | clean voice 11:18.3 + scene_map_ep3_hi.json
+- bed: EP03_BGM_STEM (original raga engine stem), duck .80/bed .38
