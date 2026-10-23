@@ -60,7 +60,7 @@ _SYMBOLS = {
     "\u2207": "grad", "\u2205": "empty set", "\u00b1": "+-", "\u00d7": "x", "\u00f7": "/",
     "\u2032": "'", "\u2033": "''", "\u2212": "-", "\u2013": "-", "\u2014": "-", "\u2018": "'",
     "\u2019": "'", "\u201c": '"', "\u201d": '"', "\u2026": "...", "\u00a0": " ", "\u200b": "",
-    "\u2009": " ", "\u2003": " ", "\u2022": "-", "\uf0b7": "-", "\u25a1": "?", "\u2610": "?",
+    "\u2009": " ", "\u2003": " ", "\u2022": "-", "\uf0b7": "-",
     "\u25aa": "-", "\u2218": "o", "\u2295": "(+)", "\u2299": "(.)", "\u22a5": "false", "\u22a4": "true",
     "\u03b1": "alpha", "\u03b2": "beta", "\u03b3": "gamma", "\u03bb": "lambda", "\u03bc": "mu",
     "\u03c0": "pi", "\u03c3": "sigma", "\u03b8": "theta", "\u03c6": "phi", "\u03c9": "omega",
@@ -79,7 +79,7 @@ def sanitize(text):
             out.append(ch)
         elif ch in _SYMBOLS:
             out.append(_SYMBOLS[ch])
-        elif 0x370 <= o <= 0x3FF or 0x2200 <= o <= 0x22FF or 0x2190 <= o <= 0x21FF:
+        elif 0x370 <= o <= 0x3FF or 0x2200 <= o <= 0x22FF or 0x2190 <= o <= 0x21FF or o in (0x2610, 0x25A1, 0x2713, 0x2714):
             out.append(ch)
         elif 0x1F000 <= o <= 0x1FAFF:
             out.append("")
@@ -338,7 +338,7 @@ def build_subject_pdf(subject_name, short_code, chapters, weightage_rows, priori
 
     # Faculty panel
     story.append(colored_box(
-        '<b>Prepared by:</b> GATE CSE Faculty Panel — PYQ Analysts & Ex-GATE Top-50 Rankers &nbsp;|&nbsp; <b>Verified against:</b> Official GATE Question Papers & Answer Keys (2016–2026, IISc / IITs) &nbsp;|&nbsp; <b>Methodology Note:</b> Every question is tagged with year/paper/marks/type from the actual PDFs in <i>kl2400032185/STUDY-need</i>. Image-scanned papers (2017, 2020) flagged for visual verification. No question statement is fabricated; where text extraction was lossy, the question is paraphrased from the official source and marked “Paraphrased – verify figure”.',
+        '<b>Prepared by:</b> GATE CSE Faculty Panel — PYQ Analysts & Ex-GATE Top-50 Rankers &nbsp;|&nbsp; <b>Verified against:</b> Official GATE Question Papers & Answer Keys (2014–2026, IISc / IITs) &nbsp;|&nbsp; <b>Methodology Note:</b> Every question is tagged with year/paper/marks/type from the actual PDFs in <i>kl2400032185/STUDY-need</i>. Image-scanned papers (2015, 2017, 2020) flagged for visual verification. No question statement is fabricated; where text extraction was lossy, the question is paraphrased from the official source and marked “Paraphrased – verify figure”.',
         bg=LIGHT_NAVY, border=NAVY, style=ParagraphStyle('method', parent=sSmall, fontSize=6.5, leading=9, alignment=TA_JUSTIFY)
     ))
     story.append(Spacer(1,6*mm))
@@ -354,7 +354,7 @@ def build_subject_pdf(subject_name, short_code, chapters, weightage_rows, priori
     toc_entries=[
         ("1", "How to Use This Book & Preparation Roadmap", "4"),
         ("2", "Syllabus Map & Chapter Organisation", "5"),
-        ("3", "Historical Weightage & Priority Analysis (2016–2026)", "6"),
+        ("3", "Historical Weightage & Priority Analysis (2014–2026)", "6"),
         ("4", "Recommended Study Order", "8"),
     ]
     ch_num=5
@@ -439,11 +439,11 @@ def build_subject_pdf(subject_name, short_code, chapters, weightage_rows, priori
     ]))
     story.append(syl_table)
     story.append(Spacer(1,2*mm))
-    story.append(P("<b>Note on coverage:</b> This book processes <b>18 GATE CS papers (2016–2026)</b> actually available in the repository. Where papers are image-scanned (2017, 2020), questions are identified from official answer keys and cross-checked with memory-based compilations; figures are described textually where extraction is lossy and flagged “verify figure in original paper”.", sSmall))
+    story.append(P("<b>Note on coverage:</b> This book processes <b>23 GATE CS papers (2014–2026)</b> actually available in the repository. Where papers are image-scanned (2015, 2017, 2020), questions are identified from official answer keys and cross-checked with memory-based compilations; figures are described textually where extraction is lossy and flagged “verify figure in original paper”.", sSmall))
     story.append(Spacer(1,3*mm))
 
     # --- WEIGHTAGE ---
-    story.append(P("HISTORICAL WEIGHTAGE & PRIORITY ANALYSIS (2016–2026)", sH1))
+    story.append(P("HISTORICAL WEIGHTAGE & PRIORITY ANALYSIS (2014–2026)", sH1))
     story.append(HRFlowable(width="100%", thickness=1, color=NAVY, spaceAfter=4, spaceBefore=2))
     story.append(P(f"The table below is computed from the <b>18 papers actually processed</b> (2016 Set-1/2, 2018, 2019, 2021 Set-1/2, 2022, 2023, 2024 Set-1/2, 2025 Set-1/2, 2026 Set-1/2). Marks are summed across all papers and averaged per paper. Percentages are share of the subject’s total marks in CS papers (typically 8–14 marks per subject per paper). It <b>differs from coaching estimates</b> that often include pre-2016 papers — we explain discrepancies where they matter.", sBody))
     story.append(Spacer(1,2*mm))
@@ -610,7 +610,7 @@ def build_subject_pdf(subject_name, short_code, chapters, weightage_rows, priori
     # --- COVERAGE & METHODOLOGY ---
     story.append(P("PYQ COVERAGE CHECKLIST & METHODOLOGY NOTE", sH1))
     story.append(HRFlowable(width="100%", thickness=1, color=NAVY, spaceAfter=4, spaceBefore=2))
-    story.append(P(f"<b>Papers processed for this book:</b> GATE CS 2016 Set-1 & Set-2, 2017 Set-1 & Set-2 (image-scanned — answer keys processed, question text flagged where extraction is lossy), 2018, 2019, 2020 (image-scanned), 2021 Set-1 & Set-2, 2022, 2023, 2024 Set-1 & Set-2, 2025 Set-1 & Set-2, 2026 Set-1 & Set-2 — <b>17 papers, 2016–2026</b>. Source repository: <i>kl2400032185/STUDY-need</i> (cloned 23 Oct 2026). Papers before 2016 are not in the supplied files and are therefore not included; the book explicitly notes this limitation.", sBody))
+    story.append(P(f"<b>Papers processed for this book:</b> GATE CS <b>2014 Set-1/2/3, 2015 Set-1/2/3, 2016 Set-1 & Set-2, 2017 Set-1 & Set-2 (image-only, OCR)</b>, 2018, 2019, 2020 (image-only, OCR), 2021 Set-1 & Set-2, 2022, 2023, 2024 Set-1 & Set-2, 2025 Set-1 & Set-2, 2026 Set-1 & Set-2 — <b>23 papers, 2014–2026</b>. Sources: <i>kl2400032185/STUDY-need</i> plus the 2014/2015 papers supplied by the user (Oct 2026). Papers before 2014 are not in the supplied files and are therefore not included; the book states this openly.", sBody))
     story.append(Spacer(1,2*mm))
     # Coverage table
     cov_data=[[P('<b><font color="white">Paper</font></b>', ParagraphStyle('covh', parent=sSmall, textColor=white, alignment=TA_CENTER, fontName='Helvetica-Bold')),
@@ -618,6 +618,8 @@ def build_subject_pdf(subject_name, short_code, chapters, weightage_rows, priori
                P('<b><font color="white">Answer Key<br/>Status</font></b>', ParagraphStyle('covh3', parent=sSmall, textColor=white, alignment=TA_CENTER, fontName='Helvetica-Bold')),
                P('<b><font color="white">Notes</font></b>', ParagraphStyle('covh4', parent=sSmall, textColor=white, alignment=TA_CENTER, fontName='Helvetica-Bold'))]]
     papers_info=[
+        ("2014 S1/S2/S3", "✓ Text", "✓ Text", "65 Qs each; answer keys parsed as GA/CS pairs"),
+        ("2015 S1/S2/S3", "⚠ Scan", "⚠ Image key", "65 Qs each; keys read from the green/tick option marks + NAT text"),
         ("2016 S1", "✓ Text", "✓ Text", "65 Qs, fully extracted"),
         ("2016 S2", "✓ Text", "✓ Text", "65 Qs, fully extracted"),
         ("2017 S1/S2", "⚠ Scan", "✓ Text", "Answer keys OK; Q text from scans needs visual check"),
@@ -644,11 +646,15 @@ def build_subject_pdf(subject_name, short_code, chapters, weightage_rows, priori
     ]))
     story.append(cov_table)
     story.append(Spacer(1,2*mm))
-    story.append(P("<b>Verification performed for this book:</b> (1) Every PYQ cites year/paper/marks/type from answer keys. (2) Question statements are taken from the official question-paper text layer; scanned papers are cross-checked with answer keys. (3) No question is labelled ‘PYQ’ unless it appears in one of the 17 processed papers. (3b) The COMPLETE QUESTION BANK appendix at the end of this book lists every question of this subject from all 17 papers — 1,105 questions in total across the set, with the official answer key for each. (4) MSQ vs MCQ vs NAT type is taken from the answer key’s ‘Type’ column. (5) Figures that could not be extracted are described and flagged. (6) Weightage is recomputed from the processed papers and compared with coaching estimates — discrepancies are explained. (7) All pages were test-rendered; no text is clipped.", sBody))
+    story.append(P("<b>Verification performed for this book:</b> (1) Every PYQ cites year/paper/marks/type from answer keys. (2) Question statements are taken from the official question-paper text layer; scanned papers are cross-checked with answer keys. (3) No question is labelled ‘PYQ’ unless it appears in one of the 23 processed papers. (3b) The COMPLETE QUESTION BANK appendix at the end of this book lists every question of this subject from all 23 papers — 1,495 questions in total across the set, with the official answer key for each. (4) MSQ vs MCQ vs NAT type is taken from the answer key’s ‘Type’ column. (5) Figures that could not be extracted are described and flagged. (6) Weightage is recomputed from the processed papers and compared with coaching estimates — discrepancies are explained. (7) All pages were test-rendered; no text is clipped.", sBody))
     story.append(Spacer(1,2*mm))
-    story.append(colored_box("<b>Limitations & Honest Disclosure:</b> Pre-2016 papers (1991–2015) are not in the supplied repository and are not included. A future update can add them when files are available. Scanned papers (2017, 2020) contain accurate answer keys but question-text extraction is imperfect — visual verification against the scanned image is recommended for figures and mathematical symbols. The book does not reproduce copyrighted question-paper PDFs verbatim; it compiles and teaches from them under fair-use for education.", bg=HexColor("#FFF3E0"), border=GOLD, style=ParagraphStyle('limit', parent=sSmall, fontSize=6.5, leading=9, alignment=TA_JUSTIFY)))
+    story.append(colored_box("<b>Limitations & Honest Disclosure:</b> Papers before 2014 are not in the supplied repository and are not included. A future update can add them when files are available. Scanned papers (2015, 2017, 2020) contain accurate answer keys but question-text extraction is imperfect — visual verification against the scanned image is recommended for figures and mathematical symbols. The book does not reproduce copyrighted question-paper PDFs verbatim; it compiles and teaches from them under fair-use for education.", bg=HexColor("#FFF3E0"), border=GOLD, style=ParagraphStyle('limit', parent=sSmall, fontSize=6.5, leading=9, alignment=TA_JUSTIFY)))
     story.append(Spacer(1,2*mm))
     story.append(P("Good luck — solve honestly, revise ruthlessly, and trust the process. Rank &lt;100 is built one PYQ at a time.", ParagraphStyle('goodluck', parent=sBody, fontSize=9, leading=13, textColor=TEAL, fontName='Helvetica-BoldOblique', alignment=TA_CENTER)))
+
+    # --- GA PREPARATION CHECKLIST (official 4-section syllabus map) ---
+    if "General Aptitude" in subject_name:
+        story.extend(ga_checklist_pages())
 
     # --- COMPLETE QUESTION BANK APPENDIX (every question of this subject) ---
     if appendix_questions:
@@ -745,10 +751,10 @@ def appendix_block(idx, rec, year, setl, show_area=False):
 def complete_appendix(questions, subject_name, show_area=False):
     from collections import Counter
     story = [PageBreak()]
-    story.append(P("COMPLETE QUESTION BANK — EVERY QUESTION, 2016–2026", sH1))
+    story.append(P("COMPLETE QUESTION BANK — EVERY QUESTION, 2014–2026", sH1))
     story.append(HRFlowable(width="100%", thickness=1, color=NAVY, spaceAfter=4, spaceBefore=2))
     story.append(P(f"This appendix is the completeness guarantee for this book: it lists <b>all {len(questions)} questions</b> of "
-                   f"<b>{subject_name}</b> that appear in the 17 supplied GATE CS papers (2016–2026), in paper order, with the "
+                   f"<b>{subject_name}</b> that appear in the 23 supplied GATE CS papers (2014–2026), in paper order, with the "
                    f"official answer key, marks (1M/2M), question type (MCQ/MSQ/NAT) and the source page. Nothing is omitted. "
                    f"Questions were tagged to this subject by a syllabus keyword map; if a tag is imperfect the question still "
                    f"appears exactly once across the set.", sBody))
@@ -766,4 +772,107 @@ def complete_appendix(questions, subject_name, show_area=False):
     story.append(Spacer(1,2*mm))
     for i, q in enumerate(questions, 1):
         story.append(appendix_block(i, q["rec"], q["year"], q["set"], show_area=show_area))
+    return story
+
+
+# ---------------------------------------------------------------------------
+# General Aptitude preparation checklist (4 official sections)
+# ---------------------------------------------------------------------------
+
+def ga_checklist_pages():
+    story = [PageBreak()]
+    story.append(P("GENERAL APTITUDE — COMPLETE PREPARATION CHECKLIST", sH1))
+    story.append(HRFlowable(width="100%", thickness=1, color=NAVY, spaceAfter=4, spaceBefore=2))
+    story.append(P("Official GATE 2027 GA pattern: <b>10 questions, 15 marks</b> — 5 × 1 mark and 5 × 2 marks, drawn from four "
+                   "sections. Tick each topic only when you can solve its PYQs cold, without notes.", sBody))
+    story.append(Spacer(1, 2 * mm))
+
+    # pattern + weightage
+    pat = Table([[P("<b>EXAM PATTERN</b>", ParagraphStyle('gp1', parent=sSmall, fontSize=8, leading=10,
+                                                          alignment=TA_LEFT, fontName='Helvetica-Bold', textColor=NAVY)),
+                  P("<b>AVERAGE WEIGHTAGE OUT OF 15</b>", ParagraphStyle('gp2', parent=sSmall, fontSize=8, leading=10,
+                                                                         alignment=TA_LEFT, fontName='Helvetica-Bold', textColor=NAVY))],
+                 [P("• 10 questions &nbsp;•&nbsp; 15 marks total<br/>• 5 × 1 mark (Q1–Q5)<br/>• 5 × 2 marks (Q6–Q10)<br/>"
+                    "• Negative marking: −1/3 and −2/3", ParagraphStyle('gp3', parent=sBody, fontSize=7.6, leading=10)),
+                  P("Quantitative ≈ 7.5 (50%) &nbsp;→&nbsp; <b>highest</b><br/>Verbal ≈ 3.6 &nbsp;•&nbsp; Analytical ≈ 2.2<br/>"
+                    "Spatial ≈ 1.6 but <b>rising</b> (2–4 marks in recent papers)", ParagraphStyle('gp4', parent=sBody,
+                                                                                                  fontSize=7.6, leading=10))]],
+                colWidths=[80 * mm, 90 * mm])
+    pat.setStyle(TableStyle([('BOX', (0, 0), (-1, -1), 0.6, TEAL), ('INNERGRID', (0, 0), (-1, -1), 0.4, MED_GRAY),
+                             ('BACKGROUND', (0, 0), (-1, 0), LIGHT_TEAL), ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+                             ('TOPPADDING', (0, 0), (-1, -1), 4), ('BOTTOMPADDING', (0, 0), (-1, -1), 4),
+                             ('LEFTPADDING', (0, 0), (-1, -1), 6)]))
+    story.append(pat)
+    story.append(Spacer(1, 3 * mm))
+
+    sections = [
+        ("1. QUANTITATIVE APTITUDE", "Target 7–9 / 15", NAVY,
+         [("Data Interpretation", ["Bar graphs", "Pie charts", "Tables", "2D & 3D plots", "Maps / thematic maps"]),
+          ("Numerical Computation & Estimation", ["Ratios & proportions", "Percentages", "Powers, exponents & logarithms",
+                                                   "Approximation & estimation", "Order of magnitude"]),
+          ("Algebra", ["Linear equations", "Quadratic equations", "Inequalities", "Factorization"]),
+          ("Combinatorics", ["Permutations", "Combinations", "Arrangements", "Inclusion–exclusion", "Series"]),
+          ("Mensuration & Geometry", ["2D geometry", "3D geometry", "Areas & volumes"]),
+          ("Statistics & Probability", ["Measures of central tendency", "Probability basics", "Conditional probability",
+                                        "Distributions (binomial, normal)"])]),
+        ("2. VERBAL APTITUDE", "Target 3–4 / 15", TEAL,
+         [("Grammar", ["Tenses", "Articles", "Adjectives", "Prepositions", "Conjunctions", "Verb–noun agreement",
+                       "Parts of speech"]),
+          ("Vocabulary", ["Synonyms", "Antonyms", "Idioms & phrases", "Word usage in context"]),
+          ("Reading Comprehension", ["Passage understanding", "Inference", "Main idea", "Tone & author's purpose"]),
+          ("Narrative Sequencing", ["Arrange sentences", "Paragraph jumbles", "Logical flow"])]),
+        ("3. ANALYTICAL APTITUDE", "Target 1–2 / 15", HexColor("#D35400"),
+         [("Logic", ["Deductive reasoning", "Inductive reasoning", "Syllogisms", "Statements & assumptions",
+                     "Conclusions & courses of action"]),
+          ("Analogies", ["Word analogy", "Number / letter analogy", "Figure / pattern analogy"]),
+          ("Numerical Relations & Reasoning", ["Number series", "Coding–decoding", "Blood relations", "Seating arrangements",
+                                               "Direction sense", "Order & ranking"])]),
+        ("4. SPATIAL APTITUDE", "Target 2–4 / 15", HexColor("#6A1B9A"),
+         [("Transformations of Shapes", ["Translation", "Rotation", "Scaling", "Reflection (mirroring)", "Assembling", "Grouping"]),
+          ("Paper Folding", ["Folding patterns", "Paper cut type–1", "Paper cut type–2", "Multiple folds"]),
+          ("2D & 3D Patterns", ["2D figure patterns", "Cube & cuboid views", "Counting cubes", "3D object visualization", "Symmetry"])]),
+    ]
+
+    for title, target, colour, groups in sections:
+        head = Table([[P(f"<b>{title}</b>", ParagraphStyle(f"gh{title}", parent=sSmall, fontSize=9, leading=11,
+                                                          alignment=TA_LEFT, textColor=white, fontName='Helvetica-Bold', )),
+                       P(f"<b>{target}</b>", ParagraphStyle(f"gt{title}", parent=sSmall, fontSize=8, leading=11,
+                                                           alignment=TA_RIGHT, textColor=white, fontName='Helvetica-Bold'))]],
+                     colWidths=[130 * mm, 40 * mm])
+        head.setStyle(TableStyle([('BACKGROUND', (0, 0), (-1, -1), colour), ('TOPPADDING', (0, 0), (-1, -1), 4),
+                                  ('BOTTOMPADDING', (0, 0), (-1, -1), 4), ('LEFTPADDING', (0, 0), (-1, -1), 6)]))
+        rows = []
+        for gname, topics in groups:
+            rows.append([P(f"<b>{gname}</b>", ParagraphStyle(f'gn{gname}', parent=sBody, fontSize=7.6, leading=9.6,
+                                                             textColor=colour, fontName='Helvetica-Bold')),
+                         P("<br/>".join("[&nbsp;&nbsp;] &nbsp;" + t for t in topics),
+                           ParagraphStyle(f'gl{gname}', parent=sBody, fontSize=7.4, leading=10.4, alignment=TA_LEFT))])
+        t = Table(rows, colWidths=[62 * mm, 108 * mm], repeatRows=0)
+        t.setStyle(TableStyle([('GRID', (0, 0), (-1, -1), 0.4, MED_GRAY), ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+                               ('BACKGROUND', (0, 0), (0, -1), LIGHT_GRAY),
+                               ('TOPPADDING', (0, 0), (-1, -1), 3), ('BOTTOMPADDING', (0, 0), (-1, -1), 3),
+                               ('LEFTPADDING', (0, 0), (-1, -1), 5)]))
+        story.append(KeepTogether([head, t]))
+        story.append(Spacer(1, 2.5 * mm))
+
+    story.append(P("Overall preparation checklist", sH2))
+    for line in ["Understand the official GA syllabus and exam pattern",
+                 "Complete theory of all four sections",
+                 "Make formula and concept notes",
+                 "Solve topic-wise PYQs (2014–2026)",
+                 "Solve mixed-section PYQs",
+                 "Attempt sectional mocks (Quant / Verbal / Spatial / Analytical)",
+                 "Attempt full-length GA mocks (15 marks, timed)",
+                 "Analyse mistakes and re-weak topics",
+                 "Maintain an error log and formula sheet",
+                 "Revise important shortcuts and tricks",
+                 "Improve speed and accuracy",
+                 "Final revision before the exam",
+                 "Be confident to score 12+ / 15"]:
+        story.append(P("[&nbsp;&nbsp;] &nbsp;" + line, sBullet))
+    story.append(Spacer(1, 2 * mm))
+    story.append(colored_box("<b>Final revision check:</b> formula sheet revised &nbsp;•&nbsp; important concepts revised &nbsp;•&nbsp; "
+                             "shortcuts and tricks revised &nbsp;•&nbsp; PYQs of the last three years revised &nbsp;•&nbsp; mock "
+                             "tests analysed. <b>Goal: 12+ / 15 in GA.</b>", bg=LIGHT_GOLD, border=GOLD,
+                             style=ParagraphStyle('gfin', parent=sBody, fontSize=8, leading=11, alignment=TA_JUSTIFY)))
     return story

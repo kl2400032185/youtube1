@@ -45,6 +45,97 @@ def _ga2016(bs):
 OVERRIDES = {"GATE_2016_CS_Set-1": _ga2016}
 
 # ------------------------------------------------------------------ alignment
+# The three 2015 papers were re-typeset from a shuffled source: their printed Q.n
+# labels do not follow the official numbering.  For those we match stems to the
+# answer-key question texts (content alignment) instead of trusting the labels.
+KEY_CACHE = DATA / "ocr_keys_cache2.json"
+
+
+def _words(t):
+    t = repair_glued(t)
+    return set(re.findall(r'[a-z0-9]{3,}', t.lower()))
+
+
+def _grams(t, n=4):
+    s = re.sub(r'[^a-z0-9]', '', t.lower())
+    return set(s[i:i + n] for i in range(len(s) - n + 1))
+
+
+def key_chunks(prefix):
+    """Question text of each answer-key entry, keyed by official question number."""
+    if not KEY_CACHE.exists():
+        return {}
+    cache = json.loads(KEY_CACHE.read_text())
+    pref = f"/tmp/STUDY-need/{prefix}_Answer_Key.pdf"
+    pages = sorted([k for k in cache if k.startswith(pref)], key=lambda k: int(k.split(":")[1]))
+    seq = []
+    for k in pages:
+        for t, _x, _y, _y1 in cache[k]["lines"]:
+            m = re.search(r"Question\s*Number\s*:?\s*(\d{1,2})", t, re.I)
+            if m:
+                seq.append({"qno": int(m.group(1)), "txt": []})
+            elif seq and not re.search(r"Correct\s*Answer", t, re.I) and not re.match(r'^[1-4]\s*[.)]', t.strip()):
+                seq[-1]["txt"].append(t)
+    out = {}
+    for c in seq:
+        out.setdefault(c["qno"], " ".join(c["txt"]))
+    return out
+
+
+def _cos(a, b):
+    if not a or not b:
+        return 0.0
+    return len(a & b) / (len(a) * len(b)) ** 0.5
+
+
+def content_align(prefix, blocks, n=65):
+    """Map blocks to official question numbers by text similarity; returns n slots."""
+    ch = key_chunks(prefix)
+    cg = {q: _grams(t) for q, t in ch.items()}
+    cw = {q: _words(t) for q, t in ch.items()}
+    bw = [(_words(b["text"]), _grams(b["text"])) for b in blocks]
+    S = [[_cos(bw[i][0], cw.get(q, set())) + _cos(bw[i][1], cg.get(q, set()))
+          for q in range(1, n + 1)] for i in range(len(blocks))]
+    pairs = sorted(((S[i][j], i, j) for i in range(len(blocks)) for j in range(n)), reverse=True)
+    b2q, q2b = {}, {}
+    for s, i, j in pairs:
+        if s <= 0:
+            break
+        if i in b2q or (j + 1) in q2b:
+            continue
+        b2q[i] = j + 1
+        q2b[j + 1] = i
+    # local search: greedily improve total similarity by swapping assignments
+    improved = True
+    while improved:
+        improved = False
+        for i in list(b2q):
+            for i2 in list(b2q):
+                if i >= i2:
+                    continue
+                j, j2 = b2q[i], b2q[i2]
+                if S[i][j2 - 1] + S[i2][j - 1] > S[i][j - 1] + S[i2][j2 - 1] + 1e-9:
+                    b2q[i], b2q[i2] = j2, j
+                    improved = True
+    # complete the bijection: every leftover block takes the best free slot, so no
+    # OCR-recovered stem is thrown away just because its question text is garbled
+    free_blocks = [i for i in range(len(blocks)) if i not in b2q]
+    free_keys = [q for q in range(1, n + 1) if q not in q2b]
+    while free_blocks and free_keys:
+        best = max(((S[i][j - 1], i, j) for i in free_blocks for j in free_keys))
+        _, i, j = best
+        b2q[i] = j
+        free_blocks.remove(i)
+        free_keys.remove(j)
+    slots = [None] * n
+    for i, q in b2q.items():
+        slots[q - 1] = blocks[i]
+    return slots
+
+
+SEQUENTIAL = {"GATE_2015_CS_Set-1", "GATE_2015_CS_Set-2", "GATE_2015_CS_Set-3"}
+
+
 def expected_qnos(blocks):
     q = [b["qno"] for b in blocks]
     if len(q) > 55 and max(q) >= 60:
@@ -63,7 +154,7 @@ def align(blocks, expected):
             bi += 1; continue
         if b["qno"] == exp:
             out[ei] = b; bi += 1; ei += 1; continue
-        found = next((k for k in range(bi + 1, min(bi + 4, len(blocks))) if blocks[k]["qno"] == exp), None)
+        found = next((k for k in range(bi + 1, min(bi + 8, len(blocks))) if blocks[k]["qno"] == exp), None)
         if found is not None:
             bi = found; continue
         ei += 1
@@ -197,8 +288,11 @@ def classify(text):
             return s, best
     return max(scores, key=scores.get), best
 
+# Hand-recovered stems for questions whose text the OCR dropped (verified line by line)
+STEM_FIX = json.loads((DATA / "stem_overrides.json").read_text()) if (DATA / "stem_overrides.json").exists() else {}
+
 # Manual labels for the zero-score questions (reviewed one by one)
-MANUAL = ['DM', 'PDS', 'CN', 'DM', 'DM', 'DBMS', 'EM-LA', 'DL', 'DL', 'TOC', 'DM', 'DL', 'ALGO', 'TOC', 'DM', 'DM', 'DM', 'DL', 'ALGO', 'DL', 'EM-LA', 'ALGO', 'DL', 'DM', 'EM-CALC', 'EM-CALC']
+MANUAL_KEYED = json.loads((DATA / "manual_labels.json").read_text())
 
 # ------------------------------------------------------------------ build
 _TAIL_JUNK = [
@@ -209,6 +303,17 @@ _TAIL_JUNK = [
     re.compile(r'Page\s*\d+\s*of\s*\d+.*$', re.I),
     re.compile(r'Copyright\s*©.*$', re.I),
 ]
+
+def _cut_merged(txt, prefix):
+    """A scan can glue the next question onto this block; cut it back at a known stem."""
+    for pos, fix in STEM_FIX.get(prefix, {}).items():
+        frag = fix["stmt"][:40]
+        pat = r'\s*'.join(re.escape(c) for c in frag if not c.isspace())
+        m = re.search(pat, txt, re.I)
+        if m and m.start() > 80:
+            return txt[:m.start()]
+    return txt
+
 
 def clean_text(t):
     t = re.sub(r'\s+', ' ', t).strip()
@@ -264,17 +369,32 @@ def main():
         blocks = payload["questions"]
         if prefix in OVERRIDES:
             blocks = OVERRIDES[prefix](blocks)
-        aligned = align(blocks, expected_qnos(blocks))
+        if prefix in SEQUENTIAL:
+            aligned = content_align(prefix, [b for b in blocks if not _junk(b["text"])])
+        else:
+            aligned = align(blocks, expected_qnos(blocks))
         k = keys[prefix]
         out = []
         for i, b in enumerate(aligned):
             key = k[i]
             if b is None:
+                fix = STEM_FIX.get(prefix, {}).get(str(i + 1))
+                if fix:
+                    subj, score = classify(fix["stmt"])
+                    out.append({"pos": i+1, "qno": i+1, "type": key["type"], "marks": key["marks"],
+                                "section": key["section"], "answer": key["key"], "text": fix["stmt"],
+                                "stmt": fix["stmt"], "options": dict(fix.get("options") or {}), "page": None,
+                                "subject": subj, "score": score, "missing": False, "ocr": True,
+                                "figure": False, "recovered": fix.get("source", "OCR line cache")})
+                    if score == 0 and key["section"] != "GA":
+                        zero_items.append((out, len(out)))
+                    continue
                 out.append({"pos": i+1, "missing": True, "type": key["type"], "marks": key["marks"],
                             "section": key["section"], "answer": key["key"], "text": "", "stmt": "",
                             "options": {}, "page": None, "subject": "GEN", "score": 0})
                 continue
             txt = re.sub(r'Q\.?\s*\d+\s*[-–]\s*Q\.?\s*\d+\s+Carry[^.]*?each\.?', ' ', b["text"], flags=re.I)
+            txt = _cut_merged(txt, prefix)
             txt = clean_text(txt)
             ocr_pages = payload.get("ocr_pages") or []
             if b.get("page") in ocr_pages:
@@ -284,6 +404,11 @@ def main():
             opts = {k: clean_text(v) for k, v in opts.items()}
             fig = bool(FIG_HINT.search(txt))
             subj, score = classify(txt)
+            fix = STEM_FIX.get(prefix, {}).get(str(i + 1))
+            if fix:
+                txt = fix["stmt"]
+                stmt, opts = fix["stmt"], dict(fix.get("options") or {})
+                subj, score = classify(stmt)
             rec = {"pos": i+1, "qno": b["qno"], "type": key["type"], "marks": key["marks"],
                    "section": key["section"], "answer": key["key"], "text": txt, "stmt": stmt,
                    "options": opts, "page": b["page"], "subject": subj, "score": score, "missing": False,
@@ -299,11 +424,12 @@ def main():
                 rec["answer"] = lo if lo == hi else f"{lo} – {hi}"
         final[prefix] = {"file": payload["file"], "questions": out}
 
-    # apply manual labels in order
-    assert len(zero_items) == len(MANUAL), f"{len(zero_items)} zero-score vs {len(MANUAL)} labels"
-    for (lst, idx), lab in zip(zero_items, MANUAL):
-        lst[idx]["subject"] = lab
-
+    # apply reviewed subject labels for questions the keyword scorer could not place
+    for prefix, payload in final.items():
+        for rec in payload["questions"]:
+            lab = MANUAL_KEYED.get(f"{prefix}:{rec['pos']}")
+            if lab:
+                rec["subject"] = lab
     (DATA / "final_questions.json").write_text(json.dumps(final, indent=1))
 
     tot = sum(len(v["questions"]) for v in final.values())

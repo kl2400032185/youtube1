@@ -917,9 +917,8 @@ def _year_set(prefix):
     import re as _re
     y = _re.search(r'(\d{4})', prefix)
     year = y.group(1) if y else ""
-    if "Set-1" in prefix: return year, "Set-1"
-    if "Set-2" in prefix: return year, "Set-2"
-    return year, ""
+    m = _re.search(r"Set-(\d)", prefix)
+    return (year, f"Set-{m.group(1)}") if m else (year, "")
 
 _DATA = _Path("/home/user/youtube1/data/final_questions.json")
 ALL_Q = _json.loads(_DATA.read_text()) if _DATA.exists() else {}

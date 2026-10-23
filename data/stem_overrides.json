@@ -1,0 +1,43 @@
+{
+ "GATE_2015_CS_Set-1": {
+  "24": {
+   "options": {
+    "A": "2N",
+    "B": "N(N-1)",
+    "C": "N(N-1)/2",
+    "D": "(N-1)^2"
+   },
+   "source": "Question paper p.9, lines recovered from OCR cache (Q.21 in the scan)",
+   "stmt": "Suppose that everyone in a group of N people wants to communicate secretly with the N-1 others using a symmetric key cryptographic system. The communication between any two persons should not be decodable by the others in the group. The number of keys required in the system as a whole to satisfy the confidentiality requirement is"
+  },
+  "30": {
+   "options": {},
+   "source": "Question paper p.6 (Q.9 in the scan) - code transcribed from the page image; the OCR had merged this stem into the previous question",
+   "stmt": "The following two functions P1 and P2 that share a variable B with an initial value of 2 execute concurrently. P1() { C = B - 1; B = 2 * C; }  P2() { D = 2 * B; B = D - 1; }  The number of distinct values that B can possibly take after the execution is ____."
+  }
+ },
+ "GATE_2015_CS_Set-2": {
+  "14": {
+   "options": {},
+   "source": "Question paper p.6, line recovered from OCR cache",
+   "stmt": "The number of divisors of 2100 is ____."
+  },
+  "7": {
+   "options": {
+    "A": "(q+r)/qr",
+    "B": "qr/(q+r)",
+    "C": "sqrt(q^2 + r^2)",
+    "D": "(q+r)^2/qr"
+   },
+   "source": "Question paper p.3, formula options transcribed from the scan's typeset fractions",
+   "stmt": "In a triangle PQR, PS is the angle bisector of angle QPR and angle QPS = 60 degrees. What is the length of PS? (The options are printed as fractions/radicals in the scan; take PQ = r and PR = q.)"
+  }
+ },
+ "GATE_2021_CS_Set-2": {
+  "28": {
+   "options": {},
+   "source": "Question paper p.19, stem split around a formula image and recovered from the OCR line cache",
+   "stmt": "If x and y are two decimal digits and (0.1101)_2 = (0.8xy5)_10, the decimal value of x + y is ____."
+  }
+ }
+}

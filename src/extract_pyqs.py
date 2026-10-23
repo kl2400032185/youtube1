@@ -40,16 +40,24 @@ def ocr_page(doc, pno, dpi=150):
     return lines
 
 P1 = re.compile(r'^Q\s*[.,]?\s*(\d{1,2})\s*[.):\-–]?\s*(.*)$')
+P4 = re.compile(r'^(\d{1,2})\s*$')   # OCR sometimes drops the 'Q.' prefix
 P2 = re.compile(r'^Question\s*Number\s*:?\s*(\d{1,2})', re.I)
 P3 = re.compile(r'^Q\s*[.,]?\s*No\s*[.,:]?\s*(\d{1,2})', re.I)
 SECTION_HDR = re.compile(r'Q\.?\s*\d{1,2}\s*[-–]\s*Q\.?\s*\d{1,2}\s+[Cc]arry', re.I)
 SECTION_HDR2 = re.compile(r'carry (one|two) mark', re.I)
+
+BLANK_HEADERS = {"6 0", "6", "0", "9", "8"}
 
 def is_qstart(ln):
     if SECTION_HDR.search(ln) or SECTION_HDR2.search(ln): return None
     for pat in (P2, P3):
         m = pat.match(ln)
         if m: return int(m.group(1)), ""
+    m4 = P4.match(ln)
+    if m4:
+        n = int(m4.group(1))
+        if 1 <= n <= 65:
+            return n, ""
     m = P1.match(ln)
     if m:
         # avoid matching things like "Q.1 to Q.5" and stray "Q. No."
@@ -97,7 +105,7 @@ def extract(pdf):
         page = doc[pno]
         words = page.get_text("words")
         lines = lines_by_pos(page) if len(words) >= 25 else [l.strip() for l in page.get_text().split("\n") if l.strip()]
-        prefer_ocr = ("2017" in pdf.name) or ("2020" in pdf.name)
+        prefer_ocr = any(y in pdf.name for y in ("2015", "2017", "2020"))
         q_idx = [i for i, l in enumerate(lines) if is_qstart(l)]
         thin_tail = (not q_idx) or (len(" ".join(lines[q_idx[-1]:])) < 45)
         if page.get_images() and (prefer_ocr or not q_idx or thin_tail):
@@ -127,6 +135,9 @@ def main():
         ms = list(pat.finditer(re.sub(r'\s+', ' ', full)))[:65]
         keys[kp.name.replace("_Answer_Key.pdf", "")] = [
             {"type": m.group(3), "section": m.group(4), "key": m.group(5).strip(), "marks": m.group(6)} for m in ms]
+    legacy = OUT / "keys_legacy.json"
+    if legacy.exists():
+        keys.update(json.loads(legacy.read_text()))
     (OUT / "keys.json").write_text(json.dumps(keys, indent=1))
 
     result = {}

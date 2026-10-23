@@ -1,11 +1,17 @@
-GATE 2027 CS/IT — PYQ COVERAGE AUDIT (Edition 2)
+GATE 2027 CS/IT — PYQ COVERAGE AUDIT (Edition 3)
 ==============================================================
-Papers processed : 17
-Questions present: 1105  (CS 935 + GA 170)
-Expected         : 17 x 65 = 1105
-Unrecovered stems: 1
+Papers processed : 23
+Questions present: 1495  (CS 1265 + GA 230)
+Expected         : 23 x 65 = 1495
+Unrecovered stems: 0
 
 PER PAPER
+  GATE_2014_CS_Set-1          65 Qs   OCR-recovered stems: 0
+  GATE_2014_CS_Set-2          65 Qs   OCR-recovered stems: 0
+  GATE_2014_CS_Set-3          65 Qs   OCR-recovered stems: 0
+  GATE_2015_CS_Set-1          65 Qs   OCR-recovered stems: 65
+  GATE_2015_CS_Set-2          65 Qs   OCR-recovered stems: 65
+  GATE_2015_CS_Set-3          65 Qs   OCR-recovered stems: 65
   GATE_2016_CS_Set-1          65 Qs   OCR-recovered stems: 0
   GATE_2016_CS_Set-2          65 Qs   OCR-recovered stems: 0
   GATE_2017_CS_Set-1          65 Qs   OCR-recovered stems: 65
@@ -14,8 +20,8 @@ PER PAPER
   GATE_2019_CS                65 Qs   OCR-recovered stems: 0
   GATE_2020_CS                65 Qs   OCR-recovered stems: 65
   GATE_2021_CS_Set-1          65 Qs   OCR-recovered stems: 55
-  GATE_2021_CS_Set-2          65 Qs   OCR-recovered stems: 54
-  GATE_2022_CS                65 Qs   OCR-recovered stems: 0
+  GATE_2021_CS_Set-2          65 Qs   OCR-recovered stems: 55
+  GATE_2022_CS                65 Qs   OCR-recovered stems: 4
   GATE_2023_CS                65 Qs   OCR-recovered stems: 0
   GATE_2024_CS_Set-1          65 Qs   OCR-recovered stems: 0
   GATE_2024_CS_Set-2          65 Qs   OCR-recovered stems: 0
@@ -25,20 +31,22 @@ PER PAPER
   GATE_2026_CS_Set-2          65 Qs   OCR-recovered stems: 0
 
 PER SUBJECT BOOK
-  PDS       132  01_Programming_and_Data_Structures.pdf
-  ALGO       68  02_Algorithms.pdf
-  DM         98  03_Discrete_Mathematics.pdf
-  EM-LA      31  04_Engineering_Mathematics_Linear_Algebra.pdf
-  EM-PS      31  05_Engineering_Mathematics_Probability_and_Statistics.pdf
-  EM-CALC    14  06_Engineering_Mathematics_Calculus.pdf
-  DL         70  07_Digital_Logic.pdf
-  COA       109  08_Computer_Organization_and_Architecture.pdf
-  OS         82  09_Operating_Systems.pdf
-  TOC        98  10_Theory_of_Computation.pdf
-  CN         89  11_Computer_Networks.pdf
-  DBMS       71  12_Databases_(DBMS).pdf
-  CD         42  13_Compiler_Design.pdf
-  GA        170  14_General_Aptitude_GATE_2027.pdf
+  PDS       174  01_Programming_and_Data_Structures.pdf
+  ALGO       93  02_Algorithms.pdf
+  DM        134  03_Discrete_Mathematics.pdf
+  EM-LA      44  04_Engineering_Mathematics_Linear_Algebra.pdf
+  EM-PS      41  05_Engineering_Mathematics_Probability_and_Statistics.pdf
+  EM-CALC    26  06_Engineering_Mathematics_Calculus.pdf
+  DL         93  07_Digital_Logic.pdf
+  COA       149  08_Computer_Organization_and_Architecture.pdf
+  OS        110  09_Operating_Systems.pdf
+  TOC       117  10_Theory_of_Computation.pdf
+  CN        126  11_Computer_Networks.pdf
+  DBMS       98  12_Databases_(DBMS).pdf
+  CD         56  13_Compiler_Design.pdf
+  GA        230  14_General_Aptitude_GATE_2027.pdf
+  OTHER       4  (out-of-syllabus legacy topics - listed in the master index and CSV)
+  TOTAL    1495  (CS 1265 + GA 230)
 
 METHOD
   Text layer extracted with PyMuPDF; grouped into question blocks by 'Q.N' and
