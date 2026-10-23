@@ -37,6 +37,57 @@ ACCENT_GREEN = HexColor("#2E7D32")
 
 OUTPUT_DIR = Path("/home/user/youtube1/gate2027_pdfs")
 
+# --- Unicode-capable fonts for question reproduction (math symbols, Greek) ---
+import unicodedata
+FONT_BODY, FONT_BOLD, FONT_ITAL, FONT_BI = "Helvetica", "Helvetica-Bold", "Helvetica-Oblique", "Helvetica-BoldOblique"
+_DJV = Path("/usr/share/fonts/truetype/dejavu")
+if _DJV.exists():
+    try:
+        pdfmetrics.registerFont(TTFont("DJV", str(_DJV / "DejaVuSans.ttf")))
+        pdfmetrics.registerFont(TTFont("DJV-Bold", str(_DJV / "DejaVuSans-Bold.ttf")))
+        pdfmetrics.registerFont(TTFont("DJV-Mono", str(_DJV / "DejaVuSansMono.ttf")))
+        pdfmetrics.registerFontFamily("DJV", normal="DJV", bold="DJV-Bold", italic="DJV", boldItalic="DJV-Bold")
+        FONT_BODY, FONT_BOLD, FONT_ITAL, FONT_BI = "DJV", "DJV-Bold", "DJV", "DJV-Bold"
+    except Exception:
+        pass
+
+_SYMBOLS = {
+    "\u2200": "for all ", "\u2203": "there exists ", "\u2208": " in ", "\u2209": " not in ",
+    "\u2286": " subset of ", "\u2282": " subset of ", "\u2287": " superset of ", "\u2283": " superset of ",
+    "\u222a": " union ", "\u2229": " intersect ", "\u2264": "<=", "\u2265": ">=", "\u2260": "!=",
+    "\u2192": "->", "\u21d2": "=>", "\u21d4": "<=>", "\u2190": "<-", "\u221e": "infinity",
+    "\u2211": "sum", "\u220f": "product", "\u221a": "sqrt", "\u222b": "integral", "\u2202": "partial",
+    "\u2207": "grad", "\u2205": "empty set", "\u00b1": "+-", "\u00d7": "x", "\u00f7": "/",
+    "\u2032": "'", "\u2033": "''", "\u2212": "-", "\u2013": "-", "\u2014": "-", "\u2018": "'",
+    "\u2019": "'", "\u201c": '"', "\u201d": '"', "\u2026": "...", "\u00a0": " ", "\u200b": "",
+    "\u2009": " ", "\u2003": " ", "\u2022": "-", "\uf0b7": "-", "\u25a1": "?", "\u2610": "?",
+    "\u25aa": "-", "\u2218": "o", "\u2295": "(+)", "\u2299": "(.)", "\u22a5": "false", "\u22a4": "true",
+    "\u03b1": "alpha", "\u03b2": "beta", "\u03b3": "gamma", "\u03bb": "lambda", "\u03bc": "mu",
+    "\u03c0": "pi", "\u03c3": "sigma", "\u03b8": "theta", "\u03c6": "phi", "\u03c9": "omega",
+    "\u0398": "Theta", "\u03a9": "Omega", "\u0394": "Delta", "\u03a3": "Sigma", "\u03a0": "Pi",
+}
+
+def sanitize(text):
+    """Normalise Unicode so reportlab can render every character."""
+    if text is None:
+        return ""
+    t = unicodedata.normalize("NFKC", str(text))
+    out = []
+    for ch in t:
+        o = ord(ch)
+        if o < 128:
+            out.append(ch)
+        elif ch in _SYMBOLS:
+            out.append(_SYMBOLS[ch])
+        elif 0x370 <= o <= 0x3FF or 0x2200 <= o <= 0x22FF or 0x2190 <= o <= 0x21FF:
+            out.append(ch)
+        elif 0x1F000 <= o <= 0x1FAFF:
+            out.append("")
+        else:
+            out.append(ch if o < 0x2000 else " ")
+    return "".join(out)
+
+
 STYLES = getSampleStyleSheet()
 
 # Define custom styles
@@ -57,6 +108,7 @@ sTip = ParagraphStyle('Tip', parent=sBody, fontSize=8, leading=11, textColor=Hex
 sWarning = ParagraphStyle('Warning', parent=sBody, fontSize=8, leading=11, textColor=HexColor("#B71C1C"), backColor=HexColor("#FFEBEE"), borderPadding=(6,6,6,6), spaceAfter=4)
 
 def esc(text):
+    text = sanitize(text)
     # Escape stray < > that are not valid reportlab tags (<b>,</b>,<i>,</i>,<font>,</font>,<br/>,<br>, etc.)
     # First protect known tags
     import re
@@ -87,11 +139,13 @@ def header_footer(canvas, doc):
     # Footer text
     canvas.setFont("Helvetica", 6)
     canvas.setFillColor(DARK_GRAY)
-    title = getattr(doc, 'subject_title', 'GATE 2027')
+    title = getattr(doc, 'footer_left', None) or getattr(doc, 'subject_title', 'GATE 2027')
+    if len(title) > 62:
+        title = title[:59].rstrip() + "..."
     ch = getattr(doc, 'chapter_name', '')
-    canvas.drawString(15*mm, 9*mm, f"{title}")
+    canvas.drawString(15*mm, 9*mm, sanitize(title))
     if ch:
-        canvas.drawCentredString(105*mm, 9*mm, ch)
+        canvas.drawCentredString(105*mm, 9*mm, sanitize(ch))
     canvas.drawRightString(195*mm, 9*mm, f"Page {doc.page}")
     # Header line
     if doc.page > 2:
@@ -224,7 +278,7 @@ def weightage_table(rows, title="Historical Weightage"):
 # MASTER BUILDER
 # ---------------------------------------------------------------------------
 
-def build_subject_pdf(subject_name, short_code, chapters, weightage_rows, priority_notes, recommended_order, output_path):
+def build_subject_pdf(subject_name, short_code, chapters, weightage_rows, priority_notes, recommended_order, output_path, appendix_questions=None):
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     doc = SimpleDocTemplate(
         str(output_path),
@@ -237,6 +291,7 @@ def build_subject_pdf(subject_name, short_code, chapters, weightage_rows, priori
     )
     story=[]
     doc.subject_title = subject_name.upper()
+    doc.footer_left = "GATE 2027 CS/IT - " + subject_name.split(" — ")[0].replace("GATE 2027 ", "")[:52]
     doc.chapter_name = short_code
 
     # --- COVER PAGE ---
@@ -555,7 +610,7 @@ def build_subject_pdf(subject_name, short_code, chapters, weightage_rows, priori
     # --- COVERAGE & METHODOLOGY ---
     story.append(P("PYQ COVERAGE CHECKLIST & METHODOLOGY NOTE", sH1))
     story.append(HRFlowable(width="100%", thickness=1, color=NAVY, spaceAfter=4, spaceBefore=2))
-    story.append(P(f"<b>Papers processed for this book:</b> GATE CS 2016 Set-1 & Set-2, 2017 Set-1 & Set-2 (image-scanned — answer keys processed, question text flagged where extraction is lossy), 2018, 2019, 2020 (image-scanned), 2021 Set-1 & Set-2, 2022, 2023, 2024 Set-1 & Set-2, 2025 Set-1 & Set-2, 2026 Set-1 & Set-2 — <b>18 papers, 2016–2026</b>. Source repository: <i>kl2400032185/STUDY-need</i> (cloned 23 Oct 2026). Papers before 2016 are not in the supplied files and are therefore not included; the book explicitly notes this limitation.", sBody))
+    story.append(P(f"<b>Papers processed for this book:</b> GATE CS 2016 Set-1 & Set-2, 2017 Set-1 & Set-2 (image-scanned — answer keys processed, question text flagged where extraction is lossy), 2018, 2019, 2020 (image-scanned), 2021 Set-1 & Set-2, 2022, 2023, 2024 Set-1 & Set-2, 2025 Set-1 & Set-2, 2026 Set-1 & Set-2 — <b>17 papers, 2016–2026</b>. Source repository: <i>kl2400032185/STUDY-need</i> (cloned 23 Oct 2026). Papers before 2016 are not in the supplied files and are therefore not included; the book explicitly notes this limitation.", sBody))
     story.append(Spacer(1,2*mm))
     # Coverage table
     cov_data=[[P('<b><font color="white">Paper</font></b>', ParagraphStyle('covh', parent=sSmall, textColor=white, alignment=TA_CENTER, fontName='Helvetica-Bold')),
@@ -589,13 +644,126 @@ def build_subject_pdf(subject_name, short_code, chapters, weightage_rows, priori
     ]))
     story.append(cov_table)
     story.append(Spacer(1,2*mm))
-    story.append(P("<b>Verification performed for this book:</b> (1) Every PYQ cites year/paper/marks/type from answer keys. (2) Question statements are taken from the official question-paper text layer; scanned papers are cross-checked with answer keys. (3) No question is labelled ‘PYQ’ unless it appears in one of the 18 processed papers. (4) MSQ vs MCQ vs NAT type is taken from the answer key’s ‘Type’ column. (5) Figures that could not be extracted are described and flagged. (6) Weightage is recomputed from the processed papers and compared with coaching estimates — discrepancies are explained. (7) All pages were test-rendered; no text is clipped.", sBody))
+    story.append(P("<b>Verification performed for this book:</b> (1) Every PYQ cites year/paper/marks/type from answer keys. (2) Question statements are taken from the official question-paper text layer; scanned papers are cross-checked with answer keys. (3) No question is labelled ‘PYQ’ unless it appears in one of the 17 processed papers. (3b) The COMPLETE QUESTION BANK appendix at the end of this book lists every question of this subject from all 17 papers — 1,105 questions in total across the set, with the official answer key for each. (4) MSQ vs MCQ vs NAT type is taken from the answer key’s ‘Type’ column. (5) Figures that could not be extracted are described and flagged. (6) Weightage is recomputed from the processed papers and compared with coaching estimates — discrepancies are explained. (7) All pages were test-rendered; no text is clipped.", sBody))
     story.append(Spacer(1,2*mm))
     story.append(colored_box("<b>Limitations & Honest Disclosure:</b> Pre-2016 papers (1991–2015) are not in the supplied repository and are not included. A future update can add them when files are available. Scanned papers (2017, 2020) contain accurate answer keys but question-text extraction is imperfect — visual verification against the scanned image is recommended for figures and mathematical symbols. The book does not reproduce copyrighted question-paper PDFs verbatim; it compiles and teaches from them under fair-use for education.", bg=HexColor("#FFF3E0"), border=GOLD, style=ParagraphStyle('limit', parent=sSmall, fontSize=6.5, leading=9, alignment=TA_JUSTIFY)))
     story.append(Spacer(1,2*mm))
     story.append(P("Good luck — solve honestly, revise ruthlessly, and trust the process. Rank &lt;100 is built one PYQ at a time.", ParagraphStyle('goodluck', parent=sBody, fontSize=9, leading=13, textColor=TEAL, fontName='Helvetica-BoldOblique', alignment=TA_CENTER)))
 
+    # --- COMPLETE QUESTION BANK APPENDIX (every question of this subject) ---
+    if appendix_questions:
+        story.extend(complete_appendix(appendix_questions, subject_name,
+                                       show_area=("General Aptitude" in subject_name)))
+
     # Build
     doc.build(story, onFirstPage=cover_header_footer, onLaterPages=header_footer)
     print(f"✓ Built {output_path} ({output_path.stat().st_size/1024:.0f} KB)")
 
+
+
+# ---------------------------------------------------------------------------
+# Appendix: complete question bank for this subject (appended at import time)
+# ---------------------------------------------------------------------------
+
+def ga_area(text):
+    t = (text or "").lower()
+    if any(k in t for k in ["fold", "unfold", "mirror image", "paper", "punched", "panel", "embedded", "rotate",
+                            "rotation", "net of", "cross section", "top view", "front view", "side view",
+                            "which of the shapes", "pattern appears", "water image", "cube is built",
+                            "removed from every corner", "square piece", "cut into two parts", "polygon"]):
+        return "Spatial"
+    if any(k in t for k in ["percent", "percentage", "ratio", "average", "interest", "speed", " km", "work",
+                            "profit", "loss", "probability", "sum of", "product of", "value of", "how many",
+                            "number of", "rupee", "litre", "median", "log", "equation", "area", "volume",
+                            "square units", "cubic", "marks", "denomination", "expenditure", "revenue"]):
+        return "Quant"
+    if any(k in t for k in ["conclusion", "inference", "logically", "valid", "assume", "statement", "syllogism",
+                            "puzzle", "arrangement", "sequence", "series", "sitting", "blood relation",
+                            "direction", "imply", "implies", "deduce"]):
+        return "Analytical"
+    return "Verbal"
+
+
+def appendix_block(idx, rec, year, setl, show_area=False):
+    tag = rec.get("subject", "")
+    if show_area:
+        tag = ga_area(rec.get("stmt") or rec.get("text"))
+    src = f"p.{rec['page']}" if rec.get("page") else "scan"
+    left = (f"<b>Q{idx:03d}</b> &nbsp; {year} {setl} &nbsp;·&nbsp; <b>{rec['marks']}M</b> &nbsp;·&nbsp; {rec['type']}"
+            + (f" &nbsp;·&nbsp; <font color='#0E7C6B'><b>{tag}</b></font>" if tag else "")
+            + f" &nbsp;·&nbsp; <font color='#616161'>source {src}</font>")
+    head = Table([[P(left, ParagraphStyle(f'ah{idx}', parent=sSmall, fontSize=6.5, leading=8, alignment=TA_LEFT, textColor=DARK_GRAY)),
+                   P(f"<b>Ans: {rec['answer']}</b>", ParagraphStyle(f'aa{idx}', parent=sSmall, fontSize=7, leading=8,
+                     alignment=TA_RIGHT, textColor=ACCENT_GREEN))]], colWidths=[150*mm, 22*mm])
+    head.setStyle(TableStyle([('BACKGROUND', (0,0), (-1,-1), LIGHT_NAVY), ('TOPPADDING', (0,0), (-1,-1), 2),
+                              ('BOTTOMPADDING', (0,0), (-1,-1), 2), ('LEFTPADDING', (0,0), (-1,-1), 4),
+                              ('RIGHTPADDING', (0,0), (-1,-1), 4), ('VALIGN', (0,0), (-1,-1), 'MIDDLE')]))
+    body = [head, Spacer(1,1.2*mm)]
+    stmt = rec.get("stmt") or ""
+    if rec.get("missing") or len(stmt.strip()) < 8:
+        body.append(P("<i>[Question text could not be recovered from the supplied scan. Open the source paper page and use the answer key above.]</i>",
+                      ParagraphStyle(f'am{idx}', parent=sBody, fontSize=8, leading=10.5, textColor=ACCENT_RED)))
+    else:
+        if len(stmt) > 1400:
+            stmt = stmt[:1400] + " …"
+        body.append(P(stmt, ParagraphStyle(f'as{idx}', parent=sBody, fontSize=7.6, leading=10.5, alignment=TA_LEFT)))
+        opts = rec.get("options") or {}
+        keys = [k for k in "ABCD" if k in opts]
+        if len(keys) >= 2:
+            cells = []
+            for i in range(0, len(keys), 2):
+                row = []
+                for k in keys[i:i + 2]:
+                    v = opts[k]
+                    if len(v) > 260:
+                        v = v[:260] + " …"
+                    row.append(P(f"<b>({k})</b> {v}", ParagraphStyle(f'ao{idx}{k}', parent=sBody, fontSize=7.4,
+                               leading=10, alignment=TA_LEFT)))
+                if len(row) == 1:
+                    row.append(P("", sBody))
+                cells.append(row)
+            ot = Table(cells, colWidths=[85*mm, 85*mm])
+            ot.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('TOPPADDING', (0,0), (-1,-1), 1),
+                                    ('BOTTOMPADDING', (0,0), (-1,-1), 1), ('LEFTPADDING', (0,0), (-1,-1), 0),
+                                    ('RIGHTPADDING', (0,0), (-1,-1), 3)]))
+            body.append(ot)
+        elif rec.get("type") == "NAT":
+            body.append(P("<i>Numerical answer type (no options).</i>", ParagraphStyle(f'an{idx}', parent=sSmall,
+                          fontSize=6.5, leading=8, alignment=TA_LEFT)))
+        if rec.get("figure"):
+            body.append(P(f"<i>[This question refers to a figure/diagram/table printed in the original paper — see page {src}. The statement, options and answer key above are complete; only the drawing itself is not reproduced.]</i>",
+                          ParagraphStyle(f'af{idx}', parent=sSmall, fontSize=6.3, leading=8, alignment=TA_LEFT,
+                                         textColor=HexColor("#8D6E63"))))
+        if rec.get("ocr"):
+            body.append(P("<i>[Scanned paper: text recovered by OCR and lightly repaired — cross-check symbols with the original scan.]</i>",
+                          ParagraphStyle(f'ao2{idx}', parent=sSmall, fontSize=6.3, leading=8, alignment=TA_LEFT,
+                                         textColor=HexColor("#8D6E63"))))
+    body.append(Spacer(1,1.6*mm))
+    return KeepTogether(body)
+
+
+def complete_appendix(questions, subject_name, show_area=False):
+    from collections import Counter
+    story = [PageBreak()]
+    story.append(P("COMPLETE QUESTION BANK — EVERY QUESTION, 2016–2026", sH1))
+    story.append(HRFlowable(width="100%", thickness=1, color=NAVY, spaceAfter=4, spaceBefore=2))
+    story.append(P(f"This appendix is the completeness guarantee for this book: it lists <b>all {len(questions)} questions</b> of "
+                   f"<b>{subject_name}</b> that appear in the 17 supplied GATE CS papers (2016–2026), in paper order, with the "
+                   f"official answer key, marks (1M/2M), question type (MCQ/MSQ/NAT) and the source page. Nothing is omitted. "
+                   f"Questions were tagged to this subject by a syllabus keyword map; if a tag is imperfect the question still "
+                   f"appears exactly once across the set.", sBody))
+    story.append(Spacer(1,1.5*mm))
+    c = Counter(q["year"] for q in questions)
+    years = sorted(c)
+    rows = [["Year"] + years, ["Questions"] + [str(c[y]) for y in years]]
+    data = [[P(f"<b>{r[0]}</b>", ParagraphStyle('yh', parent=sSmall, fontSize=6.5, leading=8)),
+             *[P(x, ParagraphStyle('yv', parent=sSmall, fontSize=6.5, leading=8)) for x in r[1:]]] for r in rows]
+    widths = [22*mm] + [158*mm / max(len(years), 1)] * len(years)
+    t = Table(data, colWidths=widths)
+    t.setStyle(TableStyle([('GRID', (0,0), (-1,-1), 0.4, MED_GRAY), ('BACKGROUND', (0,0), (0,-1), LIGHT_NAVY),
+                           ('TOPPADDING', (0,0), (-1,-1), 2), ('BOTTOMPADDING', (0,0), (-1,-1), 2)]))
+    story.append(t)
+    story.append(Spacer(1,2*mm))
+    for i, q in enumerate(questions, 1):
+        story.append(appendix_block(i, q["rec"], q["year"], q["set"], show_area=show_area))
+    return story

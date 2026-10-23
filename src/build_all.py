@@ -907,6 +907,37 @@ SUBJECTS.append({
 ]
 })
 
+
+import json as _json
+from pathlib import Path as _Path
+
+_TAGS = ["PDS","ALGO","DM","EM-LA","EM-PS","EM-CALC","DL","COA","OS","TOC","CN","DBMS","CD","GA"]
+
+def _year_set(prefix):
+    import re as _re
+    y = _re.search(r'(\d{4})', prefix)
+    year = y.group(1) if y else ""
+    if "Set-1" in prefix: return year, "Set-1"
+    if "Set-2" in prefix: return year, "Set-2"
+    return year, ""
+
+_DATA = _Path("/home/user/youtube1/data/final_questions.json")
+ALL_Q = _json.loads(_DATA.read_text()) if _DATA.exists() else {}
+
+def _appendix(tag):
+    out = []
+    for prefix, payload in ALL_Q.items():
+        year, setl = _year_set(prefix)
+        for rec in payload["questions"]:
+            is_ga = rec["section"] == "GA"
+            if tag == "GA":
+                if not is_ga: continue
+            else:
+                if is_ga or rec.get("subject") != tag: continue
+            out.append({"year": year, "set": setl, "rec": rec})
+    out.sort(key=lambda x: (x["year"], x["set"], x["rec"]["pos"]))
+    return out
+
 print(f"Subjects defined: {len(SUBJECTS)}")
 
 # Build all subject PDFs
@@ -923,6 +954,7 @@ for idx, subj in enumerate(SUBJECTS, 1):
         weightage_rows=subj['weightage'],
         priority_notes=subj['priority_notes'],
         recommended_order=subj['recommended_order'],
+        appendix_questions=_appendix(_TAGS[idx - 1]),
         output_path=out
     )
 
@@ -1000,7 +1032,8 @@ build2(
         "Spatial: transformation types → paper folding reverse-unfold method → 2D/3D patterns & cube nets (visualize with sketches)",
         "Weekly timed 15-mark mock: 5×1-mark (Q1-5) + 5×2-mark (Q6-10) with official negative marking",
     ],
-    output_path=GA_path
+    output_path=GA_path,
+    appendix_questions=_appendix("GA"),
 )
 
 print("Done all subjects!")

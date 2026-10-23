@@ -1,0 +1,6666 @@
+{
+ "GATE_2016_CS_Set-1": [
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "11.0 : 11.0",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "1.0 : 1.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "0.5 : 0.5",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "15.0 : 15.0",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "-11.0 : -11.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "3.0 : 4.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "31.0 : 31.0",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "6.0 : 6.0",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "2016.0 : 2016.0",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "10.0 : 10.0",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "10.0 : 10.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "197.9 : 198.1",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "2.0 : 2.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "0.33 : 0.34",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "456.0 : 456.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "33.0 : 34.0",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "12.0 : 12.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "7.0 : 7.0",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "256.0 : 256.0",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "9.0 : 9.0",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "384.0 : 384.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "346.0 : 346.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "1.0 : 1.0",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "13.0 : 13.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "1.1 : 1.1",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "2500.0 : 2500.0",
+   "marks": "2"
+  }
+ ],
+ "GATE_2016_CS_Set-2": [
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "4.0 : 4.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "9.0 : 9.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "4.0 : 4.0",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "0.55 : 0.55",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "0.124 : 0.126",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "-1.0 : -1.0",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "1.0 : 1.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "16.0 : 16.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "31.0 : 31.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "30.0 : 30.0",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "2.0 : 2.0",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "4.0 : 4.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "28.0 : 28.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "500.0 : 500.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "24.0 : 24.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "3.9 : 4.1",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "8.0 : 8.0",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "3.0 : 3.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "1500.0 : 1500.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "2.2 : 2.4",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "64.0 : 64.0",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "8.2 : 8.3",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "7.0 : 7.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "30.0 : 30.0",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "2.0 : 2.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "200.0 : 200.0",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "4.0 : 4.0",
+   "marks": "2"
+  }
+ ],
+ "GATE_2017_CS_Set-1": [
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "0.0 to 0.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "18.0 to 18.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "1.0 to 1.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "4.0 to 4.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "2.6 to 2.6",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "3.0 to 3.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "0.05 to 0.05",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "1024.0 to 1024.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "11.0 to 11.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "86.5 to 89.5",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "4.0 to 4.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "271.0 to 271.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "5.0 to 5.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "-16.0 to -16.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "1.49 to 1.52",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "76.0 to 76.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "2.0 to 2.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "3.0 to 3.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "14.0 to 14.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "23.0 to 23.0",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  }
+ ],
+ "GATE_2017_CS_Set-2": [
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "0.0 to 0.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "9.0 to 9.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "-0.01 to 0.01",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "2.0 to 2.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "16.0 to 16.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "8.0 to 8.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "8.0 to 8.0",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "3.0 to 3.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "54.0 to 54.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "4.72 to 4.72",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "7.0 to 7.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "15.0 to 15.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "54.0 to 54.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "52.0 to 52.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "225.0 to 225.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "29.0 to 29.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "5.0 to 5.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "18.0 to 18.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "0.0 to 0.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "2.0 to 2.0",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  }
+ ],
+ "GATE_2018_CS": [
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0.021 to 0.024",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0.27 to 0.30",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "3 to 3",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "3 to 3",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "42 to 42",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "4 to 4",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "4 to 4",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "2 to",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "59.0 to 60.0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "2 to",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "34 to 34",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "109 to 109",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0.60 to 0.62",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "10230 to 10230",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "80 to 80",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "4 to 4",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "16 to 16",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "3 to 3",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "219 to 219",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "32 to 32",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "2 to",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "85 to 85",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "144 to 144",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "50 to 50",
+   "marks": "2"
+  }
+ ],
+ "GATE_2019_CS": [
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C OR D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "31 to 31",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "26 to 26",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "31 to 31",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0.08 to 0.08",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "2 to",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0.502 to 0.504",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "80 to 80",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "6 to 6",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "29 to 29",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "2 to",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "3.7 to 3.8 OR 4.0 to 4.1",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "5 to 5",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "12 to 12",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "160 to 160",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "4.25 to 4.25",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0.8 to 0.8",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "120 to 120",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "3 to 3",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "3 to 3",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "5 to 5",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "5 to 5",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "10 to 10",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "97 to 97",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "1 to",
+   "marks": "1"
+  }
+ ],
+ "GATE_2020_CS": [
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "MTA",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0.125 to 0.125",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "7 to 7",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "5 to 5",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "1034 to 1034",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "13.3 to 13.3 OR 13.5 to 13.5",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "19 to 19",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "13 to 13",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "7 to 7",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "6 to 6",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "12 to 12",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "2.15 to 2.18",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "14 to 14",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0.5 to 0.5",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "55 to 55",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "511 to 511",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "81 to 81",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "99 to 99",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "5.25 to 5.25",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "6 to 6",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "7 to 7",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "154.5 to 155.5",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "4 to 4",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "44 to 44",
+   "marks": "2"
+  }
+ ],
+ "GATE_2021_CS_Set-1": [
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C OR D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A; C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A; C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A; C",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "11 to 11",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "3 to 3",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0.35 to 0.39",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "65 to 65",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0.25 to 0.25",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "86 to 86",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "17 to 17",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "819 to 820 OR 205 to 205",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "-7.75 to -7.75",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "12 to 12",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A; C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "B; C; D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A; B; C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A; C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A; B; D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "1023 to 1023",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "50 to 52",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "6 to 6",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "50 to 50",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "3 to 3",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "17160 to 17160",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0.04 to 0.04",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "50 to 50",
+   "marks": "2"
+  }
+ ],
+ "GATE_2021_CS_Set-2": [
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "B; C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "B; C; D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A; C; D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "B; D",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "1 to",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "256 to 256",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "3 to 3",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "2 to",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "80000 to 80000",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "698 to 698",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "15.00 to 16.00",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "15 to 15",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "4 to 4",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "19 to 19",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A; C; D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "B; C; D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A; D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A; B; C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A; D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "B; C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A; B",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A; B; C",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "4108 to 4108",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "60 to 60",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "59049 to 59049",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "8 to 8",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "6 to 6",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "1.87 to 1.88",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "130 to 140",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "929 to 929",
+   "marks": "2"
+  }
+ ],
+ "GATE_2022_CS": [
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "B,C,D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A,B,D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A,B",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A,D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A,B,C",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "509 to 509",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "5 to 5",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "36 to 36",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "8 to 8",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "7 to 7",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0.85 to 0.85",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "-0.5 to -0.5",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "4 to 4",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A,B,C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A,B,C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "B,C,D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A,B,C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A,B,C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A,B,C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A,C,D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A,B,D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "B,D",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "2 to",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0.5 to 0.5",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "24 to 24",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "7.07 to 7.09",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "33 to 33",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "1.42 to 1.45",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0 to 0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "153 to 153",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0.6 to 0.6",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "80 to 80",
+   "marks": "2"
+  }
+ ],
+ "GATE_2023_CS": [
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "MTA",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "B, C, D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "C, D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A, C, D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A, C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "B, C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A, C, D or C, D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "B, D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A, C",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "2 to",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "0 to 0",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "110 to 110",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "2040 to 2040",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "10.2 to 10.2",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "7 to 7",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "B, C, D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "B, C, D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A, D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "C, D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "C, D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A, D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS",
+   "key": "A, B",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "5040 to 5040",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "4096 to 4096",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "5 to 5",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "8 to 8",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "2.374 to 2.376",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "2 to",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "6 to 6",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "4 to 4",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "19 to 19",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS",
+   "key": "3 to 3",
+   "marks": "2"
+  }
+ ],
+ "GATE_2024_CS_Set-1": [
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "C;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;B;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;C",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "2 to",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "6 to 6",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "16 to 16",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "2 to",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;C;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;C;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;B",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;C",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "4096 to 4096",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "3 to 3",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "3.00 to 3.00",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "14 to 14",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "40 to 40",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "179 to 179",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "60 to 60",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "44 to 44",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "6596 to 6596",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "0.370 to 0.380",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "4 to 4",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "6 to 6",
+   "marks": "2"
+  }
+ ],
+ "GATE_2024_CS_Set-2": [
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B;C;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;B",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;B",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;C;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "C;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;B;D",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "5 to 5",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "3 to 3",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B;C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;B",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B;C;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;B;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "C;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B;C",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "29.50 to 30.50",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "4 to 4",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "500 to 500",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "50 to 50",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "32 to 32",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "2.9 to 3.1",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "9 to 9",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "2 to",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "34 to 34",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "15 to 15",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "4 to 4",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "1028 to 1028",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "9 to 9",
+   "marks": "2"
+  }
+ ],
+ "GATE_2025_CS_Set-1": [
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;B",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;B;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "21 to 21",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "195 to 195",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "-2.1 to -1.9",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "0.49 to 0.51",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "435 to 435",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "25 to 25",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "5 to 5",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "65468 to 65468",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "6 to 6",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "11.83 to 11.87",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "6 to 6",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "26 to 26",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "0.949 to 0.952",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "7 to 7",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "0.300 to 0.302",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "5 to 5",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "7 to 8",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "5 to 5",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "5 to 5",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "46 to 46",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "5 to 5",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "10 to 11",
+   "marks": "2"
+  }
+ ],
+ "GATE_2025_CS_Set-2": [
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B;C;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;B;C",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "13 to 13",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "21 to 21",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "250 to 250",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "4 to 4",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B;C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;B;C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "C;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "C;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;B;C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B;C;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "C;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;C;D",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "4.0 to 4.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "260.20 to 261.20",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "33 to 33",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "11 to 11",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "6 to 6",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "6 to 6",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "3.0 to 3.0",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "111 to 111",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "46 to 46",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "0.5 to 0.5",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "0.70 to 0.80",
+   "marks": "2"
+  }
+ ],
+ "GATE_2026_CS_Set-1": [
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;C;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;B;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "C;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;B;C",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "3 to 3",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "11 to 11",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "9 to 9",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "6 to 6",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-1",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;C;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;B;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "B;C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-1",
+   "key": "A;B;C",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "34 to 34",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "4.24 to 4.26",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "77.3 to 77.3",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "95 to 95",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "65536 to 65536",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "7 to 7",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "4 to 4",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "9.5 to 9.5",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-1",
+   "key": "6 to 6",
+   "marks": "2"
+  }
+ ],
+ "GATE_2026_CS_Set-2": [
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "GA",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;B",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;B;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;C",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B;D",
+   "marks": "1"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "B;C",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "3 to 3",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "24 to 24",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "3 to 3",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "4094 to 4094",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "-60.25 to -60.25",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "13 to 13",
+   "marks": "1"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "C",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "D",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "B",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MCQ",
+   "section": "CS-2",
+   "key": "A",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "C;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;C;D",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;B",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;B;C",
+   "marks": "2"
+  },
+  {
+   "type": "MSQ",
+   "section": "CS-2",
+   "key": "A;B",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "16417 to 16417",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "1536 to 1536",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "3 to 3",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "128 to 128",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "2.30 to 2.40",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "4 to 4",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "6 to 6",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "9 to 9",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "1 to",
+   "marks": "1"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "48 to 48",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "0.5 to 0.5",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "40 to 40",
+   "marks": "2"
+  },
+  {
+   "type": "NAT",
+   "section": "CS-2",
+   "key": "30 to 30",
+   "marks": "2"
+  }
+ ]
+}
