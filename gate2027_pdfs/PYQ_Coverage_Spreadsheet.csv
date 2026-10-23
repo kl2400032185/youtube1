@@ -1,0 +1,24 @@
+﻿Subject,Chapter,Subtopic,Question_ID,Year,Paper/Set,Marks,Question_Type,Answer,Verification_Source,Solution_Status,Page_in_Book,Notes
+
+--- REPOSITORY PAPER INVENTORY ---,Year,Paper/Set,Total Qs,Answer Key Status,Q-Paper Status,Notes
+REPO_INVENTORY,2016,Set-1,65 Qs (10 GA +55 CS),Answer Key: 55 CS +10 GA,Question paper text PDF,Fully processed
+REPO_INVENTORY,2016,Set-2,65 Qs,Answer Key OK,Text PDF,Fully processed
+REPO_INVENTORY,2017,Set-1,65 Qs,Answer Key OK,Scanned image PDF,Answer keys OK; Q text flagged
+REPO_INVENTORY,2017,Set-2,65 Qs,Answer Key OK,Scanned image PDF,As above
+REPO_INVENTORY,2018,,65 Qs,Answer Key OK,Text PDF,Fully processed
+REPO_INVENTORY,2019,,65 Qs,Answer Key OK,Text PDF,Fully processed
+REPO_INVENTORY,2020,,65 Qs,Answer Key OK,Scanned image PDF,Answer keys OK
+REPO_INVENTORY,2021,Set-1,65 Qs,Answer Key OK,Text PDF,Fully processed
+REPO_INVENTORY,2021,Set-2,65 Qs,Answer Key OK,Text PDF,Fully processed
+REPO_INVENTORY,2022,,65+1 Qs,Answer Key OK,Text PDF,Fully processed (66 Qs)
+REPO_INVENTORY,2023,,65 Qs,Answer Key OK,Text PDF,Fully processed
+REPO_INVENTORY,2024,Set-1,65 Qs,Answer Key OK,Text PDF,Fully processed
+REPO_INVENTORY,2024,Set-2,65 Qs,Answer Key OK,Text PDF,Fully processed
+REPO_INVENTORY,2025,Set-1,65 Qs,Answer Key OK,Text PDF,Fully processed
+REPO_INVENTORY,2025,Set-2,65 Qs,Answer Key OK,Text PDF,Fully processed
+REPO_INVENTORY,2026,Set-1,65 Qs,Answer Key OK,Text PDF,Fully processed
+REPO_INVENTORY,2026,Set-2,65 Qs,Answer Key OK,Text PDF,Fully processed
+REPO_INVENTORY,1991-2015,—,—,—,Not in repo,Future scope – not supplied
+
+"Methodology: Every PYQ in books cites Year/Paper/Set/Marks/Type from answer keys. Image-scanned papers (2017,2020) flagged. No pre-2016 papers in repo – listed as Future Scope."
+"Source: kl2400032185/STUDY-need, cloned 23 Oct 2026; branch arena/5a3f4d7d-youtube1"
